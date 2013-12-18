@@ -1,7 +1,6 @@
 /*  This file is part of the KDE project
    Copyright (C) 2005-2006 by Olivier Goffart <ogoffart at kde.org>
 
-
    This library is free software; you can redistribute it and/or
    modify it under the terms of the GNU Library General Public
    License version 2 as published by the Free Software Foundation.
@@ -32,23 +31,23 @@ class KConfigGroup;
  */
 class KNotifyConfigElement
 {
-	public:
-		KNotifyConfigElement( const QString &eventid, KConfig *config);
-		~KNotifyConfigElement();
+public:
+    KNotifyConfigElement(const QString &eventid, KConfig *config);
+    ~KNotifyConfigElement();
 
-		QString readEntry(const QString& entry, bool path=false);
-		void writeEntry(const QString& entry, const QString & data);
-		
-		void save();
-		
-		/**
-		 * return wither kttsd is installed or not.
-		 */
-		static bool have_kttsd();
-		
-	private:
-		QMap<QString,QString> m_cache;
-		KConfigGroup* m_config;
+    QString readEntry(const QString &entry, bool path = false);
+    void writeEntry(const QString &entry, const QString &data);
+
+    void save();
+
+    /**
+     * return wither kttsd is installed or not.
+     */
+    static bool have_kttsd();
+
+private:
+    QMap<QString, QString> m_cache;
+    KConfigGroup *m_config;
 };
 
 #endif

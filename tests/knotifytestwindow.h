@@ -11,28 +11,25 @@
 
 class KNotification;
 
-
 class KNotifyTestWindow : public KXmlGuiWindow
 {
-	Q_OBJECT
-	
-	public:
-		KNotifyTestWindow( QWidget* parent = 0);
-	
-	private:
-		Ui::KNotifyTestView view;
-		QPointer<KNotification> m_readNotif;
-		int m_nbNewMessage;
+    Q_OBJECT
 
-	public Q_SLOTS:
-		void slotSendOnlineEvent();
-		void slotSendMessageEvent();
-		void slotMessageRead();
-		
-		void slotConfigureG();
-		void slotConfigureC();
+public:
+    KNotifyTestWindow(QWidget *parent = 0);
+
+private:
+    Ui::KNotifyTestView view;
+    QPointer<KNotification> m_readNotif;
+    int m_nbNewMessage;
+
+public Q_SLOTS:
+    void slotSendOnlineEvent();
+    void slotSendMessageEvent();
+    void slotMessageRead();
+
+    void slotConfigureG();
+    void slotConfigureC();
 };
-
-
 
 #endif

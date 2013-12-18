@@ -6,14 +6,14 @@
 
 #include "knotifytestwindow.h"
 
-int main( int argc, char ** argv )
+int main(int argc, char **argv)
 {
-  QApplication a(argc, argv);
-  QApplication::setApplicationName("knotifytest");
-  QApplication::setApplicationDisplayName(i18n("KNotifyTest"));
+    QApplication a(argc, argv);
+    QApplication::setApplicationName("knotifytest");
+    QApplication::setApplicationDisplayName(i18n("KNotifyTest"));
 
-  KNotifyTestWindow* knotifytestwindow = new KNotifyTestWindow;
-  knotifytestwindow->show();
+    KNotifyTestWindow *knotifytestwindow = new KNotifyTestWindow;
+    knotifytestwindow->show();
 
-  return a.exec();
+    return a.exec();
 }

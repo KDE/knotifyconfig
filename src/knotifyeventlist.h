@@ -16,12 +16,10 @@
    Boston, MA 02110-1301, USA.
 */
 
-
 #ifndef KNOTIFYEVENTLIST_H
 #define KNOTIFYEVENTLIST_H
 
 #include "knotifyconfigelement.h"
-
 
 #include <QTreeWidget>
 
@@ -30,48 +28,51 @@ class KNotifyEventListItem;
 class KConfig;
 
 /**
-	@author Olivier Goffart <ogoffart at kde.org>
+    @author Olivier Goffart <ogoffart at kde.org>
 */
 class KNotifyEventList : public QTreeWidget
 {
-	Q_OBJECT
+    Q_OBJECT
 public:
     KNotifyEventList(QWidget *parent);
     ~KNotifyEventList();
-	void fill( const QString & appname , const QString & context_name=QString() , 
-			   const QString & context_value=QString());
-	void save();
-	void updateCurrentItem();
-        QSize sizeHint() const;
+    void fill(const QString &appname, const QString &context_name = QString(),
+              const QString &context_value = QString());
+    void save();
+    void updateCurrentItem();
+    QSize sizeHint() const;
 private:
-	KConfig *config;
-	QList<KNotifyEventListItem*> m_elements;
-	
-	class KNotifyEventListDelegate;
-	
+    KConfig *config;
+    QList<KNotifyEventListItem *> m_elements;
+
+    class KNotifyEventListDelegate;
+
 private Q_SLOTS:
-	void slotSelectionChanged(QTreeWidgetItem *current , QTreeWidgetItem *previous);
-	
+    void slotSelectionChanged(QTreeWidgetItem *current, QTreeWidgetItem *previous);
+
 Q_SIGNALS:
-	void eventSelected(KNotifyConfigElement *);
+    void eventSelected(KNotifyConfigElement *);
 
 };
 
 class KNotifyEventListItem : public QTreeWidgetItem
 {
-	public:
-		KNotifyEventListItem(QTreeWidget *parent , const QString & eventName , const QString & name ,
-                         const QString & description , KConfig* confir);
-		~KNotifyEventListItem();
-		void save();
-		
-		KNotifyConfigElement *configElement() { return &m_config; }
-		
-		void update();
-		
-	private:
-		KNotifyConfigElement m_config;
-		
+public:
+    KNotifyEventListItem(QTreeWidget *parent, const QString &eventName, const QString &name,
+                         const QString &description, KConfig *confir);
+    ~KNotifyEventListItem();
+    void save();
+
+    KNotifyConfigElement *configElement()
+    {
+        return &m_config;
+    }
+
+    void update();
+
+private:
+    KNotifyConfigElement m_config;
+
 };
 
 #endif

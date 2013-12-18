@@ -27,60 +27,60 @@ class KNotifyConfigElement;
 
 /**
  * Configure the notification for a given application / context
- * 
+ *
  * You probably will want to use the static function configure
- * 
+ *
  * If you create the widget yourself, you must call setApplication before showing it
- * 
+ *
  * @author Olivier Goffart <ogoffart @ kde.org>
  */
 class KNOTIFYCONFIG_EXPORT KNotifyConfigWidget : public QWidget
-{ 
-	Q_OBJECT
+{
+    Q_OBJECT
 public:
-	KNotifyConfigWidget( QWidget *parent);
-	~KNotifyConfigWidget();
-	
-	/**
-	 * Show a dialog with the widget.
-	 * @param parent the parent widget of the dialog
-	 * @param appname the application name,  if null, it is autodetected
-	 * @return the widget itself    the topLevelWidget of it is probably a KDialog
-	 */
-	static KNotifyConfigWidget *configure(QWidget *parent = 0l, const QString &appname=QString());
-	
-	/**
-	 * Change the application and the context
-	 * 
-	 * @param appname name of the application.   if null QCoreApplication::instance()->applicationName() is used
-	 * @param context_name the name of the context, if null , avery context are considered
-	 * @param context_value the context value
-	 */
-	void setApplication( const QString & appname = QString() ,
-						 const QString & context_name = QString(),
-						 const QString & context_value = QString());
-	
+    KNotifyConfigWidget(QWidget *parent);
+    ~KNotifyConfigWidget();
+
+    /**
+     * Show a dialog with the widget.
+     * @param parent the parent widget of the dialog
+     * @param appname the application name,  if null, it is autodetected
+     * @return the widget itself    the topLevelWidget of it is probably a KDialog
+     */
+    static KNotifyConfigWidget *configure(QWidget *parent = 0l, const QString &appname = QString());
+
+    /**
+     * Change the application and the context
+     *
+     * @param appname name of the application.   if null QCoreApplication::instance()->applicationName() is used
+     * @param context_name the name of the context, if null , avery context are considered
+     * @param context_value the context value
+     */
+    void setApplication(const QString &appname = QString(),
+                        const QString &context_name = QString(),
+                        const QString &context_value = QString());
+
 public Q_SLOTS:
-	/**
-	 * save to the config file
-	 */
-	void save();
-	
+    /**
+     * save to the config file
+     */
+    void save();
+
 Q_SIGNALS:
-	/**
-	 * Indicate that the state of the modules contents has changed. 
-	 * This signal is emitted whenever the state of the configuration changes. 
-	 * @see KCModule::changed
-	 */
-	void changed(bool state);
+    /**
+     * Indicate that the state of the modules contents has changed.
+     * This signal is emitted whenever the state of the configuration changes.
+     * @see KCModule::changed
+     */
+    void changed(bool state);
 
 private:
-	struct Private;
-	Private* const d;
+    struct Private;
+    Private *const d;
 private Q_SLOTS:
-	void slotEventSelected( KNotifyConfigElement *e);
-	void slotActionChanged();
-	
+    void slotEventSelected(KNotifyConfigElement *e);
+    void slotActionChanged();
+
 };
 
 #endif

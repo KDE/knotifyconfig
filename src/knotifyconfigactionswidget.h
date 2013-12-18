@@ -32,20 +32,20 @@ class KNotifyConfigElement;
  */
 class KNotifyConfigActionsWidget : public QWidget
 {
-	Q_OBJECT
-	public:
-		KNotifyConfigActionsWidget( QWidget *parent);
-		~KNotifyConfigActionsWidget() {}
+    Q_OBJECT
+public:
+    KNotifyConfigActionsWidget(QWidget *parent);
+    ~KNotifyConfigActionsWidget() {}
 
-		void setConfigElement( KNotifyConfigElement *config );
-		void save( KNotifyConfigElement *config );
-	Q_SIGNALS:
-		void changed();
-	private Q_SLOTS:
-		void slotPlay();
-		void slotKTTSComboChanged();
-	private:
-		Ui::KNotifyConfigActionsWidgetBase m_ui;
+    void setConfigElement(KNotifyConfigElement *config);
+    void save(KNotifyConfigElement *config);
+Q_SIGNALS:
+    void changed();
+private Q_SLOTS:
+    void slotPlay();
+    void slotKTTSComboChanged();
+private:
+    Ui::KNotifyConfigActionsWidgetBase m_ui;
 };
 
 #endif // KNOTIFYCONFIGACTIONSWIDGET_H
