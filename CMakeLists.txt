@@ -46,6 +46,7 @@ endif()
 # Includes
 include(FeatureSummary)
 include(ECMSetupVersion)
+include(ECMGenerateHeaders)
 include(CMakePackageConfigHelpers)
 
 # ECM setup
