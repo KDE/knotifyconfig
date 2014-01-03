@@ -24,7 +24,7 @@ add_library(KF5NotifyConfig ${knotifyconfig_LIB_SRCS})
 generate_export_header(KF5NotifyConfig BASE_NAME KNotifyConfig)
 add_library(KF5::NotifyConfig ALIAS KF5NotifyConfig)
 
-target_include_directories(KF5NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/knotifyconfig>" "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KNotifyConfig>")
+target_include_directories(KF5NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${INCLUDE_INSTALL_DIR}/KNotifyConfig>")
 
 target_link_libraries(KF5NotifyConfig
         PUBLIC
@@ -55,5 +55,5 @@ install(TARGETS KF5NotifyConfig EXPORT KF5NotifyConfigTargets ${INSTALL_TARGETS_
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/knotifyconfig_export.h
   ${KNotifyConfig_HEADERS}
-  DESTINATION ${INCLUDE_INSTALL_DIR}/knotifyconfig COMPONENT Devel)
+  DESTINATION ${INCLUDE_INSTALL_DIR}/KNotifyConfig COMPONENT Devel)
 
