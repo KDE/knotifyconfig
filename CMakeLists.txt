@@ -10,38 +10,17 @@ set(REQUIRED_QT_VERSION "5.2.0")
 set(KF5_VERSION "4.96.0")
 
 # Required Qt5 components to build this framework
-find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus Test)
+find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
 include(KDEInstallDirs)
 include(KDEFrameworkCompilerSettings)
 include(KDECMakeSettings)
 find_package(Phonon4Qt5 4.6.60 NO_MODULE)
 
-if("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_CURRENT_BINARY_DIR}")
-  # Due to a CMake bug, we need to explicitly find private dependencies of our dependencies
-  # Remove when we depend on CMake 3.0.0 (which should fix this)
-  find_package(KF5I18n ${KF5_VERSION} REQUIRED)
-  find_package(KF5CoreAddons ${KF5_VERSION} REQUIRED)
-  find_package(KF5GuiAddons ${KF5_VERSION} REQUIRED)
-  find_package(KF5WidgetsAddons ${KF5_VERSION} REQUIRED)
-  find_package(KF5DBusAddons ${KF5_VERSION} REQUIRED)
-  find_package(KF5ConfigWidgets ${KF5_VERSION} REQUIRED)
-  find_package(KF5Solid ${KF5_VERSION} REQUIRED)
-  find_package(KF5ItemViews ${KF5_VERSION} REQUIRED)
-  find_package(KF5IconThemes ${KF5_VERSION} REQUIRED)
-  find_package(KF5WindowSystem ${KF5_VERSION} REQUIRED)
-  find_package(KF5Completion ${KF5_VERSION} REQUIRED)
-  find_package(KF5Service ${KF5_VERSION} REQUIRED)
-  find_package(KF5TextWidgets ${KF5_VERSION} REQUIRED)
-  find_package(KF5XmlGui ${KF5_VERSION} REQUIRED)
-  find_package(KF5Bookmarks ${KF5_VERSION} REQUIRED)
-
-  #library dependencies
-  find_package(KF5KIO ${KF5_VERSION} REQUIRED)
-  find_package(KF5I18n ${KF5_VERSION} REQUIRED)
-
-  #test dependency
-  find_package(KF5Notifications ${KF5_VERSION} REQUIRED)
-endif()
+find_package(KF5Completion ${KF5_VERSION} REQUIRED)
+find_package(KF5Config ${KF5_VERSION} REQUIRED)
+find_package(KF5I18n ${KF5_VERSION} REQUIRED)
+find_package(KF5KIO ${KF5_VERSION} REQUIRED)
+find_package(KF5Service ${KF5_VERSION} REQUIRED)
 
 # Includes
 include(FeatureSummary)
@@ -60,7 +39,9 @@ ecm_setup_version(
 
 # Subdirectories
 add_subdirectory(src)
-add_subdirectory(tests)
+if(BUILD_TESTING)
+  add_subdirectory(tests)
+endif()
 
 # Create a Config.cmake and a ConfigVersion.cmake file and install them
 set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KF5NotifyConfig")
@@ -91,6 +72,4 @@ install(FILES
   COMPONENT Devel
 )
 
-if ("${CMAKE_BINARY_DIR}" STREQUAL "${CMAKE_CURRENT_BINARY_DIR}")
-  feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
-endif()
+feature_summary(WHAT ALL FATAL_ON_MISSING_REQUIRED_PACKAGES)
