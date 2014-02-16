@@ -41,13 +41,12 @@ set_target_properties(KF5NotifyConfig PROPERTIES
    EXPORT_NAME  NotifyConfig
 )
 
-ecm_generate_headers(
+ecm_generate_headers(KNotifyConfig_HEADERS
+  HEADER_NAMES
   KNotifyConfigWidget
 
-  MODULE_NAME KNotifyConfig
   REQUIRED_HEADERS KNotifyConfig_HEADERS
 )
-install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/KNotifyConfig DESTINATION ${INCLUDE_INSTALL_DIR} COMPONENT Devel)
 
 install(TARGETS KF5NotifyConfig EXPORT KF5NotifyConfigTargets ${INSTALL_TARGETS_DEFAULT_ARGS})
 
