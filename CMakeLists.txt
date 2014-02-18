@@ -27,7 +27,7 @@ include(FeatureSummary)
 include(GenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
-include(CMakePackageConfigHelpers)
+include(ECMPackageConfigHelpers)
 
 # ECM setup
 ecm_setup_version(
@@ -46,7 +46,7 @@ endif()
 # Create a Config.cmake and a ConfigVersion.cmake file and install them
 set(CMAKECONFIG_INSTALL_DIR "${CMAKECONFIG_INSTALL_PREFIX}/KF5NotifyConfig")
 
-configure_package_config_file(
+ecm_configure_package_config_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/KF5NotifyConfigConfig.cmake.in"
   "${CMAKE_CURRENT_BINARY_DIR}/KF5NotifyConfigConfig.cmake"
   INSTALL_DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
