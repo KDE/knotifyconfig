@@ -35,7 +35,7 @@ ecm_setup_version(
   VARIABLE_PREFIX KNOTIFYCONFIG
   VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/knotifyconfig_version.h"
   PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF5NotifyConfigConfigVersion.cmake"
-)
+  SOVERSION 5)
 
 # Subdirectories
 add_subdirectory(src)
