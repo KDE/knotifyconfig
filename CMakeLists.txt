@@ -38,6 +38,7 @@ ecm_setup_version(
   SOVERSION 5)
 
 # Subdirectories
+add_definitions(-DTRANSLATION_DOMAIN=\"knotifyconfig5\")
 add_subdirectory(src)
 if(BUILD_TESTING)
   add_subdirectory(tests)
