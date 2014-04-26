@@ -7,7 +7,8 @@ find_package(ECM 0.0.12 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
 set(REQUIRED_QT_VERSION "5.2.0")
-set(KF5_VERSION "4.98.0")
+set(KF5_VERSION "4.98.0") # handled by release scripts # handled by release scripts
+set(KF5_DEP_VERSION "4.98.0") # handled by release scripts
 
 # Required Qt5 components to build this framework
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
@@ -16,11 +17,11 @@ include(KDEFrameworkCompilerSettings)
 include(KDECMakeSettings)
 find_package(Phonon4Qt5 4.6.60 NO_MODULE)
 
-find_package(KF5Completion ${KF5_VERSION} REQUIRED)
-find_package(KF5Config ${KF5_VERSION} REQUIRED)
-find_package(KF5I18n ${KF5_VERSION} REQUIRED)
-find_package(KF5KIO ${KF5_VERSION} REQUIRED)
-find_package(KF5Service ${KF5_VERSION} REQUIRED)
+find_package(KF5Completion ${KF5_DEP_VERSION} REQUIRED)
+find_package(KF5Config ${KF5_DEP_VERSION} REQUIRED)
+find_package(KF5I18n ${KF5_DEP_VERSION} REQUIRED)
+find_package(KF5KIO ${KF5_DEP_VERSION} REQUIRED)
+find_package(KF5Service ${KF5_DEP_VERSION} REQUIRED)
 
 # Includes
 include(FeatureSummary)
