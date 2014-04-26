@@ -1,1 +1,9 @@
+maintainer: davidedmundson
+description: Configuration system for KNotify
 tier: 3
+type: integration
+platforms:
+    - name: All
+portingAid: false
+deprecated: false
+release: true
