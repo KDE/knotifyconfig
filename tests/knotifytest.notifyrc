@@ -1,24 +1,29 @@
 [Global]
 IconName=knotifytest
 Comment=Test for Knotify
+Comment[nl]=Test voor KNotify
 Comment[uk]=Тест для Knotify
 Comment[x-test]=xxTest for Knotifyxx
 Version=4
 
 [Context/group]
 Name=Group
+Name[nl]=Groep
 Name[uk]=Група
 Name[x-test]=xxGroupxx
 Comment=The group
+Comment[nl]=De groep
 Comment[uk]=Група
 Comment[x-test]=xxThe groupxx
 Icon=folder
 
 [Event/online]
 Name=Online
+Name[nl]=Online
 Name[uk]=В мережі
 Name[x-test]=xxOnlinexx
 Comment=The contact is now connected
+Comment[nl]=De contact is nu verbonden
 Comment[uk]=Контакт тепер з'єднаний
 Comment[x-test]=xxThe contact is now connectedxx
 Contexts=group
@@ -27,9 +32,11 @@ Action=Popup
 
 [Event/message]
 Name=Message Received
+Name[nl]=Bericht ontvangen
 Name[uk]=Повідомлення отримано
 Name[x-test]=xxMessage Receivedxx
 Comment=A Message has been received
+Comment[nl]=Er is een bericht ontvangen
 Comment[uk]=Повідомлення було отримано
 Comment[x-test]=xxA Message has been receivedxx
 Contexts=group
