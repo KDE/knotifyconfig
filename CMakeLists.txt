@@ -40,6 +40,9 @@ ecm_setup_version(
 
 # Subdirectories
 add_definitions(-DTRANSLATION_DOMAIN=\"knotifyconfig5\")
+if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
+    ki18n_install(po)
+endif()
 add_subdirectory(src)
 if(BUILD_TESTING)
   add_subdirectory(tests)
