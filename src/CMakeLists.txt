@@ -17,7 +17,7 @@ knotifyconfigwidget.cpp
 
 set( knotifyconfig_UI knotifyconfigactionswidgetbase.ui )
 
-qt5_wrap_ui(knotifyconfig_LIB_SRCS ${knotifyconfig_UI} )
+ki18n_wrap_ui(knotifyconfig_LIB_SRCS ${knotifyconfig_UI} )
 
 add_library(KF5NotifyConfig ${knotifyconfig_LIB_SRCS})
 generate_export_header(KF5NotifyConfig BASE_NAME KNotifyConfig)
