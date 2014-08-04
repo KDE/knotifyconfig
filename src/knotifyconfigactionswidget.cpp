@@ -115,7 +115,7 @@ void KNotifyConfigActionsWidget::save(KNotifyConfigElement *config)
 
     config->writeEntry("Action", actions.join("|"));
 
-    config->writeEntry("Sound", m_ui.Sound_select->url().toString());
+    config->writeEntry("Sound", m_ui.Sound_select->text());  // don't use .url() here, .notifyrc files have predefined "static" entries with no path
     config->writeEntry("Logfile", m_ui.Logfile_select->url().toString());
     config->writeEntry("Execute", m_ui.Execute_select->url().toLocalFile());
     switch (m_ui.KTTS_combo->currentIndex()) {
@@ -129,13 +129,15 @@ void KNotifyConfigActionsWidget::save(KNotifyConfigElement *config)
     default:
         config->writeEntry("KTTS", m_ui.KTTS_select->text());
     }
+
+    //config->save();
 }
 
 void KNotifyConfigActionsWidget::slotPlay()
 {
-    QUrl soundURL = m_ui.Sound_select->url();
-    if (soundURL.isRelative()) {
-        const QString soundString = soundURL.toLocalFile();
+    QUrl soundURL = QUrl(m_ui.Sound_select->text()); // this CTOR accepts both absolute paths (/usr/share/sounds/blabla.ogg and blabla.ogg) w/o screwing the scheme
+    if (soundURL.isRelative() && !soundURL.toString().startsWith('/')) { // QUrl considers url.scheme.isEmpty() == url.isRelative()
+        const QString soundString = soundURL.toString();
         // we need a way to get the application name in order to ba able to do this :
         /*QString search = QString("%1/sounds/%2").arg(config->appname).arg(soundFile);
           search = locate("data", search);
@@ -154,4 +156,3 @@ void KNotifyConfigActionsWidget::slotKTTSComboChanged()
     m_ui.KTTS_select->setEnabled(m_ui.KTTS_check->isChecked() &&  m_ui.KTTS_combo->currentIndex() == 2);
     emit changed();
 }
-
