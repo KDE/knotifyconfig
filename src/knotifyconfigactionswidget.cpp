@@ -129,8 +129,6 @@ void KNotifyConfigActionsWidget::save(KNotifyConfigElement *config)
     default:
         config->writeEntry("KTTS", m_ui.KTTS_select->text());
     }
-
-    //config->save();
 }
 
 void KNotifyConfigActionsWidget::slotPlay()
