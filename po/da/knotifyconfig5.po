@@ -1,0 +1,113 @@
+# translation of kdelibs4.po to
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Martin Schlander, 2008.
+# Martin Schlander <mschlander@opensuse.org>, 2008.
+# Martin Schlander <mschlander@opensuse.org>, 2008, 2009, 2010, 2011, 2012, 2013.
+# Keld Simonsen <keld@keldix.com>, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2014-08-08 08:32+0000\n"
+"PO-Revision-Date: 2013-11-06 19:33+0100\n"
+"Last-Translator: Martin Schlander <mschlander@opensuse.org>\n"
+"Language-Team: Danish <kde-i18n-doc@kde.org>\n"
+"Language: da\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+msgid "Play a &sound"
+msgstr "Af&spil en lyd"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+msgid "Select the sound to play"
+msgstr "Vælg lyd at afspille"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+msgid "Show a message in a &popup"
+msgstr "Vis besked i en &popup"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+msgid "Log to a file"
+msgstr "Log til fil"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+msgid "Mark &taskbar entry"
+msgstr "Markér punk&t i opgavelinje"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+msgid "Run &command"
+msgstr "Kør &kommando"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+msgid "Select the command to run"
+msgstr "Vælg kommandoen som skal køres"
+
+#. i18n: ectx: property (text), widget (QCheckBox, KTTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+msgid "Sp&eech"
+msgstr "Tal&e"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, KTTS_combo)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, KTTS_select)
+#: knotifyconfigactionswidgetbase.ui:119 knotifyconfigactionswidgetbase.ui:141
+#, no-c-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Specificerer hvordan Jovie bør udtale hændelsen når den modtages.  Hvis "
+"du vælger \"Udtal brugerangivet tekst\", indtast så teksten i boksen.  Du "
+"kan bruge følgende udksiftningsstrenge i teksten:<dl><dt>%e</dt><dd>Navn på "
+"hændelsen</dd><dt>%a</dt><dd>Program som sendte hændelsen</dd><dt>%m</"
+"dt><dd>Beskedensom programmet sendte</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, KTTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+msgid "Speak Event Message"
+msgstr "Læs hændelsesbesked op"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, KTTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+msgid "Speak Event Name"
+msgstr "Læs hændelsesnavn op"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, KTTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+msgid "Speak Custom Text"
+msgstr "Læs brugervalgt tekst op"
+
+#: knotifyconfigwidget.cpp:101
+msgid "Configure Notifications"
+msgstr "Indstil bekendtgørelser"
+
+#: knotifyeventlist.cpp:90
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Tilstand"
+
+#: knotifyeventlist.cpp:90
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Titel"
+
+#: knotifyeventlist.cpp:90
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Beskrivelse"
