@@ -7,7 +7,7 @@ find_package(ECM 1.3.0 REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
 set(REQUIRED_QT_VERSION "5.2.0")
-set(KF5_VERSION "5.3.0") # handled by release scripts
+set(KF5_VERSION "5.4.0") # handled by release scripts
 set(KF5_DEP_VERSION "5.3.0") # handled by release scripts
 
 # Required Qt5 components to build this framework
