@@ -23,7 +23,7 @@ add_library(KF5NotifyConfig ${knotifyconfig_LIB_SRCS})
 generate_export_header(KF5NotifyConfig BASE_NAME KNotifyConfig)
 add_library(KF5::NotifyConfig ALIAS KF5NotifyConfig)
 
-target_include_directories(KF5NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${KF5_INCLUDE_INSTALL_DIR}/KNotifyConfig>")
+target_include_directories(KF5NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KNotifyConfig>")
 
 target_link_libraries(KF5NotifyConfig
         PUBLIC
@@ -53,9 +53,9 @@ install(TARGETS KF5NotifyConfig EXPORT KF5NotifyConfigTargets ${KF5_INSTALL_TARG
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/knotifyconfig_export.h
   ${KNotifyConfig_HEADERS}
-  DESTINATION ${KF5_INCLUDE_INSTALL_DIR}/KNotifyConfig COMPONENT Devel)
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/KNotifyConfig COMPONENT Devel)
 
 
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KNotifyConfig LIB_NAME KF5NotifyConfig DEPS "widgets" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KF5_INCLUDE_INSTALL_DIR}/KNotifyConfig)
+ecm_generate_pri_file(BASE_NAME KNotifyConfig LIB_NAME KF5NotifyConfig DEPS "widgets" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/KNotifyConfig)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
