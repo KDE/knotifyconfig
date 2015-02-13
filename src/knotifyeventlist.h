@@ -40,7 +40,7 @@ public:
               const QString &context_value = QString());
     void save();
     void updateCurrentItem();
-    QSize sizeHint() const;
+    QSize sizeHint() const Q_DECL_OVERRIDE;
 private:
     KConfig *config;
     QList<KNotifyEventListItem *> m_elements;

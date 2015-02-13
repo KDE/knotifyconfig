@@ -35,7 +35,7 @@ class KNotifyEventList::KNotifyEventListDelegate : public QStyledItemDelegate
 public:
     KNotifyEventListDelegate(QObject *parent = 0);
 
-    virtual void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const;
+    void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const Q_DECL_OVERRIDE;
 private:
 };
 
