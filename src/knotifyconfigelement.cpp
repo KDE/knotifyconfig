@@ -57,8 +57,12 @@ void KNotifyConfigElement::save()
     m_config->sync();
 }
 
-bool KNotifyConfigElement::have_kttsd() //[static]
+bool KNotifyConfigElement::have_tts() //[static]
 {
-    static bool val = KService::serviceByDesktopName("kttsd");
-    return val;
+    // TODO: Add a runtime check to see if the status is not BackendError
+#ifdef HAVE_SPEECH
+    return true;
+#else
+    return false;
+#endif
 }

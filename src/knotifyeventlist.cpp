@@ -67,8 +67,8 @@ void KNotifyEventList::KNotifyEventListDelegate::paint(QPainter *painter,
     iconList << (optionsList.contains("Logfile") ? QIcon::fromTheme("text-x-generic")       : QIcon());
     iconList << (optionsList.contains("Taskbar") ? QIcon::fromTheme("services")             : QIcon());
     iconList << (optionsList.contains("Execute") ? QIcon::fromTheme("system-run")           : QIcon());
-    if (KNotifyConfigElement::have_kttsd()) {
-        iconList << (optionsList.contains("KTTS") ? QIcon::fromTheme("text-speak") : QIcon());
+    if (KNotifyConfigElement::have_tts()) {
+        iconList << (optionsList.contains("TTS") ? QIcon::fromTheme("text-speak") : QIcon());
     }
 
     int mc_x = 0;
@@ -101,7 +101,7 @@ KNotifyEventList::KNotifyEventList(QWidget *parent)
     setIconSize(QSize(iconWidth, iconWidth));
 
     header()->setSectionResizeMode(0, QHeaderView::Fixed);
-    header()->resizeSection(0, KNotifyConfigElement::have_kttsd() ? (iconWidth + 4) * 6 : (iconWidth + 4) * 5);
+    header()->resizeSection(0, KNotifyConfigElement::have_tts() ? (iconWidth + 4) * 6 : (iconWidth + 4) * 5);
     header()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
 
     connect(this, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)), this, SLOT(slotSelectionChanged(QTreeWidgetItem*,QTreeWidgetItem*)));

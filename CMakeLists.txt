@@ -12,6 +12,12 @@ set(KF5_DEP_VERSION "5.7.0") # handled by release scripts
 
 # Required Qt5 components to build this framework
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
+find_package(Qt5 ${REQUIRED_QT_VERSION} QUIET OPTIONAL_COMPONENTS TextToSpeech)
+if (NOT Qt5TextToSpeech_FOUND)
+  message(STATUS "Qt5TextToSpeech not found, speech features will be disabled")
+else()
+  add_definitions(-DHAVE_SPEECH)
+endif()
 include(KDEInstallDirs)
 include(KDEFrameworkCompilerSettings)
 include(KDECMakeSettings)

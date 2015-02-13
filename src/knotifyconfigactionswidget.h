@@ -43,7 +43,7 @@ Q_SIGNALS:
     void changed();
 private Q_SLOTS:
     void slotPlay();
-    void slotKTTSComboChanged();
+    void slotTTSComboChanged();
 private:
     Ui::KNotifyConfigActionsWidgetBase m_ui;
 };

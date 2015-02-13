@@ -41,9 +41,9 @@ public:
     void save();
 
     /**
-     * return wither kttsd is installed or not.
+     * Return whether Qt5TextToSpeech is installed or not.
      */
-    static bool have_kttsd();
+    static bool have_tts();
 
 private:
     QMap<QString, QString> m_cache;
