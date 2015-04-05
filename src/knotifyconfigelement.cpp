@@ -22,8 +22,6 @@
 #include <kconfiggroup.h>
 #include <kconfig.h>
 
-#include <kservice.h>
-
 KNotifyConfigElement::KNotifyConfigElement(const QString &eventid, KConfig *config)
     : m_config(new KConfigGroup(config, "Event/" + eventid))
 {
