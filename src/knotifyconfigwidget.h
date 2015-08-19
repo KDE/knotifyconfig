@@ -24,7 +24,7 @@
 #include <QtCore/QString>
 
 class KNotifyConfigElement;
-
+class KNotifyConfigWidgetPrivate;
 /**
  * Configure the notification for a given application / context
  *
@@ -75,8 +75,7 @@ Q_SIGNALS:
     void changed(bool state);
 
 private:
-    struct Private;
-    Private *const d;
+    KNotifyConfigWidgetPrivate *const d;
 private Q_SLOTS:
     void slotEventSelected(KNotifyConfigElement *e);
     void slotActionChanged();

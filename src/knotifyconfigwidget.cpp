@@ -29,14 +29,14 @@
 
 #include <klocalizedstring.h>
 
-struct KNotifyConfigWidget::Private {
+struct KNotifyConfigWidgetPrivate {
     KNotifyEventList *eventList;
     KNotifyConfigActionsWidget *actionsconfig;
     KNotifyConfigElement *currentElement;
 };
 
 KNotifyConfigWidget::KNotifyConfigWidget(QWidget *parent)
-    : QWidget(parent), d(new Private)
+    : QWidget(parent), d(new KNotifyConfigWidgetPrivate)
 {
     d->currentElement = 0l;
     d->eventList = new KNotifyEventList(this);
