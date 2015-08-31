@@ -94,11 +94,10 @@ void KNotifyConfigWidget::save()
     d->eventList->save();
     emit changed(false);
 
-    //ask the notify daemon to reload the config
-    if (QDBusConnection::sessionBus().interface()->isServiceRegistered("org.kde.knotify")) {
-        QDBusInterface(QLatin1String("org.kde.knotify"), QLatin1String("/Notify"),
-                       QLatin1String("org.kde.KNotify")).call("reconfigure");
-    }
+    //ask KNotification objects to reload their config
+    QDBusMessage message = QDBusMessage::createSignal("/Config", "org.kde.knotification", "reparseConfiguration");
+    message.setArguments(QVariantList() << d->application);
+    QDBusConnection::sessionBus().send(message);
 }
 
 void KNotifyConfigWidget::defaults()
