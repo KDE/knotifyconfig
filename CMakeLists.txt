@@ -4,7 +4,7 @@ project(KNotifyConfig)
 
 # Dependencies
 include(FeatureSummary)
-find_package(ECM 5.13.0  NO_MODULE)
+find_package(ECM 5.14.0  NO_MODULE)
 set_package_properties(ECM PROPERTIES TYPE REQUIRED DESCRIPTION "Extra CMake Modules." URL "https://projects.kde.org/projects/kdesupport/extra-cmake-modules")
 feature_summary(WHAT REQUIRED_PACKAGES_NOT_FOUND FATAL_ON_MISSING_REQUIRED_PACKAGES)
 
@@ -12,7 +12,7 @@ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
 
 set(REQUIRED_QT_VERSION "5.3.0")
 set(KF5_VERSION "5.14.0") # handled by release scripts
-set(KF5_DEP_VERSION "5.13.0") # handled by release scripts
+set(KF5_DEP_VERSION "5.14.0") # handled by release scripts
 
 # Required Qt5 components to build this framework
 find_package(Qt5 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
