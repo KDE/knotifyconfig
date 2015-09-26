@@ -152,6 +152,7 @@ void KNotifyEventList::save()
     foreach (KNotifyEventListItem *it, m_elements) {
         it->save();
     }
+    config->sync();
 }
 
 void KNotifyEventList::slotSelectionChanged(QTreeWidgetItem *current, QTreeWidgetItem *previous)

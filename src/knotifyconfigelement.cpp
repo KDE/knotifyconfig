@@ -52,7 +52,6 @@ void KNotifyConfigElement::save()
     for (; it != m_cache.constEnd(); ++it) {
         m_config->writeEntry(it.key(), it.value());
     }
-    m_config->sync();
 }
 
 bool KNotifyConfigElement::have_tts() //[static]
