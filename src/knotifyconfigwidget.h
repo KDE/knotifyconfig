@@ -66,6 +66,12 @@ public Q_SLOTS:
      */
     void save();
 
+    /*
+     * Reset the UI to display only the default values
+     * @see KCModule::changed
+     */
+    void defaults();
+
 Q_SIGNALS:
     /**
      * Indicate that the state of the modules contents has changed.

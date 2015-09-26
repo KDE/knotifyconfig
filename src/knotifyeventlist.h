@@ -37,7 +37,7 @@ public:
     KNotifyEventList(QWidget *parent);
     ~KNotifyEventList();
     void fill(const QString &appname, const QString &context_name = QString(),
-              const QString &context_value = QString());
+              const QString &context_value = QString(), bool loadDefaults = false);
     void save();
     void updateCurrentItem();
     QSize sizeHint() const Q_DECL_OVERRIDE;

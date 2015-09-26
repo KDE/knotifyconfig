@@ -33,6 +33,9 @@ struct KNotifyConfigWidgetPrivate {
     KNotifyEventList *eventList;
     KNotifyConfigActionsWidget *actionsconfig;
     KNotifyConfigElement *currentElement;
+    QString application;
+    QString contextName;
+    QString contextValue;
 };
 
 KNotifyConfigWidget::KNotifyConfigWidget(QWidget *parent)
@@ -61,7 +64,10 @@ KNotifyConfigWidget::~KNotifyConfigWidget()
 void KNotifyConfigWidget::setApplication(const QString &app, const QString &context_name, const QString &context_value)
 {
     d->currentElement = 0l;
-    d->eventList->fill(app.isEmpty() ? QCoreApplication::instance()->applicationName()  : app, context_name, context_value);
+    d->application = app.isEmpty() ? QCoreApplication::instance()->applicationName()  : app;
+    d->contextName = context_name;
+    d->contextValue = context_value;
+    d->eventList->fill(d->application, d->contextName, d->contextValue);
 }
 
 void KNotifyConfigWidget::slotEventSelected(KNotifyConfigElement *e)
@@ -93,6 +99,12 @@ void KNotifyConfigWidget::save()
         QDBusInterface(QLatin1String("org.kde.knotify"), QLatin1String("/Notify"),
                        QLatin1String("org.kde.KNotify")).call("reconfigure");
     }
+}
+
+void KNotifyConfigWidget::defaults()
+{
+    d->eventList->fill(d->application, d->contextName, d->contextValue, true);
+    emit changed(true);
 }
 
 KNotifyConfigWidget *KNotifyConfigWidget::configure(QWidget *parent, const QString &appname)

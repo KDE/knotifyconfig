@@ -112,7 +112,7 @@ KNotifyEventList::~KNotifyEventList()
     delete config;
 }
 
-void KNotifyEventList::fill(const QString &appname, const QString &context_name, const QString &context_value)
+void KNotifyEventList::fill(const QString &appname, const QString &context_name, const QString &context_value, bool loadDefaults)
 {
     m_elements.clear();
     clear();
@@ -140,6 +140,13 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
         }
         QString name = cg.readEntry("Name");
         QString description = cg.readEntry("Comment");
+
+        if (loadDefaults) {
+            KConfigGroup g(config, "Event/" + id);
+            foreach(const QString &entry, g.keyList()) {
+                g.revertToDefault(entry);
+            }
+        }
 
         m_elements << new KNotifyEventListItem(this, id, name, description, config);
     }
