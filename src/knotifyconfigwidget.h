@@ -69,6 +69,7 @@ public Q_SLOTS:
     /*
      * Reset the UI to display the default values
      * @see KCModule::defaults
+     * @since 5.15
      */
     void revertToDefaults();
 
