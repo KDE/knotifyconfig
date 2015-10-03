@@ -67,10 +67,10 @@ public Q_SLOTS:
     void save();
 
     /*
-     * Reset the UI to display only the default values
-     * @see KCModule::changed
+     * Reset the UI to display the default values
+     * @see KCModule::defaults
      */
-    void defaults();
+    void revertToDefaults();
 
 Q_SIGNALS:
     /**

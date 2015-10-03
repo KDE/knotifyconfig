@@ -100,7 +100,7 @@ void KNotifyConfigWidget::save()
     QDBusConnection::sessionBus().send(message);
 }
 
-void KNotifyConfigWidget::defaults()
+void KNotifyConfigWidget::revertToDefaults()
 {
     d->eventList->fill(d->application, d->contextName, d->contextValue, true);
     emit changed(true);
