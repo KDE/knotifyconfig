@@ -38,6 +38,8 @@ public:
     QString readEntry(const QString &entry, bool path = false);
     void writeEntry(const QString &entry, const QString &data);
 
+    QString eventId() const;
+
     void save();
 
     /**
@@ -48,6 +50,7 @@ public:
 private:
     QMap<QString, QString> m_cache;
     KConfigGroup *m_config;
+    QString m_eventId;
 };
 
 #endif

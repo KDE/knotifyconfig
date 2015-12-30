@@ -70,6 +70,11 @@ void KNotifyConfigWidget::setApplication(const QString &app, const QString &cont
     d->eventList->fill(d->application, d->contextName, d->contextValue);
 }
 
+void KNotifyConfigWidget::selectEvent(const QString &eventId)
+{
+    d->eventList->selectEvent(eventId);
+}
+
 void KNotifyConfigWidget::slotEventSelected(KNotifyConfigElement *e)
 {
     if (d->currentElement) {

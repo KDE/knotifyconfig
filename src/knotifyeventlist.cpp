@@ -187,6 +187,17 @@ void KNotifyEventList::updateCurrentItem()
     }
 }
 
+void KNotifyEventList::selectEvent(const QString &eventId)
+{
+    auto it = std::find_if(m_elements.constBegin(), m_elements.constEnd(), [&eventId](KNotifyEventListItem *item) {
+        return item->configElement()->eventId() == eventId;
+    });
+
+    if (it != m_elements.constEnd()) {
+        setCurrentItem(*it);
+    }
+}
+
 QSize KNotifyEventList::sizeHint() const
 {
     int fontSize = fontMetrics().height();

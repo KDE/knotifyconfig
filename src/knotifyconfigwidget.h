@@ -60,6 +60,14 @@ public:
                         const QString &context_name = QString(),
                         const QString &context_value = QString());
 
+    /**
+     * Select a given notification in the current list
+     *
+     * @param id The id of the notification
+     * @since 5.18
+     */
+    void selectEvent(const QString &eventId);
+
 public Q_SLOTS:
     /**
      * save to the config file

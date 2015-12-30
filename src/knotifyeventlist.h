@@ -41,6 +41,9 @@ public:
     void save();
     void updateCurrentItem();
     QSize sizeHint() const Q_DECL_OVERRIDE;
+
+    void selectEvent(const QString &eventId);
+
 private:
     KConfig *config;
     QList<KNotifyEventListItem *> m_elements;

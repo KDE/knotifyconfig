@@ -24,6 +24,7 @@
 
 KNotifyConfigElement::KNotifyConfigElement(const QString &eventid, KConfig *config)
     : m_config(new KConfigGroup(config, "Event/" + eventid))
+    , m_eventId(eventid)
 {
 }
 
@@ -44,6 +45,11 @@ QString KNotifyConfigElement::readEntry(const QString &entry, bool path)
 void KNotifyConfigElement::writeEntry(const QString &entry, const QString &data)
 {
     m_cache[entry] = data;
+}
+
+QString KNotifyConfigElement::eventId() const
+{
+    return m_eventId;
 }
 
 void KNotifyConfigElement::save()
