@@ -21,6 +21,7 @@
 #define KNOTIFYCONFIGELEMENT_H
 
 #include <QtCore/QMap>
+#include <QtCore/QString>
 
 class KConfig;
 class KConfigGroup;
