@@ -29,7 +29,8 @@
 
 #include <klocalizedstring.h>
 
-struct KNotifyConfigWidgetPrivate {
+class KNotifyConfigWidgetPrivate {
+public:
     KNotifyEventList *eventList;
     KNotifyConfigActionsWidget *actionsconfig;
     KNotifyConfigElement *currentElement;
