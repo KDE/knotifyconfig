@@ -1,0 +1,133 @@
+# translation of kdelibs4.po to Spanish
+# Translation of kdelibs4 to Spanish
+# Copyright (C) 2000-2007
+#
+# Pablo de Vicente <vicente@oan.es>, 2000-2002,2003, 2004.
+# Pablo de Vicente <vicnte@oan.es>, 2003.
+# Pablo de Vicente <p.devicente@wanadoo.es>, 2004, 2005.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2005, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2015.
+# Pablo de Vicente <pablo.devicente@gmail.com>, 2005, 2006, 2007.
+# Enrique Matias Sanchez (aka Quique) <cronopios@gmail.com>, 2007.
+# Jaime Robles <jaime@kde.org>, 2007.
+# Javier Viñal <fjvinal@gmail.com>, 2013.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-12-31 07:39+0000\n"
+"PO-Revision-Date: 2015-02-22 19:50+0100\n"
+"Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
+"Language-Team: Spanish <kde-l10n-es@kde.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"First-Translator: Boris Wesslowski <Boris@Wesslowski.com>\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+msgid "Play a &sound"
+msgstr "Reproducir un &sonido"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+msgid "Select the sound to play"
+msgstr "Seleccione el sonido a reproducir"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+msgid "Show a message in a &popup"
+msgstr "Mostrar un mensaje en una &ventana emergente"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+msgid "Log to a file"
+msgstr "Registrar en un archivo"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+msgid "Mark &taskbar entry"
+msgstr "Marcar entrada en la barra de &tareas"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+msgid "Run &command"
+msgstr "Eje&cutar la orden"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+msgid "Select the command to run"
+msgstr "Seleccione la orden a ejecutar"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+msgid "Sp&eech"
+msgstr "Vo&z"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, no-c-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Especifica cómo debe leer knotify el evento cuando sea recibido. Si "
+"selecciona «Leer texto personalizado», introduzca el texto en el cuadro. "
+"Puede utilizar las siguientes cadenas de sustitución en el texto:<dl><dt>%e</"
+"dt><dd>Nombre del evento</dd><dt>%a</dt><dd>Aplicación que envió el evento</"
+"dd><dt>%m</dt><dd>El mensaje enviado por la aplicación</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+msgid "Speak Event Message"
+msgstr "Leer mensaje de evento"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+msgid "Speak Event Name"
+msgstr "Leer nombre de evento"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+msgid "Speak Custom Text"
+msgstr "Leer texto personalizado"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Especifica cómo debe leer Jovie el evento cuando sea recibido. Si "
+"selecciona «Leer texto personalizado», introduzca el texto en el cuadro. "
+"Puede utilizar las siguientes cadenas de sustitución en el texto:<dl><dt>%e</"
+"dt><dd>Nombre del evento</dd><dt>%a</dt><dd>Aplicación que envió el evento</"
+"dd><dt>%m</dt><dd>El mensaje enviado por la aplicación</dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:117
+msgid "Configure Notifications"
+msgstr "Configurar las notificaciones"
+
+#: knotifyeventlist.cpp:90
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Estado"
+
+#: knotifyeventlist.cpp:90
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Título"
+
+#: knotifyeventlist.cpp:90
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Descripción"

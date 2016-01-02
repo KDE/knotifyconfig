@@ -1,0 +1,121 @@
+# translation of kdelibs4.po to Qırımtatarca (Qırım Türkçesi)
+# Copyright (C) 2008 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kdelibs package.
+#
+# Reşat SABIQ <tilde.birlik@gmail.com>, 2008, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-12-31 07:39+0000\n"
+"PO-Revision-Date: 2009-02-12 23:29-0600\n"
+"Last-Translator: Reşat SABIQ <tilde.birlik@gmail.com>\n"
+"Language-Team: Qırımtatarca (Qırım Türkçesi)\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+msgid "Play a &sound"
+msgstr "Bir &ses çal"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+msgid "Select the sound to play"
+msgstr "Çalınacaq sesni sayla"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+msgid "Show a message in a &popup"
+msgstr "&Peyda penceresinde bir beyanat köster"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+msgid "Log to a file"
+msgstr "Bir dosyege kütükle"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+msgid "Mark &taskbar entry"
+msgstr "&Vazife çubuğı kirdisini tamğala"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+msgid "Run &command"
+msgstr "&Emirni çaptır"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+msgid "Select the command to run"
+msgstr "Çaptırılacaq emirni sayla"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+msgid "Sp&eech"
+msgstr "&Söylev"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, no-c-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+#, fuzzy
+#| msgid "Speak event message"
+msgid "Speak Event Message"
+msgstr "Vaqia beyanatını söyle"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+#, fuzzy
+#| msgid "Speak event name"
+msgid "Speak Event Name"
+msgstr "Vaqia ismini söyle"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+#, fuzzy
+#| msgid "Speak custom text"
+msgid "Speak Custom Text"
+msgstr "Mahsus metinni söyle"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#: knotifyconfigwidget.cpp:117
+msgid "Configure Notifications"
+msgstr "Bildirmelerni Ayarla"
+
+#: knotifyeventlist.cpp:90
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Durum"
+
+#: knotifyeventlist.cpp:90
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Başlıq"
+
+#: knotifyeventlist.cpp:90
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Tasvir"

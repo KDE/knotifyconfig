@@ -1,0 +1,133 @@
+# Thomas Diehl <thd@kde.org>, 2002, 2003, 2004, 2005.
+# Stefan Winter <swinter@kde.org>, 2004.
+# Thomas Fischer <thomas.fischer@t-fischer.net>, 2004.
+# Stephan Johach <hunsum@gmx.de>, 2004, 2005, 2006, 2007.
+# Georg Schuster <gschuster@utanet.at>, 2005.
+# Thomas Reitelbach <tr@erdfunkstelle.de>, 2005, 2006, 2007, 2008, 2009.
+# Burkhard Lück <lueck@hube-lueck.de>, 2006, 2007, 2009, 2010, 2011, 2012, 2013, 2014, 2015.
+# Frederik Schwarzer <schwarzer@kde.org>, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
+# Johannes Obermayr <johannesobermayr@gmx.de>, 2010.
+# Panagiotis Papadopoulos <pano_90@gmx.net>, 2010.
+# Rolf Eike Beer <kde@opensource.sf-tec.de>, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-12-31 07:39+0000\n"
+"PO-Revision-Date: 2015-03-09 21:31+0100\n"
+"Last-Translator: Burkhard Lück <lueck@hube-lueck.de>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+msgid "Play a &sound"
+msgstr "Klang &abspielen"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+msgid "Select the sound to play"
+msgstr "Wählen Sie den abzuspielenden Klang"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+msgid "Show a message in a &popup"
+msgstr "&Meldungsfenster anzeigen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+msgid "Log to a file"
+msgstr "In Protokolldatei schreiben"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+msgid "Mark &taskbar entry"
+msgstr "Eintrag in &Fensterleiste hervorheben"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+msgid "Run &command"
+msgstr "&Programm ausführen"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+msgid "Select the command to run"
+msgstr "Wählen Sie den auszuführenden Befehl"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+msgid "Sp&eech"
+msgstr "&Sprachausgabe:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, no-c-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Gibt an, wie KNotify das Ereignis beim Eintreffen ankündigen soll. Wenn "
+"Sie „Benutzerdefinierten Text ausgeben“ auswählen, geben Sie diesen in das "
+"Eingabefeld ein. Sie können dabei die folgenden Ersetzungszeichen verwenden:"
+"<dl><dt>%e</dt><dd>Name des Ereignisses</dd><dt>%a</dt><dd>Anwendung, die "
+"das Ereignis versendet hat</dd><dt>%m</dt><dd>Die von der Anwendung "
+"versendete Nachricht</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+msgid "Speak Event Message"
+msgstr "Ereignisnachricht ausgeben"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+msgid "Speak Event Name"
+msgstr "Ereignisnamen ausgeben"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+msgid "Speak Custom Text"
+msgstr "Benutzerdefinierten Text ausgeben"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Gibt an, wie Jovie das Ereignis beim Eintreffen ankündigen soll. Wenn "
+"Sie „Benutzerdefinierten Text ausgeben“ auswählen, geben Sie diesen in das "
+"Eingabefeld ein. Sie können dabei die folgenden Ersetzungszeichen verwenden:"
+"<dl><dt>%e</dt><dd>Name des Ereignisses</dd><dt>%a</dt><dd>Anwendung, die "
+"das Ereignis versendet hat</dd><dt>%m</dt><dd>Die von der Anwendung "
+"versendete Nachricht</dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:117
+msgid "Configure Notifications"
+msgstr "Benachrichtigungen festlegen"
+
+#: knotifyeventlist.cpp:90
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Status"
+
+#: knotifyeventlist.cpp:90
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Titel"
+
+#: knotifyeventlist.cpp:90
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Beschreibung"

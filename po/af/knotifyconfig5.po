@@ -1,0 +1,131 @@
+# UTF-8 test:äëïöü
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4 stable\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2015-12-31 07:39+0000\n"
+"PO-Revision-Date: 2006-01-12 16:33+0200\n"
+"Last-Translator: JUANITA FRANZ <JUANITA.FRANZ@VR-WEB.DE>\n"
+"Language-Team: AFRIKAANS <translate-discuss-af@lists.sourceforge.net>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+msgid "Play a &sound"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+#, fuzzy
+#| msgid "Select the current day"
+msgid "Select the sound to play"
+msgstr "Kies die huidige dag"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+msgid "Show a message in a &popup"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+#, fuzzy
+#| msgid "Go to Line"
+msgid "Log to a file"
+msgstr "Gaan na Lyn"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+msgid "Mark &taskbar entry"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+msgid "Run &command"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+#, fuzzy
+#| msgid "Select the current day"
+msgid "Select the command to run"
+msgstr "Kies die huidige dag"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+#, fuzzy
+#| msgid "S&earch:"
+msgid "Sp&eech"
+msgstr "Soek:"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, no-c-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+#, fuzzy
+#| msgid "artsmessage"
+msgid "Speak Event Message"
+msgstr "arts boodskap"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+#, fuzzy
+#| msgid "Please enter &name:"
+msgid "Speak Event Name"
+msgstr "Voer asseblief 'n naam in:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+#, fuzzy
+#| msgid "Please enter &name:"
+msgid "Speak Custom Text"
+msgstr "Voer asseblief 'n naam in:"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#: knotifyconfigwidget.cpp:117
+#, fuzzy
+#| msgid "Configure &Notifications..."
+msgid "Configure Notifications"
+msgstr "Stel Inkennistellings Op..."
+
+#: knotifyeventlist.cpp:90
+#, fuzzy
+#| msgid "State"
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Staat"
+
+#: knotifyeventlist.cpp:90
+#, fuzzy
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Tamiliese"
+
+#: knotifyeventlist.cpp:90
+#, fuzzy
+#| msgid "Description:"
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Beskrywing:"
