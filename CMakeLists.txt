@@ -23,7 +23,7 @@ else()
   add_definitions(-DHAVE_SPEECH)
 endif()
 include(KDEInstallDirs)
-include(KDEFrameworkCompilerSettings)
+include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(KDECMakeSettings)
 find_package(Phonon4Qt5 4.6.60 NO_MODULE)
 
