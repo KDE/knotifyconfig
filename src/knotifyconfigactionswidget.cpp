@@ -133,14 +133,19 @@ void KNotifyConfigActionsWidget::save(KNotifyConfigElement *config)
 
 void KNotifyConfigActionsWidget::slotPlay()
 {
-    QUrl soundURL = QUrl(m_ui.Sound_select->text()); // this CTOR accepts both absolute paths (/usr/share/sounds/blabla.ogg and blabla.ogg) w/o screwing the scheme
-    if (soundURL.isRelative() && !soundURL.toString().startsWith('/')) { // QUrl considers url.scheme.isEmpty() == url.isRelative()
-        const QString soundString = soundURL.toString();
-        // we need a way to get the application name in order to ba able to do this :
-        /*QString search = QString("%1/sounds/%2").arg(config->appname).arg(soundFile);
-          search = locate("data", search);
-          if ( search.isEmpty() )*/
-        soundURL = QUrl::fromLocalFile(QStandardPaths::locate(QStandardPaths::GenericDataLocation, "sounds/" + soundString));
+    const QString soundFilename = m_ui.Sound_select->text();
+    QUrl soundURL;
+    const auto dataLocations = QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation);
+    foreach (const QString &dataLocation, dataLocations) {
+        soundURL = QUrl::fromUserInput(soundFilename,
+                                       dataLocation + "/sounds",
+                                       QUrl::AssumeLocalFile);
+        if (soundURL.isLocalFile() && QFile::exists(soundURL.toLocalFile())) {
+            break;
+        } else if (!soundURL.isLocalFile() && soundURL.isValid()) {
+            break;
+        }
+        soundURL.clear();
     }
 #if HAVE_PHONON
     Phonon::MediaObject *media = Phonon::createPlayer(Phonon::NotificationCategory, soundURL);
