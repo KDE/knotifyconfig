@@ -81,6 +81,12 @@ public Q_SLOTS:
      */
     void revertToDefaults();
 
+    /*
+     * Disable all sounds for the current application
+     * @since 5.23
+     */
+    void disableAllSounds();
+
 Q_SIGNALS:
     /**
      * Indicate that the state of the modules contents has changed.

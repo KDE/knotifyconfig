@@ -40,9 +40,11 @@ public:
               const QString &context_value = QString(), bool loadDefaults = false);
     void save();
     void updateCurrentItem();
+    void updateAllItems();
     QSize sizeHint() const Q_DECL_OVERRIDE;
 
     void selectEvent(const QString &eventId);
+    bool disableAllSounds();
 
 private:
     KConfig *config;

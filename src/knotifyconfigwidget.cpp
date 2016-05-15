@@ -112,6 +112,17 @@ void KNotifyConfigWidget::revertToDefaults()
     emit changed(true);
 }
 
+void KNotifyConfigWidget::disableAllSounds()
+{
+    if (d->eventList->disableAllSounds()) {
+        if (d->currentElement) {
+            d->actionsconfig->setConfigElement(d->currentElement);
+        }
+        d->eventList->updateAllItems();
+        emit changed(true);
+    }
+}
+
 KNotifyConfigWidget *KNotifyConfigWidget::configure(QWidget *parent, const QString &appname)
 {
     QDialog *dialog = new QDialog(parent);

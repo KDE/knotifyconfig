@@ -162,6 +162,19 @@ void KNotifyEventList::save()
     config->sync();
 }
 
+bool KNotifyEventList::disableAllSounds()
+{
+    bool changed = false;
+    foreach (KNotifyEventListItem *it, m_elements) {
+         QStringList actions = it->configElement()->readEntry("Action").split('|');
+         if (actions.removeAll("Sound")) {
+             it->configElement()->writeEntry("Action", actions.join('|'));
+             changed = true;
+         }
+    }
+    return changed;
+}
+
 void KNotifyEventList::slotSelectionChanged(QTreeWidgetItem *current, QTreeWidgetItem *previous)
 {
     Q_UNUSED(current);
@@ -183,6 +196,13 @@ void KNotifyEventList::updateCurrentItem()
 {
     KNotifyEventListItem *it = dynamic_cast<KNotifyEventListItem *>(currentItem());
     if (it) {
+        it->update();
+    }
+}
+
+void KNotifyEventList::updateAllItems()
+{
+    foreach (KNotifyEventListItem *it, m_elements) {
         it->update();
     }
 }
