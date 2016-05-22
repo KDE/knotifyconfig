@@ -11,3 +11,7 @@ libraries:
  - qmake: KNotifyConfig
    cmake: "KF5::NotifyConfig"
 cmakename: KF5NotifyConfig
+
+public_lib: true
+group: Frameworks
+subgroup: Tier 3
