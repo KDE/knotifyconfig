@@ -1,0 +1,133 @@
+# Vietnamese translation for kdelibs.
+# Copyright © 2007 KDE i18n Project for Vietnamese.
+#
+# Clytie Siddall <clytie@riverland.net.au>, 2006-2007.
+# Hoàng Đức Hiếu <hieu.d.hoang@gmail.com>, 2008, 2011.
+# Lê Hoàng Phương <herophuong93@gmail.com>, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2016-06-29 07:26+0000\n"
+"PO-Revision-Date: 2012-09-23 18:43+0800\n"
+"Last-Translator: Lê Hoàng Phương <herophuong93@gmail.com>\n"
+"Language-Team: American English <kde-i18n-vi@kde.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 1.5\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+msgid "Play a &sound"
+msgstr "Phát ra â&m thanh"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+msgid "Select the sound to play"
+msgstr "Chọn âm thanh để phát"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+msgid "Show a message in a &popup"
+msgstr "Hiện một tin nhắn trong một &cửa sổ bật lên"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+msgid "Log to a file"
+msgstr "Ghi lưu vào một tập tin"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+msgid "Mark &taskbar entry"
+msgstr "Đánh dấu mục &thanh tác vụ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+msgid "Run &command"
+msgstr "Chạy &lệnh"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+msgid "Select the command to run"
+msgstr "Chọn lệnh để chạy"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+msgid "Sp&eech"
+msgstr "&Lời nói"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, fuzzy, no-c-format
+#| msgid ""
+#| "<qt>Specifies how Jovie should speak the event when received.  If you "
+#| "select \"Speak custom text\", enter the text in the box.  You may use the "
+#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#| "dt><dd>The message sent by the application</dd></dl></qt>"
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Chỉ định Jovie sẽ nói như thế nào khi nhận sự kiện. Nếu bạn chọn \"Nói "
+"văn bản tự chọn\", hãy nhập văn bản vào hộp. Bạn cũng có thể dùng các chuỗi "
+"thay thế trong văn bản:<dl><dt>%e</dt><dd>Tên sự kiện</dd><dt>%a</dt><dd> "
+"Ứng dụng gửi sự kiện</dd><dt>%m</dt><dd>Tin nhắn gửi bởi ứng dụng</dd></dl></"
+"qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+msgid "Speak Event Message"
+msgstr "Nói tin nhắn sự kiện"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+msgid "Speak Event Name"
+msgstr "Nói tên sự kiện"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+msgid "Speak Custom Text"
+msgstr "Nói văn bản tự chọn"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Chỉ định Jovie sẽ nói như thế nào khi nhận sự kiện. Nếu bạn chọn \"Nói "
+"văn bản tự chọn\", hãy nhập văn bản vào hộp. Bạn cũng có thể dùng các chuỗi "
+"thay thế trong văn bản:<dl><dt>%e</dt><dd>Tên sự kiện</dd><dt>%a</dt><dd> "
+"Ứng dụng gửi sự kiện</dd><dt>%m</dt><dd>Tin nhắn gửi bởi ứng dụng</dd></dl></"
+"qt>"
+
+#: knotifyconfigwidget.cpp:129
+msgid "Configure Notifications"
+msgstr "Cấu hình thông báo"
+
+# | msgctxt "As in addresses"
+#: knotifyeventlist.cpp:90
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Trạng thái"
+
+#: knotifyeventlist.cpp:90
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Tiêu đề"
+
+#: knotifyeventlist.cpp:90
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Mô tả"
