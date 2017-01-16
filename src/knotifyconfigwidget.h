@@ -47,7 +47,7 @@ public:
      * @param appname the application name,  if null, it is autodetected
      * @return the widget itself    the topLevelWidget of it is probably a KDialog
      */
-    static KNotifyConfigWidget *configure(QWidget *parent = 0l, const QString &appname = QString());
+    static KNotifyConfigWidget *configure(QWidget *parent = nullptr, const QString &appname = QString());
 
     /**
      * Change the application and the context

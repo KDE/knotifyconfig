@@ -16,7 +16,7 @@ class KNotifyTestWindow : public KXmlGuiWindow
     Q_OBJECT
 
 public:
-    KNotifyTestWindow(QWidget *parent = 0);
+    KNotifyTestWindow(QWidget *parent = nullptr);
 
 private:
     Ui::KNotifyTestView view;

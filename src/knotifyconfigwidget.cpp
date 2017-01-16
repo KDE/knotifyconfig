@@ -42,7 +42,7 @@ public:
 KNotifyConfigWidget::KNotifyConfigWidget(QWidget *parent)
     : QWidget(parent), d(new KNotifyConfigWidgetPrivate)
 {
-    d->currentElement = 0l;
+    d->currentElement = nullptr;
     d->eventList = new KNotifyEventList(this);
     d->eventList->setFocus();
     d->actionsconfig = new KNotifyConfigActionsWidget(this);
@@ -64,7 +64,7 @@ KNotifyConfigWidget::~KNotifyConfigWidget()
 
 void KNotifyConfigWidget::setApplication(const QString &app, const QString &context_name, const QString &context_value)
 {
-    d->currentElement = 0l;
+    d->currentElement = nullptr;
     d->application = app.isEmpty() ? QCoreApplication::instance()->applicationName()  : app;
     d->contextName = context_name;
     d->contextValue = context_value;

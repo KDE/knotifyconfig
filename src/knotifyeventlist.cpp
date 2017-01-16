@@ -33,7 +33,7 @@
 class KNotifyEventList::KNotifyEventListDelegate : public QStyledItemDelegate
 {
 public:
-    KNotifyEventListDelegate(QObject *parent = 0);
+    KNotifyEventListDelegate(QObject *parent = nullptr);
 
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const Q_DECL_OVERRIDE;
 private:
@@ -84,7 +84,7 @@ void KNotifyEventList::KNotifyEventListDelegate::paint(QPainter *painter,
 //END KNotifyEventListDelegate
 
 KNotifyEventList::KNotifyEventList(QWidget *parent)
-    : QTreeWidget(parent), config(0)
+    : QTreeWidget(parent), config(nullptr)
 {
     QStringList headerLabels;
     headerLabels << i18nc("State of the notified event", "State") << i18nc("Title of the notified event", "Title") << i18nc("Description of the notified event", "Description");
@@ -183,7 +183,7 @@ void KNotifyEventList::slotSelectionChanged(QTreeWidgetItem *current, QTreeWidge
     if (it) {
         emit eventSelected(it->configElement());
     } else {
-        emit eventSelected(0l);
+        emit eventSelected(nullptr);
     }
 
     it = dynamic_cast<KNotifyEventListItem *>(previous);
