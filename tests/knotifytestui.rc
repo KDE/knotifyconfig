@@ -1,5 +1,5 @@
 <!DOCTYPE kpartgui>
-<kpartgui name="kcop" version="2">
+<gui name="kcop" version="2">
 <MenuBar>
   <Menu name="execute"><text>&amp;Extra</text>
     <Action name="reload"/>
@@ -12,4 +12,4 @@
     <Action name="execute"/>
     <Action name="langmode"/>
 </ToolBar>
-</kpartgui>
+</gui>
