@@ -1,4 +1,4 @@
-<!DOCTYPE kpartgui>
+<!DOCTYPE gui>
 <gui name="kcop" version="2">
 <MenuBar>
   <Menu name="execute"><text>&amp;Extra</text>
