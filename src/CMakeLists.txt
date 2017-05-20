@@ -55,6 +55,27 @@ install(FILES
   ${KNotifyConfig_HEADERS}
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/KNotifyConfig COMPONENT Devel)
 
+if(BUILD_QCH)
+    ecm_add_qch(
+        KF5NotifyConfig_QCH
+        NAME KNotifyConfig
+        BASE_NAME KF5NotifyConfig
+        VERSION ${KF5_VERSION}
+        ORG_DOMAIN org.kde
+        SOURCES # using only public headers, to cover only public API
+            ${KNotifyConfig_HEADERS}
+        MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
+        LINK_QCHS
+            Qt5Widgets_QCH
+        BLANK_MACROS
+            KNOTIFYCONFIG_EXPORT
+            KNOTIFYCONFIG_DEPRECATED
+            KNOTIFYCONFIG_DEPRECATED_EXPORT
+        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
+        COMPONENT Devel
+    )
+endif()
 
 include(ECMGeneratePriFile)
 ecm_generate_pri_file(BASE_NAME KNotifyConfig LIB_NAME KF5NotifyConfig DEPS "widgets" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/KNotifyConfig)
