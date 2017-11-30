@@ -101,7 +101,7 @@ void KNotifyConfigWidget::save()
     emit changed(false);
 
     //ask KNotification objects to reload their config
-    QDBusMessage message = QDBusMessage::createSignal("/Config", "org.kde.knotification", "reparseConfiguration");
+    QDBusMessage message = QDBusMessage::createSignal(QStringLiteral("/Config"), QStringLiteral("org.kde.knotification"), QStringLiteral("reparseConfiguration"));
     message.setArguments(QVariantList() << d->application);
     QDBusConnection::sessionBus().send(message);
 }

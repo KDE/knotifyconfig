@@ -31,18 +31,18 @@ KNotifyConfigActionsWidget::KNotifyConfigActionsWidget(QWidget *parent)
     m_ui.setupUi(this);
 
     //Show sounds directory by default
-    QStringList soundDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, "sounds", QStandardPaths::LocateDirectory);
+    QStringList soundDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("sounds"), QStandardPaths::LocateDirectory);
     if (!soundDirs.isEmpty()) {
         m_ui.Sound_select->setStartDir(QUrl::fromLocalFile(soundDirs.last()));
     }
 
-    m_ui.Sound_play->setIcon(QIcon::fromTheme("media-playback-start"));
-    m_ui.Sound_check->setIcon(QIcon::fromTheme("media-playback-start"));
-    m_ui.Popup_check->setIcon(QIcon::fromTheme("dialog-information"));
-    m_ui.Logfile_check->setIcon(QIcon::fromTheme("text-x-generic"));
-    m_ui.Execute_check->setIcon(QIcon::fromTheme("system-run"));
-    m_ui.Taskbar_check->setIcon(QIcon::fromTheme("services"));
-    m_ui.TTS_check->setIcon(QIcon::fromTheme("text-speak"));
+    m_ui.Sound_play->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
+    m_ui.Sound_check->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
+    m_ui.Popup_check->setIcon(QIcon::fromTheme(QStringLiteral("dialog-information")));
+    m_ui.Logfile_check->setIcon(QIcon::fromTheme(QStringLiteral("text-x-generic")));
+    m_ui.Execute_check->setIcon(QIcon::fromTheme(QStringLiteral("system-run")));
+    m_ui.Taskbar_check->setIcon(QIcon::fromTheme(QStringLiteral("services")));
+    m_ui.TTS_check->setIcon(QIcon::fromTheme(QStringLiteral("text-speak")));
 
     connect(m_ui.Execute_check, SIGNAL(toggled(bool)), this, SIGNAL(changed()));
     connect(m_ui.Sound_check, SIGNAL(toggled(bool)), this, SIGNAL(changed()));
@@ -67,20 +67,20 @@ KNotifyConfigActionsWidget::KNotifyConfigActionsWidget(QWidget *parent)
 void KNotifyConfigActionsWidget::setConfigElement(KNotifyConfigElement *config)
 {
     bool blocked = blockSignals(true); //to block the changed() signal
-    QString prstring = config->readEntry("Action");
-    QStringList actions = prstring.split('|');
+    QString prstring = config->readEntry(QStringLiteral("Action"));
+    QStringList actions = prstring.split(QLatin1Char('|'));
 
-    m_ui.Sound_check->setChecked(actions.contains("Sound"));
-    m_ui.Popup_check->setChecked(actions.contains("Popup"));
-    m_ui.Logfile_check->setChecked(actions.contains("Logfile"));
-    m_ui.Execute_check->setChecked(actions.contains("Execute"));
-    m_ui.Taskbar_check->setChecked(actions.contains("Taskbar"));
-    m_ui.TTS_check->setChecked(actions.contains("TTS"));
+    m_ui.Sound_check->setChecked(actions.contains(QStringLiteral("Sound")));
+    m_ui.Popup_check->setChecked(actions.contains(QStringLiteral("Popup")));
+    m_ui.Logfile_check->setChecked(actions.contains(QStringLiteral("Logfile")));
+    m_ui.Execute_check->setChecked(actions.contains(QStringLiteral("Execute")));
+    m_ui.Taskbar_check->setChecked(actions.contains(QStringLiteral("Taskbar")));
+    m_ui.TTS_check->setChecked(actions.contains(QStringLiteral("TTS")));
 
-    m_ui.Sound_select->setUrl(QUrl(config->readEntry("Sound", true)));
-    m_ui.Logfile_select->setUrl(QUrl(config->readEntry("Logfile", true)));
-    m_ui.Execute_select->setUrl(QUrl::fromLocalFile(config->readEntry("Execute")));
-    m_ui.TTS_select->setText(config->readEntry("TTS"));
+    m_ui.Sound_select->setUrl(QUrl(config->readEntry(QStringLiteral("Sound"), true)));
+    m_ui.Logfile_select->setUrl(QUrl(config->readEntry(QStringLiteral("Logfile"), true)));
+    m_ui.Execute_select->setUrl(QUrl::fromLocalFile(config->readEntry(QStringLiteral("Execute"))));
+    m_ui.TTS_select->setText(config->readEntry(QStringLiteral("TTS")));
     if (m_ui.TTS_select->text() == QLatin1String("%e")) {
         m_ui.TTS_combo->setCurrentIndex(1);
     } else if (m_ui.TTS_select->text() == QLatin1String("%m") || m_ui.TTS_select->text() == QLatin1String("%s")) {
@@ -95,39 +95,39 @@ void KNotifyConfigActionsWidget::save(KNotifyConfigElement *config)
 {
     QStringList actions;
     if (m_ui.Sound_check->isChecked()) {
-        actions << "Sound";
+        actions << QStringLiteral("Sound");
     }
     if (m_ui.Popup_check->isChecked()) {
-        actions << "Popup";
+        actions << QStringLiteral("Popup");
     }
     if (m_ui.Logfile_check->isChecked()) {
-        actions << "Logfile";
+        actions << QStringLiteral("Logfile");
     }
     if (m_ui.Execute_check->isChecked()) {
-        actions << "Execute";
+        actions << QStringLiteral("Execute");
     }
     if (m_ui.Taskbar_check->isChecked()) {
-        actions << "Taskbar";
+        actions << QStringLiteral("Taskbar");
     }
     if (m_ui.TTS_check->isChecked()) {
-        actions << "TTS";
+        actions << QStringLiteral("TTS");
     }
 
-    config->writeEntry("Action", actions.join("|"));
+    config->writeEntry(QStringLiteral("Action"), actions.join(QLatin1Char('|')));
 
-    config->writeEntry("Sound", m_ui.Sound_select->text());  // don't use .url() here, .notifyrc files have predefined "static" entries with no path
-    config->writeEntry("Logfile", m_ui.Logfile_select->url().toString());
-    config->writeEntry("Execute", m_ui.Execute_select->url().toLocalFile());
+    config->writeEntry(QStringLiteral("Sound"), m_ui.Sound_select->text());  // don't use .url() here, .notifyrc files have predefined "static" entries with no path
+    config->writeEntry(QStringLiteral("Logfile"), m_ui.Logfile_select->url().toString());
+    config->writeEntry(QStringLiteral("Execute"), m_ui.Execute_select->url().toLocalFile());
     switch (m_ui.TTS_combo->currentIndex()) {
     case 0:
-        config->writeEntry("TTS", "%s");
+        config->writeEntry(QStringLiteral("TTS"), QStringLiteral("%s"));
         break;
     case 1:
-        config->writeEntry("TTS", "%e");
+        config->writeEntry(QStringLiteral("TTS"), QStringLiteral("%e"));
         break;
     case 2:
     default:
-        config->writeEntry("TTS", m_ui.TTS_select->text());
+        config->writeEntry(QStringLiteral("TTS"), m_ui.TTS_select->text());
     }
 }
 
@@ -138,7 +138,7 @@ void KNotifyConfigActionsWidget::slotPlay()
     const auto dataLocations = QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation);
     foreach (const QString &dataLocation, dataLocations) {
         soundURL = QUrl::fromUserInput(soundFilename,
-                                       dataLocation + "/sounds",
+                                       dataLocation + QStringLiteral("/sounds"),
                                        QUrl::AssumeLocalFile);
         if (soundURL.isLocalFile() && QFile::exists(soundURL.toLocalFile())) {
             break;

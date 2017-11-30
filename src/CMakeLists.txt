@@ -1,8 +1,6 @@
 set(HAVE_PHONON ${Phonon4Qt5_FOUND})
 configure_file(knotify-config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/knotify-config.h )
 
-remove_definitions(-DQT_NO_CAST_FROM_ASCII)
-
 include_directories(BEFORE ${PHONON_INCLUDES})
 
 ########### next target ###############

@@ -23,7 +23,7 @@
 #include <kconfig.h>
 
 KNotifyConfigElement::KNotifyConfigElement(const QString &eventid, KConfig *config)
-    : m_config(new KConfigGroup(config, "Event/" + eventid))
+    : m_config(new KConfigGroup(config, QStringLiteral("Event/") + eventid))
     , m_eventId(eventid)
 {
 }

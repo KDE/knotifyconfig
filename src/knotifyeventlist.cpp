@@ -60,15 +60,15 @@ void KNotifyEventList::KNotifyEventListDelegate::paint(QPainter *painter,
 
     QRect rect = option.rect;
 
-    QStringList optionsList = prstring.split('|');
+    QStringList optionsList = prstring.split(QLatin1Char('|'));
     QList<QIcon> iconList;
-    iconList << (optionsList.contains("Sound")   ? QIcon::fromTheme("media-playback-start") : QIcon());
-    iconList << (optionsList.contains("Popup")   ? QIcon::fromTheme("dialog-information")   : QIcon());
-    iconList << (optionsList.contains("Logfile") ? QIcon::fromTheme("text-x-generic")       : QIcon());
-    iconList << (optionsList.contains("Taskbar") ? QIcon::fromTheme("services")             : QIcon());
-    iconList << (optionsList.contains("Execute") ? QIcon::fromTheme("system-run")           : QIcon());
+    iconList << (optionsList.contains(QStringLiteral("Sound"))   ? QIcon::fromTheme(QStringLiteral("media-playback-start")) : QIcon());
+    iconList << (optionsList.contains(QStringLiteral("Popup"))   ? QIcon::fromTheme(QStringLiteral("dialog-information"))   : QIcon());
+    iconList << (optionsList.contains(QStringLiteral("Logfile")) ? QIcon::fromTheme(QStringLiteral("text-x-generic"))       : QIcon());
+    iconList << (optionsList.contains(QStringLiteral("Taskbar")) ? QIcon::fromTheme(QStringLiteral("services"))             : QIcon());
+    iconList << (optionsList.contains(QStringLiteral("Execute")) ? QIcon::fromTheme(QStringLiteral("system-run"))           : QIcon());
     if (KNotifyConfigElement::have_tts()) {
-        iconList << (optionsList.contains("TTS") ? QIcon::fromTheme("text-speak") : QIcon());
+        iconList << (optionsList.contains(QStringLiteral("TTS")) ? QIcon::fromTheme(QStringLiteral("text-speak")) : QIcon());
     }
 
     int mc_x = 0;
@@ -122,7 +122,7 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
                              QStringLiteral("knotifications5/") + appname + QStringLiteral(".notifyrc")));
 
     QStringList conflist = config->groupList();
-    QRegExp rx("^Event/([^/]*)$");
+    QRegExp rx(QStringLiteral("^Event/([^/]*)$"));
     conflist = conflist.filter(rx);
 
     foreach (const QString &group, conflist) {
@@ -136,13 +136,13 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
                 continue;
             }
 
-            id = id + '/' + context_name + '/' + context_value;
+            id = id + QLatin1Char('/') + context_name + QLatin1Char('/') + context_value;
         }
         QString name = cg.readEntry("Name");
         QString description = cg.readEntry("Comment");
 
         if (loadDefaults) {
-            KConfigGroup g(config, "Event/" + id);
+            KConfigGroup g(config, QStringLiteral("Event/") + id);
             foreach(const QString &entry, g.keyList()) {
                 g.revertToDefault(entry);
             }
@@ -166,9 +166,9 @@ bool KNotifyEventList::disableAllSounds()
 {
     bool changed = false;
     foreach (KNotifyEventListItem *it, m_elements) {
-         QStringList actions = it->configElement()->readEntry("Action").split('|');
-         if (actions.removeAll("Sound")) {
-             it->configElement()->writeEntry("Action", actions.join('|'));
+         QStringList actions = it->configElement()->readEntry(QStringLiteral("Action")).split(QLatin1Char('|'));
+         if (actions.removeAll(QStringLiteral("Sound"))) {
+             it->configElement()->writeEntry(QStringLiteral("Action"), actions.join(QLatin1Char('|')));
              changed = true;
          }
     }
@@ -247,6 +247,6 @@ void KNotifyEventListItem::save()
 
 void KNotifyEventListItem::update()
 {
-    setData(0, Qt::UserRole, m_config.readEntry("Action"));
+    setData(0, Qt::UserRole, m_config.readEntry(QStringLiteral("Action")));
 }
 
