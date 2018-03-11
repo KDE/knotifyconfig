@@ -20,8 +20,8 @@
 #ifndef KNOTIFYCONFIGELEMENT_H
 #define KNOTIFYCONFIGELEMENT_H
 
-#include <QtCore/QMap>
-#include <QtCore/QString>
+#include <QMap>
+#include <QString>
 
 class KConfig;
 class KConfigGroup;

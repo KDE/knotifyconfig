@@ -21,7 +21,7 @@
 
 #include <knotifyconfig_export.h>
 #include <QWidget>
-#include <QtCore/QString>
+#include <QString>
 
 class KNotifyConfigElement;
 class KNotifyConfigWidgetPrivate;
