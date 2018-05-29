@@ -41,7 +41,7 @@ public:
     void save();
     void updateCurrentItem();
     void updateAllItems();
-    QSize sizeHint() const Q_DECL_OVERRIDE;
+    QSize sizeHint() const override;
 
     void selectEvent(const QString &eventId);
     bool disableAllSounds();
