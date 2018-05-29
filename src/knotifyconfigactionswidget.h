@@ -34,7 +34,7 @@ class KNotifyConfigActionsWidget : public QWidget
 {
     Q_OBJECT
 public:
-    KNotifyConfigActionsWidget(QWidget *parent);
+    explicit KNotifyConfigActionsWidget(QWidget *parent);
     ~KNotifyConfigActionsWidget() {}
 
     void setConfigElement(KNotifyConfigElement *config);

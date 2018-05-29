@@ -34,8 +34,8 @@ class KNotifyEventList : public QTreeWidget
 {
     Q_OBJECT
 public:
-    KNotifyEventList(QWidget *parent);
-    ~KNotifyEventList();
+    explicit KNotifyEventList(QWidget *parent);
+    ~KNotifyEventList() override;
     void fill(const QString &appname, const QString &context_name = QString(),
               const QString &context_value = QString(), bool loadDefaults = false);
     void save();

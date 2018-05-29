@@ -38,7 +38,7 @@ class KNOTIFYCONFIG_EXPORT KNotifyConfigWidget : public QWidget
 {
     Q_OBJECT
 public:
-    KNotifyConfigWidget(QWidget *parent);
+    explicit KNotifyConfigWidget(QWidget *parent);
     ~KNotifyConfigWidget();
 
     /**
