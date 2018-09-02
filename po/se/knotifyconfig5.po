@@ -1,0 +1,136 @@
+# Translation of knotifyconfig5 to Northern Sami
+#
+# Børre Gaup <boerre@skolelinux.no>, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2018-08-16 09:05+0200\n"
+"PO-Revision-Date: 2012-05-30 23:19+0200\n"
+"Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
+"Language-Team: Northern Sami <i18n-sme@lister.ping.uio.no>\n"
+"Language: se\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 1.4\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+#, kde-format
+msgid "Play a &sound"
+msgstr "Čuojat &jiena"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+#, kde-format
+msgid "Select the sound to play"
+msgstr "Vállje jiena maid čuojahit"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "Čájet dieđu &báhccanláses"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+#, kde-format
+msgid "Log to a file"
+msgstr "Čálit fiilii"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "Merke &bargoholgamerkoša"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+#, kde-format
+msgid "Run &command"
+msgstr "Vuoje &gohččuma"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+#, kde-format
+msgid "Select the command to run"
+msgstr "Vállje gohččuma"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+#, kde-format
+msgid "Sp&eech"
+msgstr "&Hupmamuš"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+#, kde-format
+msgid "Speak Event Message"
+msgstr "Huma dáhpáhusdieđu"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+#, kde-format
+msgid "Speak Event Name"
+msgstr "Huma dáhpáhusnama"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "Huma iešdefinerejuvvon teavstta"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Merošta man láhkai Jovie galggašii dadjat dáhpáhusa go joavdá. Jus "
+"válljet «Huma iešmeroštuvvon teavstta», čális teavstta boksii. Fertet "
+"geavahit dáid buhttencealkagiid teavsttas: <dl><dt>%e</dt><dd>Dáhpáhusa "
+"namma</dd><dt>%a</dt><dd>Prográmma mii sáddii dáhpáhusa</dd><dt>%m</"
+"dt><dd>Diehtu maid prográmma sáddii</dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:129
+#, kde-format
+msgid "Configure Notifications"
+msgstr "Heivet dieđáhusaid …"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Dilli"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Namahus"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Válddahus"

@@ -1,0 +1,148 @@
+# translation of kdelibs4.po to Chinese Simplified
+# Copyright (C) 2007 Free Software Foundation, Inc.
+#
+# Lie Ex <lilith.ex@gmail.com> 2007-2011.
+# Wang Jian <lark@linux.ustc.edu.cn>, 1998.
+# Sarah Smith <sarahs@redhat.com>, 2002.
+# Xiong Jiang <jxiong@offtopic.org>, 2002,2003,2004.
+# Funda Wang <fundawang@linux.net.cn>, 2002,2003,2004.
+# Liang Qi <cavendish.qi@gmail.com>, 2007.
+# Feng Chao <chaofeng111@gmail.com>, 2010, 2012, 2014.
+# Ni Hui <shuizhuyuanluo@126.com>, 2010, 2011, 2012.
+# Weng Xuetian <wengxt@gmail.com>, 2011, 2012, 2013, 2015.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdeorg\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2018-08-16 09:05+0200\n"
+"PO-Revision-Date: 2018-08-30 13:09\n"
+"Last-Translator: guoyunhebrave <yunhe.guo@protonmail.com>\n"
+"Language-Team: Chinese Simplified\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: kdeorg\n"
+"X-Crowdin-Language: zh-CN\n"
+"X-Crowdin-File: /kf5-trunk/messages/frameworks/knotifyconfig5.pot\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+#, kde-format
+msgid "Play a &sound"
+msgstr "播放声音(&S)"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+#, kde-format
+msgid "Select the sound to play"
+msgstr "选择要播放的声音"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "在弹出窗口中显示消息(&P)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+#, kde-format
+msgid "Log to a file"
+msgstr "将日志记录到文件"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "标记任务栏项(&T)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+#, kde-format
+msgid "Run &command"
+msgstr "运行命令(&C)"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+#, kde-format
+msgid "Select the command to run"
+msgstr "选择要运行的命令"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+#, kde-format
+msgid "Sp&eech"
+msgstr "语音(&E)"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>指定当收到事件时 knotify 应如何读出事件。如果您选择了“读出自定义文本”，请"
+"在框中输入文本。您可以在文本中使用如下占位符：<dl><dt>%e</dt><dd>事件名称</"
+"dd><dt>%a</dt><dd>发送事件的应用程序</dd><dt>%m</dt><dd>应用程序发送的消息</"
+"dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+#, kde-format
+msgid "Speak Event Message"
+msgstr "读出事件消息"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+#, kde-format
+msgid "Speak Event Name"
+msgstr "读出事件名称"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "读出自定义文本"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>指定当收到事件时 Jovie 应如何读出事件。如果您选择了“读出自定义文本”，请在"
+"框中输入文本。您可以在文本中使用如下占位符：<dl><dt>%e</dt><dd>事件名称</"
+"dd><dt>%a</dt><dd>发送事件的应用程序</dd><dt>%m</dt><dd>应用程序发送的消息</"
+"dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:129
+#, kde-format
+msgid "Configure Notifications"
+msgstr "配置通知"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "状态"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "标题"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "描述"
