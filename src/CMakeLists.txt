@@ -1,8 +1,6 @@
 set(HAVE_PHONON ${Phonon4Qt5_FOUND})
 configure_file(knotify-config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/knotify-config.h )
 
-include_directories(BEFORE ${PHONON_INCLUDES})
-
 ########### next target ###############
 
 set(knotifyconfig_LIB_SRCS
@@ -29,7 +27,7 @@ target_link_libraries(KF5NotifyConfig
         PRIVATE
             KF5::I18n
             KF5::KIOWidgets     # KUrlRequester
-            ${PHONON_LIBS}
+            Phonon::phonon4qt5
             Qt5::DBus)
 
 set_target_properties(KF5NotifyConfig PROPERTIES
