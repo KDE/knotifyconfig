@@ -27,8 +27,14 @@ target_link_libraries(KF5NotifyConfig
         PRIVATE
             KF5::I18n
             KF5::KIOWidgets     # KUrlRequester
-            Phonon::phonon4qt5
             Qt5::DBus)
+
+if(HAVE_PHONON)
+    target_link_libraries(KF5NotifyConfig
+        PRIVATE
+            Phonon::phonon4qt5
+    )
+endif()
 
 set_target_properties(KF5NotifyConfig PROPERTIES
    VERSION      ${KNOTIFYCONFIG_VERSION_STRING}
