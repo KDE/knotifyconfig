@@ -1,0 +1,158 @@
+# Finnish messages for kdelibs4.
+# Copyright © 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012 This_file_is_part_of_KDE
+# This file is distributed under the same license as the kdelibs package.
+# Kim Enkovaara <kim.enkovaara@iki.fi>, 2002,2003, 2005, 2006, 2007.
+# Tapio Kautto <eleknader@phnet.fi>, 2003, 2004.
+# Mikko Ikola <kola@netikka.fi>, 2003.
+# Teemu Rytilahti <teemu.rytilahti@d5k.net>, 2003, 2008.
+# Mikko Ikola <ikola@iki.fi>, 2003.
+# Teemu Rytilahti <teemu.rytilahti@kde-fi.org>, 2003, 2004, 2008.
+# Niklas Laxström <niklas.laxstrom+kdetrans@gmail.com>, 2006, 2007.
+# Joonas Niilola <juippis@roskakori.org>, 2006.
+# Mikko Piippo <piippo@cc.helsinki.fi>, 2007.
+# Teemu Rytilahti <tpr@d5k.net>, 2008.
+# Tommi Nieminen <translator@legisign.org>, 2009, 2010, 2011.
+# Tommi Nieminen <tommi.nieminen@legisign.org>, 2009.
+# Jorma Karvonen <karvonen.jorma@gmail.com>, 2010.
+# Lasse Liehu <lasse.liehu@gmail.com>, 2006, 2010, 2011, 2012, 2013, 2014, 2015.
+#
+# KDE Finnish translation sprint participants:
+# Author: Artnay
+# Author: Jl
+# Author: Lliehu
+# Author: Niklas Laxström
+# Author: Suhviksi
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"POT-Creation-Date: 2018-08-16 09:05+0200\n"
+"PO-Revision-Date: 2015-02-20 22:09+0200\n"
+"Last-Translator: Lasse Liehu <lasse.liehu@gmail.com>\n"
+"Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 1.5\n"
+"X-POT-Import-Date: 2013-01-13 20:43:21+0000\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+#, kde-format
+msgid "Play a &sound"
+msgstr "Toista &ääni"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+#, kde-format
+msgid "Select the sound to play"
+msgstr "Valitse toistettava ääni"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "Näytä viesti &ponnahdusikkunassa"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+#, kde-format
+msgid "Log to a file"
+msgstr "Kirjaa lokitiedostoon"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "Korosta &tehtäväpalkin kohtaa"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+#, kde-format
+msgid "Run &command"
+msgstr "Suorita &komento"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+#, kde-format
+msgid "Select the command to run"
+msgstr "Valitse suoritettava komento"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+#, kde-format
+msgid "Sp&eech"
+msgstr "&Puhe"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Määrittelee kuinka knotify ilmoittaa saapuneesta tapahtumasta. "
+"Mukautetussa puheessa voit käyttää seuraavia korvausmerkkejä:<dl><dt>%e</"
+"dt><dd>tapahtuman nimi</dd><dt>%a</dt><dd>Sovellus, joka lähetti tapahtuman</"
+"dd><dt>%m</dt><dd>Sovelluksen lähettämä viesti</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+#, kde-format
+msgid "Speak Event Message"
+msgstr "Puhu tapahtuman viesti"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+#, kde-format
+msgid "Speak Event Name"
+msgstr "Puhu tapahtuman nimi"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "Puhu oma teksti"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Määrittelee kuinka Jovie ilmoittaa saapuneesta tapahtumasta. "
+"Mukautetussa puheessa voit käyttää seuraavia korvausmerkkejä:<dl><dt>%e</"
+"dt><dd>tapahtuman nimi</dd><dt>%a</dt><dd>Sovellus, joka lähetti tapahtuman</"
+"dd><dt>%m</dt><dd>Sovelluksen lähettämä viesti</dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:129
+#, kde-format
+msgid "Configure Notifications"
+msgstr "Ilmoitusten asetukset"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Tila"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Otsikko"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Kuvaus"
