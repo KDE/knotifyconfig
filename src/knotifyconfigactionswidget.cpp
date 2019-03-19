@@ -35,6 +35,8 @@ KNotifyConfigActionsWidget::KNotifyConfigActionsWidget(QWidget *parent)
     if (!soundDirs.isEmpty()) {
         m_ui.Sound_select->setStartDir(QUrl::fromLocalFile(soundDirs.last()));
     }
+    m_ui.Sound_select->setMimeTypeFilters({QStringLiteral("audio/x-vorbis+ogg"),
+                                           QStringLiteral("audio/x-wav")});
 
     m_ui.Sound_play->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
     m_ui.Sound_check->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
