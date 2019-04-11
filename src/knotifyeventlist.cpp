@@ -75,7 +75,7 @@ void KNotifyEventList::KNotifyEventListDelegate::paint(QPainter *painter,
 
     int iconWidth = option.decorationSize.width();
     int iconHeight = option.decorationSize.height();
-    foreach (const QIcon &icon, iconList) {
+    for (const QIcon &icon : qAsConst(iconList)) {
         icon.paint(painter, rect.left() + mc_x + 4, rect.top() + (rect.height() - iconHeight) / 2, iconWidth, iconHeight);
         mc_x += iconWidth + 4;
     }
@@ -125,7 +125,7 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
     QRegExp rx(QStringLiteral("^Event/([^/]*)$"));
     conflist = conflist.filter(rx);
 
-    foreach (const QString &group, conflist) {
+    for (const QString &group : qAsConst(conflist)) {
         KConfigGroup cg(config, group);
         rx.indexIn(group);
         QString id = rx.cap(1);
@@ -143,7 +143,8 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
 
         if (loadDefaults) {
             KConfigGroup g(config, QStringLiteral("Event/") + id);
-            foreach(const QString &entry, g.keyList()) {
+            const auto keyList = g.keyList();
+            for (const QString &entry : keyList) {
                 g.revertToDefault(entry);
             }
         }
@@ -156,7 +157,7 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
 
 void KNotifyEventList::save()
 {
-    foreach (KNotifyEventListItem *it, m_elements) {
+    for (KNotifyEventListItem *it : qAsConst(m_elements)) {
         it->save();
     }
     config->sync();
@@ -165,7 +166,7 @@ void KNotifyEventList::save()
 bool KNotifyEventList::disableAllSounds()
 {
     bool changed = false;
-    foreach (KNotifyEventListItem *it, m_elements) {
+    for (KNotifyEventListItem *it : qAsConst(m_elements)) {
          QStringList actions = it->configElement()->readEntry(QStringLiteral("Action")).split(QLatin1Char('|'));
          if (actions.removeAll(QStringLiteral("Sound"))) {
              it->configElement()->writeEntry(QStringLiteral("Action"), actions.join(QLatin1Char('|')));
@@ -202,7 +203,7 @@ void KNotifyEventList::updateCurrentItem()
 
 void KNotifyEventList::updateAllItems()
 {
-    foreach (KNotifyEventListItem *it, m_elements) {
+    for (KNotifyEventListItem *it : qAsConst(m_elements)) {
         it->update();
     }
 }

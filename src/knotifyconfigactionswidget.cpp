@@ -138,7 +138,7 @@ void KNotifyConfigActionsWidget::slotPlay()
     const QString soundFilename = m_ui.Sound_select->text();
     QUrl soundURL;
     const auto dataLocations = QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation);
-    foreach (const QString &dataLocation, dataLocations) {
+    for (const QString &dataLocation : dataLocations) {
         soundURL = QUrl::fromUserInput(soundFilename,
                                        dataLocation + QStringLiteral("/sounds"),
                                        QUrl::AssumeLocalFile);
