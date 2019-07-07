@@ -1,0 +1,139 @@
+# Kiszel Kristóf <ulysses@kubuntu.org>, 2010.
+# Kristóf Kiszel <ulysses@kubuntu.org>, 2010, 2011, 2012.
+# Balázs Úr <urbalazs@gmail.com>, 2012, 2013.
+# Kristof Kiszel <kiszel.kristof@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: KDE 4.4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 02:57+0200\n"
+"PO-Revision-Date: 2018-10-06 10:56+0200\n"
+"Last-Translator: Kristof Kiszel <kiszel.kristof@gmail.com>\n"
+"Language-Team: Hungarian <kde-l10n-hu@kde.org>\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 2.0\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+#, kde-format
+msgid "Play a &sound"
+msgstr "&Hanglejátszás"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+#, kde-format
+msgid "Select the sound to play"
+msgstr "A lejátszandó hang kiválasztása"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "Ü&zenetablak"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+#, kde-format
+msgid "Log to a file"
+msgstr "Fájlba írás"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "Eszköztárbeje&gyzés megjelölése"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+#, kde-format
+msgid "Run &command"
+msgstr "Parancs &végrehajtása"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+#, kde-format
+msgid "Select the command to run"
+msgstr "Válassza ki a végrehajtandó parancsot"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+#, kde-format
+msgid "Sp&eech"
+msgstr "&Felolvasás"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Az esemény felolvasási módját lehet itt megadni. Jelölje ki „Adott "
+"szöveg felolvasása” opciót, majd írja be a szöveget. A következő "
+"helyettesítő szimbólumokat lehet használni a szövegben:<dl><dt>%e</"
+"dt><dd>Esemény</dd><dt>%a</dt><dd>Küldő alkalmazás</dd><dt>%m</"
+"dt><dd>Üzenet</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+#, kde-format
+msgid "Speak Event Message"
+msgstr "Az esemény szövegének felolvasása"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+#, kde-format
+msgid "Speak Event Name"
+msgstr "Az esemény nevének felolvasása"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "Adott szöveg felolvasása"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Az esemény felolvasási módját lehet itt megadni. Jelölje ki „Adott "
+"szöveg felolvasása” opciót, majd írja be a szöveget. A következő "
+"helyettesítő szimbólumokat lehet használni a szövegben:<dl><dt>%e</"
+"dt><dd>Esemény</dd><dt>%a</dt><dd>Küldő alkalmazás</dd><dt>%m</"
+"dt><dd>Üzenet</dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:129
+#, kde-format
+msgid "Configure Notifications"
+msgstr "Az értesítő üzenetek beállítása"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Állapot"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Cím"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Leírás"

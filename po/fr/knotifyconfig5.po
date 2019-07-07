@@ -1,0 +1,159 @@
+# translation of kdelibs4.po to Français
+# translation of kdelibs4.po to
+# Matthieu Robin <kde@macolu.org>, 2002,2003, 2004.
+# Robert Jacolin <rjacolin@ifrance.com>, 2003,2004.
+# Gilles Caulier <caulier.gilles@free.fr>, 2003.
+# Gérard Delafond <gerard@delafond.org>, 2003, 2004.
+# Matthieu Robin <kde@macolu.org>, 2004, 2005, 2006.
+# Cedric Pasteur <cedric.pasteur@free.fr>, 2004.
+# Nicolas Ternisien <nicolas.ternisien@gmail.com>, 2004, 2005, 2006, 2007, 2008.
+# Matthieu Robin <matthieu@macolu.org>, 2005.
+# Éric Bischoff <ebischoff@nerim.net>, 2005.
+# Sébastien Renard <Sebastien.Renard@digitalfox.org>, 2006, 2007, 2008.
+# Anne-Marie Mahfouf <annma@kde.org>, 2007, 2008, 2012.
+# Ludovic Grossard <grossard@kde.org>, 2008.
+# Mickael Sibelle <kimael@gmail.com>, 2008.
+# Nicolas Lécureuil <nlecureuil@mandriva.com>, 2010.
+# Joëlle Cornavin <jcorn@free.fr>, 2007, 2008, 2009, 2010, 2011, 2012, 2013.
+# Sebastien Renard <renard@kde.org>, 2013, 2014.
+# Vincent Pinon <vpinon@kde.org>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2019-05-20 02:57+0200\n"
+"PO-Revision-Date: 2016-11-27 23:13+0100\n"
+"Last-Translator: Vincent Pinon <vpinon@kde.org>\n"
+"Language-Team: French <kde-i18n-doc@kde.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Lokalize 2.0\n"
+"X-Environment: kde\n"
+"X-Accelerator-Marker: &\n"
+"X-Text-Markup: kde4\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+#, kde-format
+msgid "Play a &sound"
+msgstr "Lire un &son"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+#, kde-format
+msgid "Select the sound to play"
+msgstr "Sélectionnez le son à lire"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "Afficher un message dans une fen&être qui apparaît"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+#, kde-format
+msgid "Log to a file"
+msgstr "Journaliser dans un fichier"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "Marquer l'élément dans la barre des t&âches"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+#, kde-format
+msgid "Run &command"
+msgstr "Exécuter la &commande"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+#, kde-format
+msgid "Select the command to run"
+msgstr "Sélectionnez la commande à exécuter"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+#, kde-format
+msgid "Sp&eech"
+msgstr "Par&ole"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Spécifie comment knotify énoncera l'évènement lors de sa réception. Si "
+"vous sélectionnez « Énoncer un texte personnalisé », saisissez le texte dans "
+"le champ de saisie. Vous pouvez également utiliser les chaînes de "
+"substitution suivantes dans le texte : <dl><dt>%e</dt><dd>Nom de "
+"l'évènement</dd><dt>%a</dt><dd>Application ayant envoyé l'évènement</dd><dt>"
+"%m</dt><dd>Le message envoyé par l'application</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+#, kde-format
+msgid "Speak Event Message"
+msgstr "Énoncer le message d'évènement"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+#, kde-format
+msgid "Speak Event Name"
+msgstr "Énoncer le nom de l'évènement"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "Énoncer un texte personnalisé"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Spécifie comment Jovie énoncera l'évènement lors de sa réception. Si "
+"vous sélectionnez « Énoncer un texte personnalisé », saisissez le texte dans "
+"le champ de saisie. Vous pouvez également utiliser les chaînes de "
+"substitution suivantes dans le texte : <dl><dt>%e</dt><dd>Nom de "
+"l'évènement</dd><dt>%a</dt><dd>Application ayant envoyé l'évènement</dd><dt>"
+"%m</dt><dd>Le message envoyé par l'application</dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:129
+#, kde-format
+msgid "Configure Notifications"
+msgstr "Configurer les notifications"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "État"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Titre"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Description"
