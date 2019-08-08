@@ -26,7 +26,6 @@
 #include <QStyledItemDelegate>
 #include <QPainter>
 #include <QHeaderView>
-#include <QFontMetrics>
 
 //BEGIN KNotifyEventListDelegate
 

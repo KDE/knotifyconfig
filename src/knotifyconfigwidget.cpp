@@ -24,7 +24,6 @@
 #include <QDialog>
 #include <QDialogButtonBox>
 #include <QVBoxLayout>
-#include <QDBusInterface>
 #include <QDBusConnectionInterface>
 
 #include <klocalizedstring.h>
