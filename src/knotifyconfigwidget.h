@@ -26,6 +26,8 @@
 class KNotifyConfigElement;
 class KNotifyConfigWidgetPrivate;
 /**
+ * @class KNotifyConfigWidget knotifyconfigwidget.h <KNotifyConfigWidget>
+ *
  * Configure the notification for a given application / context
  *
  * You probably will want to use the static function configure
