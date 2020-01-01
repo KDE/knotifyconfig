@@ -22,6 +22,7 @@
 #include <kconfig.h>
 #include <kconfiggroup.h>
 
+#include <QRegularExpression>
 #include <QStandardPaths>
 #include <QStyledItemDelegate>
 #include <QPainter>
@@ -121,13 +122,12 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
                              QStringLiteral("knotifications5/") + appname + QStringLiteral(".notifyrc")));
 
     QStringList conflist = config->groupList();
-    QRegExp rx(QStringLiteral("^Event/([^/]*)$"));
+    QRegularExpression rx(QStringLiteral("^Event/([^/]*)$"));
     conflist = conflist.filter(rx);
 
     for (const QString &group : qAsConst(conflist)) {
         KConfigGroup cg(config, group);
-        rx.indexIn(group);
-        QString id = rx.cap(1);
+        QString id = rx.match(group).captured(1);
 
         if (!context_name.isEmpty()) {
             QStringList contexts = cg.readEntry("Contexts", QStringList());
