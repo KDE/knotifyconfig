@@ -1,0 +1,143 @@
+# Bengali (Bangla) translation of kdelibs4.
+# Copyright (C) 2009, Free Software Foundation, Inc.
+# translation of kdelibs4.po to Bengali
+# Copyright (C) 2003, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
+# Deepayan Sarkar,,, <deepayan.sarkar@gmail.com>, 2003.
+# Deepayan Sarkar <deepayan.sarkar@gmail.com>, 2003, 2004, 2005.
+# Deepayan Sarkar <deepayan.sarkar@gmail.com>, 2006, 2008, 2009..
+# Deepayan Sarkar <deepayan.sarkar@gmail.com>, 2009, 2010, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-02 02:51+0100\n"
+"PO-Revision-Date: 2012-07-16 14:27+0530\n"
+"Last-Translator: Deepayan Sarkar <deepayan.sarkar@gmail.com>\n"
+"Language-Team: American English <kde-translation@bengalinux.org>\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 1.4\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+#, kde-format
+msgid "Play a &sound"
+msgstr "একটি &শব্দ শোনাও"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+#, kde-format
+msgid "Select the sound to play"
+msgstr "চালানোর জন্য শব্দ নির্বাচন করুন"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "&পপ-আপ উইণ্ডোয় একটি বার্তা দেখাও"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+#, kde-format
+msgid "Log to a file"
+msgstr "ফাইলে লগ লেখো"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "টাস্কবার &এন্ট্রী চিহ্নিত করো"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+#, kde-format
+msgid "Run &command"
+msgstr "&কমান্ড চালাও"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+#, kde-format
+msgid "Select the command to run"
+msgstr "চালানোর জন্য কমান্ড নির্বাচন করুন"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+#, kde-format
+msgid "Sp&eech"
+msgstr "&কথা"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, fuzzy, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>ের যেমন KTTS ঘটনা উল্লেখ কর কথা বলো যখন গ্রহন করেছিল। যদি আপনি\"স্বনির্বাচিত "
+"লেখা\"নির্বাচন করো কথা বলো, বাক্সে লেখা ঢোকাও। আপনি লেখাতে নিম্নলিখিত "
+"substitution পঙ্‌ক্তি ব্যবহার করতে পারেন:<dl><dt>%e</dt><dd>ঘটনার নাম</dd><dt>"
+"%a</dt><dd>অ্যাপলিকেশন যে ঘটনা পাঠিয়েছিল</dd><dt>%m</dt><dd>বার্তা "
+"অ্যাপলিকেশনের দ্বারা পাঠিয়েছিল</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+#, kde-format
+msgid "Speak Event Message"
+msgstr "ঘটনাবার্তা পড়ে শোনাও"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+#, kde-format
+msgid "Speak Event Name"
+msgstr "ঘটনার নাম বলো"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "স্বনির্বাচিত লেখা পড়ে শোনাও"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, fuzzy, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>ের যেমন KTTS ঘটনা উল্লেখ কর কথা বলো যখন গ্রহন করেছিল। যদি আপনি\"স্বনির্বাচিত "
+"লেখা\"নির্বাচন করো কথা বলো, বাক্সে লেখা ঢোকাও। আপনি লেখাতে নিম্নলিখিত "
+"substitution পঙ্‌ক্তি ব্যবহার করতে পারেন:<dl><dt>%e</dt><dd>ঘটনার নাম</dd><dt>"
+"%a</dt><dd>অ্যাপলিকেশন যে ঘটনা পাঠিয়েছিল</dd><dt>%m</dt><dd>বার্তা "
+"অ্যাপলিকেশনের দ্বারা পাঠিয়েছিল</dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:128
+#, kde-format
+msgid "Configure Notifications"
+msgstr "বার্তাবলী কনফিগার করো"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "অবস্থা"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "শিরোনাম"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "বিবরণ"

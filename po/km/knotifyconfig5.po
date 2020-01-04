@@ -1,0 +1,142 @@
+# translation of kdelibs4.po to Khmer
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2008, 2009, 2010, 2011, 2012.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-01-02 02:51+0100\n"
+"PO-Revision-Date: 2012-06-27 10:04+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"Language-Team: Khmer\n"
+"Language: km\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: KBabel 1.11.4\n"
+"X-Language: km-KH\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:16
+#, kde-format
+msgid "Play a &sound"
+msgstr "ចាក់​សំឡេង"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:42
+#, kde-format
+msgid "Select the sound to play"
+msgstr "ជ្រើស​សំឡេង​ដែល​ត្រូវចាក់"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:49
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "បង្ហាញ​សារ​នៅ​ក្នុង​បង្អួច​លេចឡើង"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:56
+#, kde-format
+msgid "Log to a file"
+msgstr "ចុះ​កំណត់ហេតុ​ទៅ​ឯកសារ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:76
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "សម្គាល់​ធាតុ​របារ​ភារកិច្ច"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:83
+#, kde-format
+msgid "Run &command"
+msgstr "រត់​ពាក្យ​បញ្ជា"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:99
+#, kde-format
+msgid "Select the command to run"
+msgstr "ជ្រើស​ពាក្យ​បញ្ជា​ដែលត្រូវ​រត់"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:106
+#, kde-format
+msgid "Sp&eech"
+msgstr "សំដី"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:119
+#, fuzzy, no-c-format, kde-format
+#| msgid ""
+#| "<qt>Specifies how Jovie should speak the event when received.  If you "
+#| "select \"Speak custom text\", enter the text in the box.  You may use the "
+#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#| "dt><dd>The message sent by the application</dd></dl></qt>"
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>បញ្ជាក់​វិធី​ដែល​ Jovie គួរ​និយាយ​ព្រឹត្តិការណ៍​នៅពេល​បាន​ទទួល ។ ប្រសិនបើ​អ្នក​ជ្រើស \"និយាយ​អត្ថបទ​"
+"ផ្ទាល់ខ្លួន\" បញ្ចូល​អត្ថបទ​នៅ​ក្នុង​ប្រអប់ ។ អ្នក​អាច​ប្រើ​​ឃ្លា​ជំនួស​ដូច​ខាងក្រោម​នៅ​ក្នុងអត្ថបទ ៖<dl><dt>"
+"%e</dt><dd>ឈ្មោះ​ព្រឹត្តិការណ៍</dd><dt>%a</dt><dd>កម្មវិធី​ដែលបាន​ផ្ញើ​ព្រឹត្តិការណ៍</dd><dt>"
+"%m</dt><dd>សារ​បាន​ផ្ញើ​ដោយ​កម្មវិធី</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:123
+#, kde-format
+msgid "Speak Event Message"
+msgstr "និយាយ​សារ​ព្រឹត្តិការណ៍"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:128
+#, kde-format
+msgid "Speak Event Name"
+msgstr "និយាយ​ឈ្មោះ​ព្រឹត្តិការណ៍"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:133
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "និយាយ​អត្ថបទ​ផ្ទាល់ខ្លួន"
+
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:141
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>បញ្ជាក់​វិធី​ដែល​ Jovie គួរ​និយាយ​ព្រឹត្តិការណ៍​នៅពេល​បាន​ទទួល ។ ប្រសិនបើ​អ្នក​ជ្រើស \"និយាយ​អត្ថបទ​"
+"ផ្ទាល់ខ្លួន\" បញ្ចូល​អត្ថបទ​នៅ​ក្នុង​ប្រអប់ ។ អ្នក​អាច​ប្រើ​​ឃ្លា​ជំនួស​ដូច​ខាងក្រោម​នៅ​ក្នុងអត្ថបទ ៖<dl><dt>"
+"%e</dt><dd>ឈ្មោះ​ព្រឹត្តិការណ៍</dd><dt>%a</dt><dd>កម្មវិធី​ដែលបាន​ផ្ញើ​ព្រឹត្តិការណ៍</dd><dt>"
+"%m</dt><dd>សារ​បាន​ផ្ញើ​ដោយ​កម្មវិធី</dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:128
+#, kde-format
+msgid "Configure Notifications"
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ការ​ជូនដំណឹង"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "ស្ថាន​​ភាព"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "ចំណងជើង"
+
+#: knotifyeventlist.cpp:90
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "សេចក្តី​ពិពណ៌នា"
