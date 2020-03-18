@@ -23,6 +23,10 @@
 #include <QWidget>
 #include "ui_knotifyconfigactionswidgetbase.h"
 
+#ifdef HAVE_CANBERRA
+struct ca_context;
+#endif
+
 class KNotifyConfigElement;
 
 /**
@@ -35,7 +39,7 @@ class KNotifyConfigActionsWidget : public QWidget
     Q_OBJECT
 public:
     explicit KNotifyConfigActionsWidget(QWidget *parent);
-    ~KNotifyConfigActionsWidget() {}
+    ~KNotifyConfigActionsWidget() override;
 
     void setConfigElement(KNotifyConfigElement *config);
     void save(KNotifyConfigElement *config);
@@ -46,6 +50,9 @@ private Q_SLOTS:
     void slotTTSComboChanged();
 private:
     Ui::KNotifyConfigActionsWidgetBase m_ui;
+#ifdef HAVE_CANBERRA
+    ca_context *m_context = nullptr;
+#endif
 };
 
 #endif // KNOTIFYCONFIGACTIONSWIDGET_H

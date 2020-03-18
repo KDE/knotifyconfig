@@ -29,11 +29,10 @@ target_link_libraries(KF5NotifyConfig
             KF5::KIOWidgets     # KUrlRequester
             Qt5::DBus)
 
-if(HAVE_PHONON)
-    target_link_libraries(KF5NotifyConfig
-        PRIVATE
-            Phonon::phonon4qt5
-    )
+if(Canberra_FOUND)
+  target_link_libraries(KF5NotifyConfig PRIVATE Canberra::Canberra)
+elseif (Phonon4Qt5_FOUND)
+    target_link_libraries(KF5NotifyConfig PRIVATE Phonon::phonon4qt5)
 endif()
 
 set_target_properties(KF5NotifyConfig PROPERTIES

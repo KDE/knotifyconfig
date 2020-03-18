@@ -18,10 +18,14 @@
 #include "knotifyconfigactionswidget.h"
 #include "knotifyconfigelement.h"
 
+#include <QDebug>
 #include <QStandardPaths>
 
 #include "knotify-config.h"
-#if HAVE_PHONON
+
+#if defined(HAVE_CANBERRA)
+#include <canberra.h>
+#elif defined(HAVE_PHONON)
 #include <phonon/mediaobject.h>
 #endif
 
@@ -63,7 +67,16 @@ KNotifyConfigActionsWidget::KNotifyConfigActionsWidget(QWidget *parent)
         m_ui.TTS_select->setVisible(false);
         m_ui.TTS_combo->setVisible(false);
     }
+}
 
+KNotifyConfigActionsWidget::~KNotifyConfigActionsWidget()
+{
+#ifdef HAVE_CANBERRA
+    if (m_context) {
+        ca_context_destroy(m_context);
+    }
+    m_context = nullptr;
+#endif
 }
 
 void KNotifyConfigActionsWidget::setConfigElement(KNotifyConfigElement *config)
@@ -149,7 +162,49 @@ void KNotifyConfigActionsWidget::slotPlay()
         }
         soundURL.clear();
     }
-#if HAVE_PHONON
+
+#if defined(HAVE_CANBERRA)
+    if (!m_context) {
+        int ret = ca_context_create(&m_context);
+        if (ret != CA_SUCCESS) {
+            qWarning() << "Failed to initialize canberra context for audio notification:" << ca_strerror(ret);
+            m_context = nullptr;
+            return;
+        }
+
+        QString desktopFileName = QGuiApplication::desktopFileName();
+        // handle apps which set the desktopFileName property with filename suffix,
+        // due to unclear API dox (https://bugreports.qt.io/browse/QTBUG-75521)
+        if (desktopFileName.endsWith(QLatin1String(".desktop"))) {
+            desktopFileName.chop(8);
+        }
+        ret = ca_context_change_props(m_context,
+            CA_PROP_APPLICATION_NAME, qUtf8Printable(qApp->applicationDisplayName()),
+            CA_PROP_APPLICATION_ID, qUtf8Printable(desktopFileName),
+            CA_PROP_APPLICATION_ICON_NAME, qUtf8Printable(qApp->windowIcon().name()),
+            nullptr);
+        if (ret != CA_SUCCESS) {
+            qWarning() << "Failed to set application properties on canberra context for audio notification:" << ca_strerror(ret);
+        }
+    }
+
+    ca_proplist *props = nullptr;
+    ca_proplist_create(&props);
+
+    // We'll also want this cached for a time. volatile makes sure the cache is
+    // dropped after some time or when the cache is under pressure.
+    ca_proplist_sets(props, CA_PROP_MEDIA_FILENAME, QFile::encodeName(soundURL.toLocalFile()).constData());
+    ca_proplist_sets(props, CA_PROP_CANBERRA_CACHE_CONTROL, "volatile");
+
+    int ret = ca_context_play_full(m_context, 0, props, nullptr, nullptr);
+
+    ca_proplist_destroy(props);
+
+    if (ret != CA_SUCCESS) {
+        qWarning() << "Failed to play sound with canberra:" << ca_strerror(ret);
+        return;
+    }
+#elif defined(HAVE_PHONON)
     Phonon::MediaObject *media = Phonon::createPlayer(Phonon::NotificationCategory, soundURL);
     media->play();
     connect(media, SIGNAL(finished()), media, SLOT(deleteLater()));
