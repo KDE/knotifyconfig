@@ -22,6 +22,7 @@
 
 #include <QWidget>
 #include "ui_knotifyconfigactionswidgetbase.h"
+#include "knotify-config.h"
 
 #ifdef HAVE_CANBERRA
 struct ca_context;

@@ -35,15 +35,12 @@ find_package(Canberra)
 set_package_properties(Canberra PROPERTIES
     PURPOSE "Needed to preview notification sounds"
     TYPE OPTIONAL)
-if (Canberra_FOUND)
-    add_definitions(-DHAVE_CANBERRA)
-else()
+if (NOT Canberra_FOUND)
     # This is REQUIRED since you cannot tell CMake "either one of those two optional ones are required"
     find_package(Phonon4Qt5 4.6.60 NO_MODULE REQUIRED)
     set_package_properties(Phonon4Qt5 PROPERTIES
         DESCRIPTION "Qt-based audio library"
         PURPOSE "Needed to preview notification sounds when Canberra isn't available")
-    add_definitions(-DHAVE_PHONON4QT5)
 endif()
 
 # Includes

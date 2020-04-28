@@ -1,3 +1,4 @@
+set(HAVE_CANBERRA ${Canberra_FOUND})
 set(HAVE_PHONON ${Phonon4Qt5_FOUND})
 configure_file(knotify-config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/knotify-config.h )
 

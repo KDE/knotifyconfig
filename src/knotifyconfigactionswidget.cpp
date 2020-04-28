@@ -21,8 +21,6 @@
 #include <QDebug>
 #include <QStandardPaths>
 
-#include "knotify-config.h"
-
 #if defined(HAVE_CANBERRA)
 #include <canberra.h>
 #elif defined(HAVE_PHONON)
@@ -71,7 +69,7 @@ KNotifyConfigActionsWidget::KNotifyConfigActionsWidget(QWidget *parent)
 
 KNotifyConfigActionsWidget::~KNotifyConfigActionsWidget()
 {
-#ifdef HAVE_CANBERRA
+#if defined(HAVE_CANBERRA)
     if (m_context) {
         ca_context_destroy(m_context);
     }
