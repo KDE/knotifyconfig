@@ -2,7 +2,7 @@
  * Copyright (C) 2005-2006 by Olivier Goffart <ogoffart at kde.org>
  */
 #include <QApplication>
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
 #include "knotifytestwindow.h"
 

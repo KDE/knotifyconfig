@@ -26,7 +26,7 @@
 #include <QVBoxLayout>
 #include <QDBusConnectionInterface>
 
-#include <klocalizedstring.h>
+#include <KLocalizedString>
 
 class KNotifyConfigWidgetPrivate {
 public:

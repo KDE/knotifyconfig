@@ -6,11 +6,11 @@
 #include "knotification.h"
 #include "knotifyconfigwidget.h"
 
-#include <kmessagebox.h>
-#include <klocalizedstring.h>
-#include <kstandardaction.h>
-#include <kactioncollection.h>
-#include <kxmlguifactory.h>
+#include <KMessageBox>
+#include <KLocalizedString>
+#include <KStandardAction>
+#include <KActionCollection>
+#include <KXMLGUIFactory>
 
 #include <QDialog>
 #include <QDialogButtonBox>

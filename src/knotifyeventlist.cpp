@@ -18,9 +18,9 @@
 #include "knotifyeventlist.h"
 
 #include <QDebug>
-#include <klocalizedstring.h>
-#include <kconfig.h>
-#include <kconfiggroup.h>
+#include <KLocalizedString>
+#include <KConfig>
+#include <KConfigGroup>
 
 #include <QRegularExpression>
 #include <QStandardPaths>

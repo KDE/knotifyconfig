@@ -19,8 +19,8 @@
 
 #include "knotifyconfigelement.h"
 
-#include <kconfiggroup.h>
-#include <kconfig.h>
+#include <KConfigGroup>
+#include <KConfig>
 
 KNotifyConfigElement::KNotifyConfigElement(const QString &eventid, KConfig *config)
     : m_config(new KConfigGroup(config, QStringLiteral("Event/") + eventid))
