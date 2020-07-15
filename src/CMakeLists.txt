@@ -16,6 +16,14 @@ set( knotifyconfig_UI knotifyconfigactionswidgetbase.ui )
 
 ki18n_wrap_ui(knotifyconfig_LIB_SRCS ${knotifyconfig_UI} )
 
+ecm_qt_declare_logging_category(knotifyconfig_LIB_SRCS
+    HEADER knotifyconfig_debug.h
+    IDENTIFIER KNOTIFYCONFIG_LOG
+    CATEGORY_NAME kf.notifyconfig
+    DESCRIPTION "KNotifyConfig"
+    EXPORT KNOTIFYCONFIG
+)
+
 add_library(KF5NotifyConfig ${knotifyconfig_LIB_SRCS})
 generate_export_header(KF5NotifyConfig BASE_NAME KNotifyConfig)
 add_library(KF5::NotifyConfig ALIAS KF5NotifyConfig)
@@ -84,3 +92,9 @@ endif()
 include(ECMGeneratePriFile)
 ecm_generate_pri_file(BASE_NAME KNotifyConfig LIB_NAME KF5NotifyConfig DEPS "widgets" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/KNotifyConfig)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
+
+ecm_qt_install_logging_categories(
+    EXPORT KNOTIFYCONFIG
+    FILE knotifyconfig.categories
+    DESTINATION "${KDE_INSTALL_LOGGINGCATEGORIESDIR}"
+)

@@ -16,9 +16,10 @@
    Boston, MA 02110-1301, USA.
 */
 #include "knotifyconfigactionswidget.h"
-#include "knotifyconfigelement.h"
 
-#include <QDebug>
+#include "knotifyconfigelement.h"
+#include <knotifyconfig_debug.h>
+
 #include <QStandardPaths>
 
 #if defined(HAVE_CANBERRA)
@@ -165,7 +166,7 @@ void KNotifyConfigActionsWidget::slotPlay()
     if (!m_context) {
         int ret = ca_context_create(&m_context);
         if (ret != CA_SUCCESS) {
-            qWarning() << "Failed to initialize canberra context for audio notification:" << ca_strerror(ret);
+            qCWarning(KNOTIFYCONFIG_LOG) << "Failed to initialize canberra context for audio notification:" << ca_strerror(ret);
             m_context = nullptr;
             return;
         }
@@ -182,7 +183,7 @@ void KNotifyConfigActionsWidget::slotPlay()
             CA_PROP_APPLICATION_ICON_NAME, qUtf8Printable(qApp->windowIcon().name()),
             nullptr);
         if (ret != CA_SUCCESS) {
-            qWarning() << "Failed to set application properties on canberra context for audio notification:" << ca_strerror(ret);
+            qCWarning(KNOTIFYCONFIG_LOG) << "Failed to set application properties on canberra context for audio notification:" << ca_strerror(ret);
         }
     }
 
@@ -199,7 +200,7 @@ void KNotifyConfigActionsWidget::slotPlay()
     ca_proplist_destroy(props);
 
     if (ret != CA_SUCCESS) {
-        qWarning() << "Failed to play sound with canberra:" << ca_strerror(ret);
+        qCWarning(KNOTIFYCONFIG_LOG) << "Failed to play sound with canberra:" << ca_strerror(ret);
         return;
     }
 #elif defined(HAVE_PHONON)

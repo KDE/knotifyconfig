@@ -17,7 +17,8 @@
 */
 #include "knotifyeventlist.h"
 
-#include <QDebug>
+#include <knotifyconfig_debug.h>
+
 #include <KLocalizedString>
 #include <KConfig>
 #include <KConfigGroup>
