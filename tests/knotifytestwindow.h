@@ -1,6 +1,6 @@
 /*
- * Copyright (C) 2005-2006 by Olivier Goffart <ogoffart at kde.org>
- */
+    SPDX-FileCopyrightText: 2005-2006 Olivier Goffart <ogoffart at kde.org>
+*/
 
 #ifndef __KNotifyTestWINDOW_H__
 #define __KNotifyTestWINDOW_H__
