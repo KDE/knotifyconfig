@@ -1,0 +1,133 @@
+# translation of kdelibs4.po to Kannada
+# Copyright (C) YEAR This_file_is_part_of_KDE
+# This file is distributed under the same license as the PACKAGE package.
+#
+# Umesh Rudrapatna <urudrapatna@yahoo.com>, 2007.
+# Umesh Rudrapatna <umeshrs@gmail.com>, 2007, 2008, 2009.
+# Shankar Prasad <svenkate@redhat.com>, 2008, 2010.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-11 02:10+0200\n"
+"PO-Revision-Date: 2010-06-24 18:32+0530\n"
+"Last-Translator: Shankar Prasad <svenkate@redhat.com>\n"
+"Language-Team: kn_IN <kde-i18n-doc@kde.org>\n"
+"Language: kn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"\n"
+"X-Generator: Lokalize 1.0\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr "ಧ್ವನಿಯೊಂದನ್ನು ಹೊರಹೊಮ್ಮಿಸು(&s)"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, kde-format
+msgid "Select the sound to play"
+msgstr "ಹೊರಹೊಮ್ಮಿಸಬೇಕಾದ ಧ್ವನಿಯೊಂದನ್ನು ಆರಿಸು"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "ಪುಟಿಕೆಯಲ್ಲಿ (ಪಾಪಪ್) ಒಂದು ಸಂದೇಶವನ್ನು ತೋರಿಸು(&p)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "ಕಡತಕ್ಕೆ ಬರೆ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "ಕಾರ್ಯಪಟ್ಟಿಯ ನಮೂದಿಗೆ ಗುರುತುಹಚ್ಚು(&t)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "ಆದೇಶವನ್ನು ಚಲಾಯಿಸು(&c)"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "ಚಲಾಯಿಸಲು ಆದೇಶವನ್ನು ಆರಿಸಿ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, kde-format
+msgid "Sp&eech"
+msgstr "ಮಾತು(&e)"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, kde-format
+msgid "Speak Event Message"
+msgstr "ಘಟನಾ ಸಂದೇಶವನ್ನು ನುಡಿ"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, kde-format
+msgid "Speak Event Name"
+msgstr "ಘಟನೆಯ ಹೆಸರನ್ನು ನುಡಿ"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "ಗ್ರಾಹಕೀಯ (ಕಸ್ಟಮ್) ಪಠ್ಯವನ್ನು ನುಡಿ"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#: knotifyconfigwidget.cpp:117
+#, kde-format
+msgid "Configure Notifications"
+msgstr "ಪ್ರಕಟಣೆಗಳನ್ನು ಸಂರಚಿಸಿ"
+
+#: knotifyeventlist.cpp:81
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "ಸ್ಥಿತಿ"
+
+#: knotifyeventlist.cpp:81
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "ಶೀರ್ಷಿಕೆ"
+
+#: knotifyeventlist.cpp:81
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "ವಿವರಣೆ"
