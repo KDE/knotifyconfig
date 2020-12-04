@@ -122,10 +122,9 @@ KNotifyConfigWidget *KNotifyConfigWidget::configure(QWidget *parent, const QStri
     buttonBox->setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Apply | QDialogButtonBox::Cancel);
     buttonBox->button(QDialogButtonBox::Apply)->setEnabled(false);
 
-    QVBoxLayout *layout = new QVBoxLayout;
+    QVBoxLayout *layout = new QVBoxLayout(dialog);
     layout->addWidget(w);
     layout->addWidget(buttonBox);
-    dialog->setLayout(layout);
 
     connect(buttonBox->button(QDialogButtonBox::Apply), SIGNAL(clicked()), w, SLOT(save()));
     connect(buttonBox->button(QDialogButtonBox::Ok), SIGNAL(clicked()), w, SLOT(save()));

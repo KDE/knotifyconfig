@@ -102,10 +102,9 @@ void KNotifyTestWindow::slotConfigureC()
     connect(buttonBox, SIGNAL(accepted()), &dialog, SLOT(accept()));
     connect(buttonBox, SIGNAL(rejected()), &dialog, SLOT(reject()));
 
-    QVBoxLayout *layout = new QVBoxLayout;
+    QVBoxLayout *layout = new QVBoxLayout(&dialog);
     layout->addWidget(w);
     layout->addWidget(buttonBox);
-    dialog.setLayout(layout);
 
     if (dialog.exec()) {
         w->save();
