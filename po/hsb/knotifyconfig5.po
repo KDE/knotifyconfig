@@ -1,0 +1,159 @@
+# translation of kdelibs4.po to Upper Sorbian
+# translation of kdelibs4.po to
+# Copyright (C) 2003,2004, 2005, 2007 Free Software Foundation, Inc.
+# Eduard Werner <e.werner@rz.uni-leipzig.de>, 2003.
+# Prof. Dr. Eduard Werner <e.werner@rz.uni-leipzig.de>, 2003,2004.
+# Eduard Werner <edi.werner@gmx.de>, 2005.
+# Eduard Werner/Edward Wornar <edi.werner@gmx.de>, 2007, 2008.
+# Bianka Šwejdźic <hertn@gmx.de>, 2007, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-11 02:10+0200\n"
+"PO-Revision-Date: 2008-12-19 22:49+0100\n"
+"Last-Translator: Eduard Werner <edi.werner@gmx.de>\n"
+"Language-Team: en_US <kde-i18n-doc@lists.kde.org>\n"
+"Language: hsb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
+"X-Generator: KAider 0.1\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr "Zwuk &wothrać"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, kde-format
+msgid "Select the sound to play"
+msgstr "Zwuk wubrać, kiž ma so wothrać"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "Powěsć jako popup pokazać"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "Do dataje protokolować"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "Zapisk w pasmje nadawkow &markěrować"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "Přikaz &wuwjesć"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "Přikaz wubrać, kiž ma so wuwjesć"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, kde-format
+msgid "Sp&eech"
+msgstr "&Rěč:"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, fuzzy, no-c-format, kde-format
+#| msgid ""
+#| "<qt>Specifies how KTTS should speak the event when received.  If you "
+#| "select \"Speak custom text\", enter the text in the box.  You may use the "
+#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#| "dt><dd>The message sent by the application</dd></dl></qt>"
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Postaji, kak ma KTTS rěčeć. Hdyž wubjerjeće \"Postajeny tekst rěčec\", "
+"zapodajće tekst do kašćika. Móžeće slědowace wariable wužiwać w teksće: "
+"<dl><dt>%e</dt></dd>Mjeno podawka</dd><dt>%a</dt><dd>Pogram, kotryž je "
+"podawk pósłał</dd><dt>%m</dt><dd>Powěsć, kotruž je program pósłał</dd></dl></"
+"qt>"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, fuzzy, kde-format
+#| msgid "Speak event message"
+msgid "Speak Event Message"
+msgstr "Podawkowu powěsć rěčeć"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, fuzzy, kde-format
+#| msgid "Speak event name"
+msgid "Speak Event Name"
+msgstr "Mjeno podawka prajić"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, fuzzy, kde-format
+#| msgid "Speak custom text"
+msgid "Speak Custom Text"
+msgstr "Postajeny tekst prajić"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, fuzzy, no-c-format, kde-format
+#| msgid ""
+#| "<qt>Specifies how KTTS should speak the event when received.  If you "
+#| "select \"Speak custom text\", enter the text in the box.  You may use the "
+#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#| "dt><dd>The message sent by the application</dd></dl></qt>"
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Postaji, kak ma KTTS rěčeć. Hdyž wubjerjeće \"Postajeny tekst rěčec\", "
+"zapodajće tekst do kašćika. Móžeće slědowace wariable wužiwać w teksće: "
+"<dl><dt>%e</dt></dd>Mjeno podawka</dd><dt>%a</dt><dd>Pogram, kotryž je "
+"podawk pósłał</dd><dt>%m</dt><dd>Powěsć, kotruž je program pósłał</dd></dl></"
+"qt>"
+
+#: knotifyconfigwidget.cpp:117
+#, kde-format
+msgid "Configure Notifications"
+msgstr "Konfiguracija zdźělenkow"
+
+#: knotifyeventlist.cpp:81
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Staw"
+
+#: knotifyeventlist.cpp:81
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Titl"
+
+#: knotifyeventlist.cpp:81
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Wopisanje"

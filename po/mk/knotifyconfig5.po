@@ -1,0 +1,165 @@
+# translation of kdelibs4.po to Macedonian
+#
+# Copyright (C) 2000,2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010 Free Software Foundation, Inc.
+# Dimitar Indovski <dime@gord.com.mk>
+# Damjan Janevski <miopa@freemail.org.mk>
+# Dragan Sekulovski <d_sekulovski@yahoo.com>
+#
+# Maratonec , 2002.
+# Dragan Bocevski <d_bocevski@hotmail.com>, 2002.
+# Danko Ilik <danko@mindless.com>, 2002,2003.
+# Bozidar Proevski <bobibobi@freemail.com.mk>, 2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+# Danko Ilik <danko@on.net.mk>, 2003.
+# Darko Nikolovski <darkon@macedonia.homelinux.org>, 2003.
+# Ivan Dimitrov <ivan34mk@yahoo.com>, 2003.
+# Magdica Shambevska <magdica@yahoo.com>, 2004.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2020-08-11 02:10+0200\n"
+"PO-Revision-Date: 2010-01-27 10:39+0100\n"
+"Last-Translator: Bozidar Proevski <bobibobi@freemail.com.mk>\n"
+"Language-Team: Macedonian <mkde-l10n@lists.sourceforge.net>\n"
+"Language: mk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+"Plural-Forms: Plural-Forms: nplurals=3; plural=n%10==1 ? 0 : n%10==2 ? 1 : "
+"2;\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr "Пушти &звук"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, kde-format
+msgid "Select the sound to play"
+msgstr "Изберете го звукот за емитување"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "Прикажи порака во &скок-прозорец"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "Запиши во датотека"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "Обележи елемент во &лентата со програми"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "Изврши &наредба"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "Изберете ја наредбата за извршување"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, kde-format
+msgid "Sp&eech"
+msgstr "Г&овор"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, fuzzy, no-c-format, kde-format
+#| msgid ""
+#| "<qt>Specifies how KTTS should speak the event when received.  If you "
+#| "select \"Speak custom text\", enter the text in the box.  You may use the "
+#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#| "dt><dd>The message sent by the application</dd></dl></qt>"
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Одредува како KTTS треба да да го изговори настанот кога ќе го добие.  "
+"Ако изберете „Изговори сопствен текст“, тогаш внесете го текстот во ова "
+"поле.  Може да ги користите следниве променливи во текстот:<dl><dt>%e</"
+"dt><dd>Името на настанот</dd><dt>%a</dt><dd>Апликацијата што го испратила "
+"настанот</dd><dt>%m</dt><dd>Пораката што била испратена од апликацијата</"
+"dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, kde-format
+msgid "Speak Event Message"
+msgstr "Изговори порака за настанот"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, kde-format
+msgid "Speak Event Name"
+msgstr "Изговори име на настанот"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "Изговори сопствен текст"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, fuzzy, no-c-format, kde-format
+#| msgid ""
+#| "<qt>Specifies how KTTS should speak the event when received.  If you "
+#| "select \"Speak custom text\", enter the text in the box.  You may use the "
+#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#| "dt><dd>The message sent by the application</dd></dl></qt>"
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Одредува како KTTS треба да да го изговори настанот кога ќе го добие.  "
+"Ако изберете „Изговори сопствен текст“, тогаш внесете го текстот во ова "
+"поле.  Може да ги користите следниве променливи во текстот:<dl><dt>%e</"
+"dt><dd>Името на настанот</dd><dt>%a</dt><dd>Апликацијата што го испратила "
+"настанот</dd><dt>%m</dt><dd>Пораката што била испратена од апликацијата</"
+"dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:117
+#, kde-format
+msgid "Configure Notifications"
+msgstr "Конфигурирање на известувања"
+
+#: knotifyeventlist.cpp:81
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Состојба"
+
+#: knotifyeventlist.cpp:81
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Наслов"
+
+#: knotifyeventlist.cpp:81
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Опис"
