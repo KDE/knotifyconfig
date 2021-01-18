@@ -203,5 +203,5 @@ void KNotifyConfigActionsWidget::slotPlay()
 void KNotifyConfigActionsWidget::slotTTSComboChanged()
 {
     m_ui.TTS_select->setEnabled(m_ui.TTS_check->isChecked() &&  m_ui.TTS_combo->currentIndex() == 2);
-    emit changed();
+    Q_EMIT changed();
 }

@@ -86,7 +86,7 @@ void KNotifyConfigWidget::save()
     }
 
     d->eventList->save();
-    emit changed(false);
+    Q_EMIT changed(false);
 
     //ask KNotification objects to reload their config
     QDBusMessage message = QDBusMessage::createSignal(QStringLiteral("/Config"), QStringLiteral("org.kde.knotification"), QStringLiteral("reparseConfiguration"));
@@ -97,7 +97,7 @@ void KNotifyConfigWidget::save()
 void KNotifyConfigWidget::revertToDefaults()
 {
     d->eventList->fill(d->application, d->contextName, d->contextValue, true);
-    emit changed(true);
+    Q_EMIT changed(true);
 }
 
 void KNotifyConfigWidget::disableAllSounds()
@@ -107,7 +107,7 @@ void KNotifyConfigWidget::disableAllSounds()
             d->actionsconfig->setConfigElement(d->currentElement);
         }
         d->eventList->updateAllItems();
-        emit changed(true);
+        Q_EMIT changed(true);
     }
 }
 
@@ -141,7 +141,7 @@ KNotifyConfigWidget *KNotifyConfigWidget::configure(QWidget *parent, const QStri
 
 void KNotifyConfigWidget::slotActionChanged()
 {
-    emit changed(true);   //TODO
+    Q_EMIT changed(true);   //TODO
     if (d->currentElement) {
         d->actionsconfig->save(d->currentElement);
         d->eventList->updateCurrentItem();

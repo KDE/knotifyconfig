@@ -172,9 +172,9 @@ void KNotifyEventList::slotSelectionChanged(QTreeWidgetItem *current, QTreeWidge
 
     KNotifyEventListItem *it = dynamic_cast<KNotifyEventListItem *>(currentItem());
     if (it) {
-        emit eventSelected(it->configElement());
+        Q_EMIT eventSelected(it->configElement());
     } else {
-        emit eventSelected(nullptr);
+        Q_EMIT eventSelected(nullptr);
     }
 
     it = dynamic_cast<KNotifyEventListItem *>(previous);
