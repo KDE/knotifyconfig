@@ -7,16 +7,16 @@ include(ECMMarkAsTest)
 find_package(Qt5Test ${REQUIRED_QT_VERSION} REQUIRED)
 set_package_properties(Qt5Test PROPERTIES PURPOSE "Required for tests")
 
-find_package(KF5ConfigWidgets ${KF5_DEP_VERSION} REQUIRED)
+find_package(KF5ConfigWidgets ${KF_DEP_VERSION} REQUIRED)
 set_package_properties(KF5ConfigWidgets PROPERTIES PURPOSE "Required for tests")
 
-find_package(KF5Notifications ${KF5_DEP_VERSION} REQUIRED)
+find_package(KF5Notifications ${KF_DEP_VERSION} REQUIRED)
 set_package_properties(KF5Notifications PROPERTIES PURPOSE "Required for tests")
 
-find_package(KF5WidgetsAddons ${KF5_DEP_VERSION} REQUIRED)
+find_package(KF5WidgetsAddons ${KF_DEP_VERSION} REQUIRED)
 set_package_properties(KF5WidgetsAddons PROPERTIES PURPOSE "Required for tests")
 
-find_package(KF5XmlGui ${KF5_DEP_VERSION} REQUIRED)
+find_package(KF5XmlGui ${KF_DEP_VERSION} REQUIRED)
 set_package_properties(KF5XmlGui PROPERTIES PURPOSE "Required for tests")
 
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
