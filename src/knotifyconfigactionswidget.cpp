@@ -10,7 +10,9 @@
 #include "knotifyconfigelement.h"
 #include <knotifyconfig_debug.h>
 
+#include <QFile>
 #include <QStandardPaths>
+#include <QUrl>
 
 #if defined(HAVE_CANBERRA)
 #include <canberra.h>
