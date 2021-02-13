@@ -63,7 +63,7 @@ ecm_setup_version(
 option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0x050e00)
-add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x054B00)
+add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x054F00)
 # Subdirectories
 add_definitions(-DTRANSLATION_DOMAIN=\"knotifyconfig5\")
 if (IS_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/po")
