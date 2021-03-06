@@ -1,0 +1,138 @@
+# translation of kdelibs4.po to Luxembourgish
+# kevin claude everard <kevin@math.uni-sb.de>, 2005.
+# Michel Ludwig <michel.ludwig@kdemail.net>, 2005, 2006.
+msgid ""
+msgstr ""
+"Project-Id-Version: kdelibs4\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-02-09 02:36+0100\n"
+"PO-Revision-Date: 2006-06-22 16:29+0200\n"
+"Last-Translator: Michel Ludwig <michel.ludwig@kdemail.net>\n"
+"Language-Team: Luxembourgish <kde-i18n-lb@kde.org>\n"
+"Language: lb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.2\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, fuzzy, kde-format
+#| msgid "Select the current day"
+msgid "Select the sound to play"
+msgstr "Heitegen Dag auswielen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Log to a file"
+msgstr "Sprang op d'Zeil"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, fuzzy, kde-format
+#| msgid "Select the current day"
+msgid "Select the command to run"
+msgstr "Heitegen Dag auswielen"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, fuzzy, kde-format
+#| msgid "S&earch:"
+msgid "Sp&eech"
+msgstr "Siche&n:"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, fuzzy, kde-format
+#| msgid "artsmessage"
+msgid "Speak Event Message"
+msgstr "aRts-Noricht"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, fuzzy, kde-format
+#| msgid "Please enter &name:"
+msgid "Speak Event Name"
+msgstr "Gitt w.e.g. den &Numm an:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, fuzzy, kde-format
+#| msgid "Please enter &name:"
+msgid "Speak Custom Text"
+msgstr "Gitt w.e.g. den &Numm an:"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#: knotifyconfigwidget.cpp:118
+#, fuzzy, kde-format
+#| msgid "Configure &Notifications..."
+msgid "Configure Notifications"
+msgstr "&Norichte configuréieren..."
+
+#: knotifyeventlist.cpp:81
+#, fuzzy, kde-format
+#| msgid "State"
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Status"
+
+#: knotifyeventlist.cpp:81
+#, fuzzy, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Tamil"
+
+#: knotifyeventlist.cpp:81
+#, fuzzy, kde-format
+#| msgid "Description:"
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Beschreiwung:"
