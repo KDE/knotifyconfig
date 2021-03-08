@@ -25,13 +25,12 @@ KNotifyConfigActionsWidget::KNotifyConfigActionsWidget(QWidget *parent)
 {
     m_ui.setupUi(this);
 
-    //Show sounds directory by default
+    // Show sounds directory by default
     QStringList soundDirs = QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("sounds"), QStandardPaths::LocateDirectory);
     if (!soundDirs.isEmpty()) {
         m_ui.Sound_select->setStartDir(QUrl::fromLocalFile(soundDirs.last()));
     }
-    m_ui.Sound_select->setMimeTypeFilters({QStringLiteral("audio/x-vorbis+ogg"),
-                                           QStringLiteral("audio/x-wav")});
+    m_ui.Sound_select->setMimeTypeFilters({QStringLiteral("audio/x-vorbis+ogg"), QStringLiteral("audio/x-wav")});
 
     m_ui.Sound_play->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
     m_ui.Sound_check->setIcon(QIcon::fromTheme(QStringLiteral("media-playback-start")));
@@ -72,7 +71,7 @@ KNotifyConfigActionsWidget::~KNotifyConfigActionsWidget()
 
 void KNotifyConfigActionsWidget::setConfigElement(KNotifyConfigElement *config)
 {
-    bool blocked = blockSignals(true); //to block the changed() signal
+    bool blocked = blockSignals(true); // to block the changed() signal
     QString prstring = config->readEntry(QStringLiteral("Action"));
     QStringList actions = prstring.split(QLatin1Char('|'));
 
@@ -121,7 +120,8 @@ void KNotifyConfigActionsWidget::save(KNotifyConfigElement *config)
 
     config->writeEntry(QStringLiteral("Action"), actions.join(QLatin1Char('|')));
 
-    config->writeEntry(QStringLiteral("Sound"), m_ui.Sound_select->text());  // don't use .url() here, .notifyrc files have predefined "static" entries with no path
+    config->writeEntry(QStringLiteral("Sound"),
+                       m_ui.Sound_select->text()); // don't use .url() here, .notifyrc files have predefined "static" entries with no path
     config->writeEntry(QStringLiteral("Logfile"), m_ui.Logfile_select->url().toString());
     config->writeEntry(QStringLiteral("Execute"), m_ui.Execute_select->url().toLocalFile());
     switch (m_ui.TTS_combo->currentIndex()) {
@@ -143,9 +143,7 @@ void KNotifyConfigActionsWidget::slotPlay()
     QUrl soundURL;
     const auto dataLocations = QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation);
     for (const QString &dataLocation : dataLocations) {
-        soundURL = QUrl::fromUserInput(soundFilename,
-                                       dataLocation + QStringLiteral("/sounds"),
-                                       QUrl::AssumeLocalFile);
+        soundURL = QUrl::fromUserInput(soundFilename, dataLocation + QStringLiteral("/sounds"), QUrl::AssumeLocalFile);
         if (soundURL.isLocalFile() && QFile::exists(soundURL.toLocalFile())) {
             break;
         } else if (!soundURL.isLocalFile() && soundURL.isValid()) {
@@ -170,10 +168,13 @@ void KNotifyConfigActionsWidget::slotPlay()
             desktopFileName.chop(8);
         }
         ret = ca_context_change_props(m_context,
-            CA_PROP_APPLICATION_NAME, qUtf8Printable(qApp->applicationDisplayName()),
-            CA_PROP_APPLICATION_ID, qUtf8Printable(desktopFileName),
-            CA_PROP_APPLICATION_ICON_NAME, qUtf8Printable(qApp->windowIcon().name()),
-            nullptr);
+                                      CA_PROP_APPLICATION_NAME,
+                                      qUtf8Printable(qApp->applicationDisplayName()),
+                                      CA_PROP_APPLICATION_ID,
+                                      qUtf8Printable(desktopFileName),
+                                      CA_PROP_APPLICATION_ICON_NAME,
+                                      qUtf8Printable(qApp->windowIcon().name()),
+                                      nullptr);
         if (ret != CA_SUCCESS) {
             qCWarning(KNOTIFYCONFIG_LOG) << "Failed to set application properties on canberra context for audio notification:" << ca_strerror(ret);
         }
@@ -204,6 +205,6 @@ void KNotifyConfigActionsWidget::slotPlay()
 
 void KNotifyConfigActionsWidget::slotTTSComboChanged()
 {
-    m_ui.TTS_select->setEnabled(m_ui.TTS_check->isChecked() &&  m_ui.TTS_combo->currentIndex() == 2);
+    m_ui.TTS_select->setEnabled(m_ui.TTS_check->isChecked() && m_ui.TTS_combo->currentIndex() == 2);
     Q_EMIT changed();
 }

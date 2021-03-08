@@ -8,9 +8,9 @@
 #ifndef KNOTIFYCONFIGACTIONSWIDGET_H
 #define KNOTIFYCONFIGACTIONSWIDGET_H
 
-#include <QWidget>
-#include "ui_knotifyconfigactionswidgetbase.h"
 #include "knotify-config.h"
+#include "ui_knotifyconfigactionswidgetbase.h"
+#include <QWidget>
 
 #ifdef HAVE_CANBERRA
 struct ca_context;
@@ -37,6 +37,7 @@ Q_SIGNALS:
 private Q_SLOTS:
     void slotPlay();
     void slotTTSComboChanged();
+
 private:
     Ui::KNotifyConfigActionsWidgetBase m_ui;
 #ifdef HAVE_CANBERRA

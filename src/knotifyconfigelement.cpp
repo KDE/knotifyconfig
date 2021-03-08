@@ -7,8 +7,8 @@
 
 #include "knotifyconfigelement.h"
 
-#include <KConfigGroup>
 #include <KConfig>
+#include <KConfigGroup>
 
 KNotifyConfigElement::KNotifyConfigElement(const QString &eventid, KConfig *config)
     : m_config(new KConfigGroup(config, QStringLiteral("Event/") + eventid))
@@ -26,8 +26,7 @@ QString KNotifyConfigElement::readEntry(const QString &entry, bool path)
     if (m_cache.contains(entry)) {
         return m_cache[entry];
     }
-    return path ?  m_config->readPathEntry(entry, QString()) :
-           m_config->readEntry(entry, QString());
+    return path ? m_config->readPathEntry(entry, QString()) : m_config->readEntry(entry, QString());
 }
 
 void KNotifyConfigElement::writeEntry(const QString &entry, const QString &data)

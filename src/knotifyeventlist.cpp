@@ -9,17 +9,17 @@
 
 #include <knotifyconfig_debug.h>
 
-#include <KLocalizedString>
 #include <KConfig>
 #include <KConfigGroup>
+#include <KLocalizedString>
 
+#include <QHeaderView>
+#include <QPainter>
 #include <QRegularExpression>
 #include <QStandardPaths>
 #include <QStyledItemDelegate>
-#include <QPainter>
-#include <QHeaderView>
 
-//BEGIN KNotifyEventListDelegate
+// BEGIN KNotifyEventListDelegate
 
 class KNotifyEventList::KNotifyEventListDelegate : public QStyledItemDelegate
 {
@@ -27,6 +27,7 @@ public:
     explicit KNotifyEventListDelegate(QObject *parent = nullptr);
 
     void paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const override;
+
 private:
 };
 
@@ -35,8 +36,7 @@ KNotifyEventList::KNotifyEventListDelegate::KNotifyEventListDelegate(QObject *pa
 {
 }
 
-void KNotifyEventList::KNotifyEventListDelegate::paint(QPainter *painter,
-        const QStyleOptionViewItem &option, const QModelIndex &index) const
+void KNotifyEventList::KNotifyEventListDelegate::paint(QPainter *painter, const QStyleOptionViewItem &option, const QModelIndex &index) const
 {
     if (index.column() != 0) {
         return QStyledItemDelegate::paint(painter, option, index);
@@ -47,17 +47,17 @@ void KNotifyEventList::KNotifyEventListDelegate::paint(QPainter *painter,
 
     QStyledItemDelegate::paint(painter, option, index);
 
-//  qDebug() << prstring;
+    //  qDebug() << prstring;
 
     QRect rect = option.rect;
 
     QStringList optionsList = prstring.split(QLatin1Char('|'));
     QList<QIcon> iconList;
-    iconList << (optionsList.contains(QStringLiteral("Sound"))   ? QIcon::fromTheme(QStringLiteral("media-playback-start")) : QIcon());
-    iconList << (optionsList.contains(QStringLiteral("Popup"))   ? QIcon::fromTheme(QStringLiteral("dialog-information"))   : QIcon());
-    iconList << (optionsList.contains(QStringLiteral("Logfile")) ? QIcon::fromTheme(QStringLiteral("text-x-generic"))       : QIcon());
-    iconList << (optionsList.contains(QStringLiteral("Taskbar")) ? QIcon::fromTheme(QStringLiteral("services"))             : QIcon());
-    iconList << (optionsList.contains(QStringLiteral("Execute")) ? QIcon::fromTheme(QStringLiteral("system-run"))           : QIcon());
+    iconList << (optionsList.contains(QStringLiteral("Sound")) ? QIcon::fromTheme(QStringLiteral("media-playback-start")) : QIcon());
+    iconList << (optionsList.contains(QStringLiteral("Popup")) ? QIcon::fromTheme(QStringLiteral("dialog-information")) : QIcon());
+    iconList << (optionsList.contains(QStringLiteral("Logfile")) ? QIcon::fromTheme(QStringLiteral("text-x-generic")) : QIcon());
+    iconList << (optionsList.contains(QStringLiteral("Taskbar")) ? QIcon::fromTheme(QStringLiteral("services")) : QIcon());
+    iconList << (optionsList.contains(QStringLiteral("Execute")) ? QIcon::fromTheme(QStringLiteral("system-run")) : QIcon());
     if (KNotifyConfigElement::have_tts()) {
         iconList << (optionsList.contains(QStringLiteral("TTS")) ? QIcon::fromTheme(QStringLiteral("text-speak")) : QIcon());
     }
@@ -72,30 +72,32 @@ void KNotifyEventList::KNotifyEventListDelegate::paint(QPainter *painter,
     }
 }
 
-//END KNotifyEventListDelegate
+// END KNotifyEventListDelegate
 
 KNotifyEventList::KNotifyEventList(QWidget *parent)
-    : QTreeWidget(parent), config(nullptr)
+    : QTreeWidget(parent)
+    , config(nullptr)
 {
     QStringList headerLabels;
-    headerLabels << i18nc("State of the notified event", "State") << i18nc("Title of the notified event", "Title") << i18nc("Description of the notified event", "Description");
+    headerLabels << i18nc("State of the notified event", "State") << i18nc("Title of the notified event", "Title")
+                 << i18nc("Description of the notified event", "Description");
     setHeaderLabels(headerLabels);
 
     setItemDelegate(new KNotifyEventListDelegate(this));
     setRootIsDecorated(false);
     setAlternatingRowColors(true);
 
-    //Extract icon size as the font height (as h=w on icons)
+    // Extract icon size as the font height (as h=w on icons)
     QStyleOptionViewItem iconOption;
     iconOption.initFrom(this);
-    int iconWidth = iconOption.fontMetrics.height() - 2; //1px margin top & bottom
+    int iconWidth = iconOption.fontMetrics.height() - 2; // 1px margin top & bottom
     setIconSize(QSize(iconWidth, iconWidth));
 
     header()->setSectionResizeMode(0, QHeaderView::Fixed);
     header()->resizeSection(0, KNotifyConfigElement::have_tts() ? (iconWidth + 4) * 6 : (iconWidth + 4) * 5);
     header()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
 
-    connect(this, SIGNAL(currentItemChanged(QTreeWidgetItem*,QTreeWidgetItem*)), this, SLOT(slotSelectionChanged(QTreeWidgetItem*,QTreeWidgetItem*)));
+    connect(this, SIGNAL(currentItemChanged(QTreeWidgetItem *, QTreeWidgetItem *)), this, SLOT(slotSelectionChanged(QTreeWidgetItem *, QTreeWidgetItem *)));
 }
 
 KNotifyEventList::~KNotifyEventList()
@@ -109,8 +111,8 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
     clear();
     delete config;
     config = new KConfig(appname + QStringLiteral(".notifyrc"), KConfig::NoGlobals);
-    config->addConfigSources(QStandardPaths::locateAll(QStandardPaths::GenericDataLocation,
-                             QStringLiteral("knotifications5/") + appname + QStringLiteral(".notifyrc")));
+    config->addConfigSources(
+        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("knotifications5/") + appname + QStringLiteral(".notifyrc")));
 
     QStringList conflist = config->groupList();
     QRegularExpression rx(QStringLiteral("^Event/([^/]*)$"));
@@ -157,11 +159,11 @@ bool KNotifyEventList::disableAllSounds()
 {
     bool changed = false;
     for (KNotifyEventListItem *it : qAsConst(m_elements)) {
-         QStringList actions = it->configElement()->readEntry(QStringLiteral("Action")).split(QLatin1Char('|'));
-         if (actions.removeAll(QStringLiteral("Sound"))) {
-             it->configElement()->writeEntry(QStringLiteral("Action"), actions.join(QLatin1Char('|')));
-             changed = true;
-         }
+        QStringList actions = it->configElement()->readEntry(QStringLiteral("Action")).split(QLatin1Char('|'));
+        if (actions.removeAll(QStringLiteral("Sound"))) {
+            it->configElement()->writeEntry(QStringLiteral("Action"), actions.join(QLatin1Char('|')));
+            changed = true;
+        }
     }
     return changed;
 }
@@ -215,10 +217,9 @@ QSize KNotifyEventList::sizeHint() const
     return QSize(48 * fontSize, 12 * fontSize);
 }
 
-KNotifyEventListItem::KNotifyEventListItem(QTreeWidget *parent, const QString &eventName,
-        const QString &name, const QString &description, KConfig *config)
-    : QTreeWidgetItem(parent),
-      m_config(eventName, config)
+KNotifyEventListItem::KNotifyEventListItem(QTreeWidget *parent, const QString &eventName, const QString &name, const QString &description, KConfig *config)
+    : QTreeWidgetItem(parent)
+    , m_config(eventName, config)
 {
     setText(1, name);
     setToolTip(1, description);
@@ -240,4 +241,3 @@ void KNotifyEventListItem::update()
 {
     setData(0, Qt::UserRole, m_config.readEntry(QStringLiteral("Action")));
 }
-

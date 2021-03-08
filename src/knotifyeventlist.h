@@ -25,8 +25,7 @@ class KNotifyEventList : public QTreeWidget
 public:
     explicit KNotifyEventList(QWidget *parent);
     ~KNotifyEventList() override;
-    void fill(const QString &appname, const QString &context_name = QString(),
-              const QString &context_value = QString(), bool loadDefaults = false);
+    void fill(const QString &appname, const QString &context_name = QString(), const QString &context_value = QString(), bool loadDefaults = false);
     void save();
     void updateCurrentItem();
     void updateAllItems();
@@ -46,14 +45,12 @@ private Q_SLOTS:
 
 Q_SIGNALS:
     void eventSelected(KNotifyConfigElement *);
-
 };
 
 class KNotifyEventListItem : public QTreeWidgetItem
 {
 public:
-    KNotifyEventListItem(QTreeWidget *parent, const QString &eventName, const QString &name,
-                         const QString &description, KConfig *confir);
+    KNotifyEventListItem(QTreeWidget *parent, const QString &eventName, const QString &name, const QString &description, KConfig *confir);
     ~KNotifyEventListItem();
     void save();
 
@@ -66,7 +63,6 @@ public:
 
 private:
     KNotifyConfigElement m_config;
-
 };
 
 #endif

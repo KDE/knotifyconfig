@@ -2,8 +2,8 @@
     SPDX-FileCopyrightText: 2005-2006 Olivier Goffart <ogoffart at kde.org>
 */
 
-#include <QApplication>
 #include <KLocalizedString>
+#include <QApplication>
 
 #include "knotifytestwindow.h"
 

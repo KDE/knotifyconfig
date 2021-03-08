@@ -6,26 +6,27 @@
 #include "knotification.h"
 #include "knotifyconfigwidget.h"
 
-#include <KMessageBox>
-#include <KLocalizedString>
-#include <KStandardAction>
 #include <KActionCollection>
+#include <KLocalizedString>
+#include <KMessageBox>
+#include <KStandardAction>
 #include <KXMLGUIFactory>
 
 #include <QDialog>
 #include <QDialogButtonBox>
 #include <QStatusBar>
-#include <QVBoxLayout>
 #include <QTest>
+#include <QVBoxLayout>
 
 // ------------------------------------------------------------------------
 
 KNotifyTestWindow::KNotifyTestWindow(QWidget *parent)
-    : KXmlGuiWindow(parent), m_nbNewMessage(0)
+    : KXmlGuiWindow(parent)
+    , m_nbNewMessage(0)
 {
     QWidget *w = new QWidget(this);
     view.setupUi(w);
-//  statusBar()->message(i18n("Test program for KNotify"));
+    //  statusBar()->message(i18n("Test program for KNotify"));
     setCaption(i18n("Test program for KNotify"));
 
     setCentralWidget(w);
@@ -39,9 +40,8 @@ KNotifyTestWindow::KNotifyTestWindow(QWidget *parent)
     connect(view.b_online, SIGNAL(clicked()), this, SLOT(slotSendOnlineEvent()));
     connect(view.b_message, SIGNAL(clicked()), this, SLOT(slotSendMessageEvent()));
     connect(view.b_read, SIGNAL(clicked()), this, SLOT(slotMessageRead()));
-    connect(view.b_confG,  SIGNAL(clicked()), this, SLOT(slotConfigureG()));
-    connect(view.b_confC,  SIGNAL(clicked()), this, SLOT(slotConfigureC()));
-
+    connect(view.b_confG, SIGNAL(clicked()), this, SLOT(slotConfigureG()));
+    connect(view.b_confC, SIGNAL(clicked()), this, SLOT(slotConfigureC()));
 }
 
 void KNotifyTestWindow::slotSendOnlineEvent()
@@ -50,7 +50,7 @@ void KNotifyTestWindow::slotSendOnlineEvent()
     contexts.append(qMakePair(QString("group"), view.c_group->currentText()));
     KNotification *n = new KNotification("online");
     n->setWidget(this);
-    n->setText(i18n("the contact %1 is now online",  view.c_name->text()));
+    n->setText(i18n("the contact %1 is now online", view.c_name->text()));
     n->setContexts(contexts);
     n->sendEvent();
 }
@@ -61,7 +61,7 @@ void KNotifyTestWindow::slotSendMessageEvent()
     if (!m_readNotif) {
         KNotification *n = new KNotification("message", KNotification::Persistent);
         n->setWidget(this);
-        n->setText(i18n("new message : %1",  view.c_text->toPlainText()));
+        n->setText(i18n("new message : %1", view.c_text->toPlainText()));
         n->setActions(QStringList(i18n("Read")));
         connect(n, SIGNAL(activated(uint)), this, SLOT(slotMessageRead()));
 
@@ -110,4 +110,3 @@ void KNotifyTestWindow::slotConfigureC()
         w->save();
     }
 }
-

@@ -25,7 +25,7 @@ public:
     ~KNotifyConfigElement();
 
     KNotifyConfigElement(const KNotifyConfigElement &) = delete;
-    KNotifyConfigElement& operator=(const KNotifyConfigElement &) = delete;
+    KNotifyConfigElement &operator=(const KNotifyConfigElement &) = delete;
 
     QString readEntry(const QString &entry, bool path = false);
     void writeEntry(const QString &entry, const QString &data);

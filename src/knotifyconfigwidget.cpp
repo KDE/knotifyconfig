@@ -7,18 +7,19 @@
 
 #include "knotifyconfigwidget.h"
 #include "knotifyconfigactionswidget.h"
-#include "knotifyeventlist.h"
 #include "knotifyconfigelement.h"
+#include "knotifyeventlist.h"
 
+#include <QDBusConnectionInterface>
 #include <QDialog>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
-#include <QDBusConnectionInterface>
 
 #include <KLocalizedString>
 
-class KNotifyConfigWidgetPrivate {
+class KNotifyConfigWidgetPrivate
+{
 public:
     KNotifyEventList *eventList;
     KNotifyConfigActionsWidget *actionsconfig;
@@ -29,15 +30,15 @@ public:
 };
 
 KNotifyConfigWidget::KNotifyConfigWidget(QWidget *parent)
-    : QWidget(parent), d(new KNotifyConfigWidgetPrivate)
+    : QWidget(parent)
+    , d(new KNotifyConfigWidgetPrivate)
 {
     d->currentElement = nullptr;
     d->eventList = new KNotifyEventList(this);
     d->eventList->setFocus();
     d->actionsconfig = new KNotifyConfigActionsWidget(this);
     d->actionsconfig->setEnabled(false);
-    connect(d->eventList, SIGNAL(eventSelected(KNotifyConfigElement*)),
-            this, SLOT(slotEventSelected(KNotifyConfigElement*)));
+    connect(d->eventList, SIGNAL(eventSelected(KNotifyConfigElement *)), this, SLOT(slotEventSelected(KNotifyConfigElement *)));
     connect(d->actionsconfig, SIGNAL(changed()), this, SLOT(slotActionChanged()));
 
     QVBoxLayout *layout = new QVBoxLayout(this);
@@ -54,7 +55,7 @@ KNotifyConfigWidget::~KNotifyConfigWidget()
 void KNotifyConfigWidget::setApplication(const QString &app, const QString &context_name, const QString &context_value)
 {
     d->currentElement = nullptr;
-    d->application = app.isEmpty() ? QCoreApplication::instance()->applicationName()  : app;
+    d->application = app.isEmpty() ? QCoreApplication::instance()->applicationName() : app;
     d->contextName = context_name;
     d->contextValue = context_value;
     d->eventList->fill(d->application, d->contextName, d->contextValue);
@@ -77,7 +78,6 @@ void KNotifyConfigWidget::slotEventSelected(KNotifyConfigElement *e)
     } else {
         d->actionsconfig->setEnabled(false);
     }
-
 }
 
 void KNotifyConfigWidget::save()
@@ -89,8 +89,9 @@ void KNotifyConfigWidget::save()
     d->eventList->save();
     Q_EMIT changed(false);
 
-    //ask KNotification objects to reload their config
-    QDBusMessage message = QDBusMessage::createSignal(QStringLiteral("/Config"), QStringLiteral("org.kde.knotification"), QStringLiteral("reparseConfiguration"));
+    // ask KNotification objects to reload their config
+    QDBusMessage message =
+        QDBusMessage::createSignal(QStringLiteral("/Config"), QStringLiteral("org.kde.knotification"), QStringLiteral("reparseConfiguration"));
     message.setArguments(QVariantList() << d->application);
     QDBusConnection::sessionBus().send(message);
 }
@@ -142,10 +143,9 @@ KNotifyConfigWidget *KNotifyConfigWidget::configure(QWidget *parent, const QStri
 
 void KNotifyConfigWidget::slotActionChanged()
 {
-    Q_EMIT changed(true);   //TODO
+    Q_EMIT changed(true); // TODO
     if (d->currentElement) {
         d->actionsconfig->save(d->currentElement);
         d->eventList->updateCurrentItem();
     }
 }
-

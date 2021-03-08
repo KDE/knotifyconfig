@@ -5,9 +5,9 @@
 #ifndef __KNotifyTestWINDOW_H__
 #define __KNotifyTestWINDOW_H__
 
-#include <kxmlguiwindow.h>
 #include "ui_knotifytestview.h"
 #include <QPointer>
+#include <kxmlguiwindow.h>
 
 class KNotification;
 

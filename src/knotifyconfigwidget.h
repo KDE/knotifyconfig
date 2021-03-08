@@ -8,9 +8,9 @@
 #ifndef KNOTIFYCONFIGWIDGET_H
 #define KNOTIFYCONFIGWIDGET_H
 
-#include <knotifyconfig_export.h>
-#include <QWidget>
 #include <QString>
+#include <QWidget>
+#include <knotifyconfig_export.h>
 
 class KNotifyConfigElement;
 class KNotifyConfigWidgetPrivate;
@@ -47,9 +47,7 @@ public:
      * @param context_name the name of the context, if null , avery context are considered
      * @param context_value the context value
      */
-    void setApplication(const QString &appname = QString(),
-                        const QString &context_name = QString(),
-                        const QString &context_value = QString());
+    void setApplication(const QString &appname = QString(), const QString &context_name = QString(), const QString &context_value = QString());
 
     /**
      * Select a given notification in the current list
@@ -91,7 +89,6 @@ private:
 private Q_SLOTS:
     void slotEventSelected(KNotifyConfigElement *e);
     void slotActionChanged();
-
 };
 
 #endif
