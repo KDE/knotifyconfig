@@ -45,7 +45,7 @@ elseif (Phonon4Qt5_FOUND)
 endif()
 
 set_target_properties(KF5NotifyConfig PROPERTIES
-   VERSION      ${KNOTIFYCONFIG_VERSION_STRING}
+   VERSION      ${KNOTIFYCONFIG_VERSION}
    SOVERSION    ${KNOTIFYCONFIG_SOVERSION}
    EXPORT_NAME  NotifyConfig
 )
