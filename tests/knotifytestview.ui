@@ -74,7 +74,7 @@
       </widget>
      </item>
      <item>
-      <widget class="KLineEdit" name="c_name" />
+      <widget class="QLineEdit" name="c_name" />
      </item>
     </layout>
    </item>
