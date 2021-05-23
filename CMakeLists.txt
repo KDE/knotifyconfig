@@ -68,8 +68,6 @@ add_definitions(-DKF_DISABLE_DEPRECATED_BEFORE_AND_AT=0x055100)
 # Subdirectories
 add_definitions(-DTRANSLATION_DOMAIN=\"knotifyconfig5\")
 ki18n_install(po)
-#We can't activate it as it depend against phonon but it builds fine without it
-#add_definitions(-DQT_NO_FOREACH)
 add_subdirectory(src)
 if(BUILD_TESTING)
   add_subdirectory(tests)
