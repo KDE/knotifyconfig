@@ -2,21 +2,19 @@ set(HAVE_CANBERRA ${Canberra_FOUND})
 set(HAVE_PHONON ${Phonon4Qt5_FOUND})
 configure_file(knotify-config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/knotify-config.h )
 
-########### next target ###############
+add_library(KF5NotifyConfig)
+add_library(KF5::NotifyConfig ALIAS KF5NotifyConfig)
 
-set(knotifyconfig_LIB_SRCS
-knotifyconfigactionswidget.cpp
-knotifyconfigelement.cpp
-knotifyeventlist.cpp
-knotifyconfigwidget.cpp
+target_sources(KF5NotifyConfig PRIVATE
+    knotifyconfigactionswidget.cpp
+    knotifyconfigelement.cpp
+    knotifyeventlist.cpp
+    knotifyconfigwidget.cpp
 )
 
+ki18n_wrap_ui(KF5NotifyConfig knotifyconfigactionswidgetbase.ui)
 
-set( knotifyconfig_UI knotifyconfigactionswidgetbase.ui )
-
-ki18n_wrap_ui(knotifyconfig_LIB_SRCS ${knotifyconfig_UI} )
-
-ecm_qt_declare_logging_category(knotifyconfig_LIB_SRCS
+ecm_qt_declare_logging_category(KF5NotifyConfig
     HEADER knotifyconfig_debug.h
     IDENTIFIER KNOTIFYCONFIG_LOG
     CATEGORY_NAME kf.notifyconfig
@@ -24,9 +22,7 @@ ecm_qt_declare_logging_category(knotifyconfig_LIB_SRCS
     EXPORT KNOTIFYCONFIG
 )
 
-add_library(KF5NotifyConfig ${knotifyconfig_LIB_SRCS})
 generate_export_header(KF5NotifyConfig BASE_NAME KNotifyConfig)
-add_library(KF5::NotifyConfig ALIAS KF5NotifyConfig)
 
 target_include_directories(KF5NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KNotifyConfig>")
 

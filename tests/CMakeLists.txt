@@ -21,11 +21,10 @@ set_package_properties(KF5XmlGui PROPERTIES PURPOSE "Required for tests")
 
 remove_definitions(-DQT_NO_CAST_FROM_ASCII)
 
-set(knotifytest_SRCS main.cpp knotifytestwindow.cpp )
+add_executable(knotifytest main.cpp knotifytestwindow.cpp)
 
-ki18n_wrap_ui(knotifytest_SRCS knotifytestview.ui)
+ki18n_wrap_ui(knotifytest knotifytestview.ui)
 
-add_executable(knotifytest ${knotifytest_SRCS})
 ecm_mark_as_test(knotifytest)
 
 target_link_libraries(knotifytest
