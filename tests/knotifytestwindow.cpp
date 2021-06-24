@@ -33,7 +33,8 @@ KNotifyTestWindow::KNotifyTestWindow(QWidget *parent)
 
     // set up the actions
     actionCollection()->addAction(KStandardAction::Quit, this, SLOT(close()));
-    actionCollection()->addAction(KStandardAction::KeyBindings, guiFactory(), SLOT(configureShortcuts()));
+
+    KStandardAction::keyBindings(guiFactory(), &KXMLGUIFactory::showConfigureShortcutsDialog, actionCollection());
 
     createGUI(QFINDTESTDATA("knotifytestui.rc"));
 
