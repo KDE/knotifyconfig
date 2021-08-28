@@ -66,7 +66,7 @@ void KNotifyEventList::KNotifyEventListDelegate::paint(QPainter *painter, const 
 
     int iconWidth = option.decorationSize.width();
     int iconHeight = option.decorationSize.height();
-    for (const QIcon &icon : qAsConst(iconList)) {
+    for (const QIcon &icon : std::as_const(iconList)) {
         icon.paint(painter, rect.left() + mc_x + 4, rect.top() + (rect.height() - iconHeight) / 2, iconWidth, iconHeight);
         mc_x += iconWidth + 4;
     }
@@ -118,7 +118,7 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
     QRegularExpression rx(QStringLiteral("^Event/([^/]*)$"));
     conflist = conflist.filter(rx);
 
-    for (const QString &group : qAsConst(conflist)) {
+    for (const QString &group : std::as_const(conflist)) {
         KConfigGroup cg(config, group);
         QString id = rx.match(group).captured(1);
 
@@ -149,7 +149,7 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
 
 void KNotifyEventList::save()
 {
-    for (KNotifyEventListItem *it : qAsConst(m_elements)) {
+    for (KNotifyEventListItem *it : std::as_const(m_elements)) {
         it->save();
     }
     config->sync();
@@ -158,7 +158,7 @@ void KNotifyEventList::save()
 bool KNotifyEventList::disableAllSounds()
 {
     bool changed = false;
-    for (KNotifyEventListItem *it : qAsConst(m_elements)) {
+    for (KNotifyEventListItem *it : std::as_const(m_elements)) {
         QStringList actions = it->configElement()->readEntry(QStringLiteral("Action")).split(QLatin1Char('|'));
         if (actions.removeAll(QStringLiteral("Sound"))) {
             it->configElement()->writeEntry(QStringLiteral("Action"), actions.join(QLatin1Char('|')));
@@ -195,7 +195,7 @@ void KNotifyEventList::updateCurrentItem()
 
 void KNotifyEventList::updateAllItems()
 {
-    for (KNotifyEventListItem *it : qAsConst(m_elements)) {
+    for (KNotifyEventListItem *it : std::as_const(m_elements)) {
         it->update();
     }
 }
