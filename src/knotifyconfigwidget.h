@@ -30,7 +30,7 @@ class KNOTIFYCONFIG_EXPORT KNotifyConfigWidget : public QWidget
     Q_OBJECT
 public:
     explicit KNotifyConfigWidget(QWidget *parent);
-    ~KNotifyConfigWidget();
+    ~KNotifyConfigWidget() override;
 
     /**
      * Show a dialog with the widget.

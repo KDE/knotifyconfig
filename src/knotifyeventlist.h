@@ -51,7 +51,7 @@ class KNotifyEventListItem : public QTreeWidgetItem
 {
 public:
     KNotifyEventListItem(QTreeWidget *parent, const QString &eventName, const QString &name, const QString &description, KConfig *confir);
-    ~KNotifyEventListItem();
+    ~KNotifyEventListItem() override;
     void save();
 
     KNotifyConfigElement *configElement()
