@@ -24,15 +24,15 @@ ecm_qt_declare_logging_category(KF5NotifyConfig
 
 generate_export_header(KF5NotifyConfig BASE_NAME KNotifyConfig)
 
-target_include_directories(KF5NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF5}/KNotifyConfig>")
+target_include_directories(KF5NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig>")
 
 target_link_libraries(KF5NotifyConfig
         PUBLIC
-            Qt5::Widgets
+            Qt${QT_MAJOR_VERSION}::Widgets
         PRIVATE
             KF5::I18n
             KF5::KIOWidgets     # KUrlRequester
-            Qt5::DBus)
+            Qt${QT_MAJOR_VERSION}::DBus)
 
 if(Canberra_FOUND)
   target_link_libraries(KF5NotifyConfig PRIVATE Canberra::Canberra)
@@ -59,7 +59,7 @@ install(TARGETS KF5NotifyConfig EXPORT KF5NotifyConfigTargets ${KF5_INSTALL_TARG
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/knotifyconfig_export.h
   ${KNotifyConfig_HEADERS}
-  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF5}/KNotifyConfig COMPONENT Devel)
+  DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig COMPONENT Devel)
 
 if(BUILD_QCH)
     ecm_add_qch(
@@ -86,7 +86,7 @@ if(BUILD_QCH)
 endif()
 
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KNotifyConfig LIB_NAME KF5NotifyConfig DEPS "widgets" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF5}/KNotifyConfig)
+ecm_generate_pri_file(BASE_NAME KNotifyConfig LIB_NAME KF5NotifyConfig DEPS "widgets" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
 ecm_qt_install_logging_categories(
