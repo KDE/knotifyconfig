@@ -17,9 +17,7 @@ include(KDEInstallDirs)
 
 # Required Qt components to build this framework
 find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
-if (QT_MAJOR_VERSION STREQUAL "6")
-    find_package(Qt6Core5Compat)
-endif()
+
 find_package(Qt5 ${REQUIRED_QT_VERSION} QUIET OPTIONAL_COMPONENTS TextToSpeech)
 if (NOT TARGET Qt5::TextToSpeech)
   message(STATUS "Qt5TextToSpeech not found, speech features will be disabled")
