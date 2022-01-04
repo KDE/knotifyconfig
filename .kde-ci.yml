@@ -4,7 +4,8 @@ Dependencies:
     'frameworks/extra-cmake-modules': '@same'
     'frameworks/kio' : '@same'
     'frameworks/ki18n' : '@same'
-    'frameworks/knotifications #test dependency' : '@same'
+    'frameworks/knotifications' : '@same'
+    'libraries/phonon' : '@stable'
 
 Options:
   test-before-installing: True
