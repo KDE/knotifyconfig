@@ -109,7 +109,7 @@ install(EXPORT
 
 install(FILES
   "${CMAKE_CURRENT_BINARY_DIR}/knotifyconfig_version.h"
-  DESTINATION "${KDE_INSTALL_INCLUDEDIR_KF}"
+  DESTINATION "${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig"
   COMPONENT Devel
 )
 
