@@ -12,7 +12,7 @@
 #include "ui_knotifyconfigactionswidgetbase.h"
 #include <QWidget>
 
-#ifdef HAVE_CANBERRA
+#if HAVE_CANBERRA
 struct ca_context;
 #endif
 
@@ -40,7 +40,7 @@ private Q_SLOTS:
 
 private:
     Ui::KNotifyConfigActionsWidgetBase m_ui;
-#ifdef HAVE_CANBERRA
+#if HAVE_CANBERRA
     ca_context *m_context = nullptr;
 #endif
 };
