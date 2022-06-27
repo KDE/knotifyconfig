@@ -12,10 +12,21 @@ feature_summary(WHAT REQUIRED_PACKAGES_NOT_FOUND FATAL_ON_MISSING_REQUIRED_PACKA
 
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
-set(REQUIRED_QT_VERSION 5.15.2)
+# Includes
 include(KDEInstallDirs)
+include(KDECMakeSettings)
+include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+
+include(GenerateExportHeader)
+include(ECMSetupVersion)
+include(ECMGenerateHeaders)
+include(ECMQtDeclareLoggingCategory)
+include(ECMAddQch)
+include(CMakePackageConfigHelpers)
+include(KDEGitCommitHooks)
 
 # Required Qt components to build this framework
+set(REQUIRED_QT_VERSION 5.15.2)
 find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
 
 find_package(Qt5 ${REQUIRED_QT_VERSION} QUIET OPTIONAL_COMPONENTS TextToSpeech)
@@ -24,9 +35,6 @@ if (NOT TARGET Qt5::TextToSpeech)
 else()
   add_definitions(-DHAVE_SPEECH)
 endif()
-include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
-include(KDECMakeSettings)
-include(KDEGitCommitHooks)
 
 find_package(KF5Completion ${KF_DEP_VERSION} REQUIRED)
 find_package(KF5Config ${KF_DEP_VERSION} REQUIRED)
@@ -44,15 +52,6 @@ if (NOT Canberra_FOUND)
         DESCRIPTION "Qt-based audio library"
         PURPOSE "Needed to preview notification sounds when Canberra isn't available")
 endif()
-
-# Includes
-
-include(GenerateExportHeader)
-include(ECMSetupVersion)
-include(ECMGenerateHeaders)
-include(ECMQtDeclareLoggingCategory)
-include(ECMAddQch)
-include(CMakePackageConfigHelpers)
 
 # ECM setup
 ecm_setup_version(
