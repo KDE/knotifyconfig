@@ -50,6 +50,7 @@ KNotifyConfigActionsWidget::KNotifyConfigActionsWidget(QWidget *parent)
     connect(m_ui.Sound_select, SIGNAL(textChanged(QString)), this, SIGNAL(changed()));
     connect(m_ui.Logfile_select, SIGNAL(textChanged(QString)), this, SIGNAL(changed()));
     connect(m_ui.Sound_play, SIGNAL(clicked()), this, SLOT(slotPlay()));
+    connect(m_ui.TTS_select, SIGNAL(textChanged(QString)), this, SIGNAL(changed()));
     connect(m_ui.TTS_combo, SIGNAL(currentIndexChanged(int)), this, SLOT(slotTTSComboChanged()));
     m_ui.TTS_combo->setEnabled(false);
     if (!KNotifyConfigElement::have_tts()) {
