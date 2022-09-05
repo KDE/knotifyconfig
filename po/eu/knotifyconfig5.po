@@ -1,0 +1,145 @@
+# Translation of knotifyconfig5.po to Euskara/Basque (eu).
+# Copyright (C) 1999-2017, Free Software Foundation, Inc.
+# This file is distributed under the same license as the frameworks package.
+# KDE Euskaratzeko proiektuaren arduraduna <xalba@euskalnet.net>.
+#
+# Translators:
+# Marcos <marcos@euskalgnu.org>, 2002,2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010.
+# Ion Gaztañaga <igaztanaga@gmail.com>, 2005.
+# Iñaki Larrañaga Murgoitio <dooteo@euskalgnu.org>, 2009.
+# Iñigo Salvador Azurmendi <xalba@euskalnet.net>, 2010, 2011, 2012, 2013, 2014, 2017.
+msgid ""
+msgstr ""
+"Project-Id-Version: knotifyconfig5\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"PO-Revision-Date: 2017-08-30 22:32+0100\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@euskalnet.net>\n"
+"Language-Team: Basque <kde-i18n-doc@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 2.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr "Jo &soinu bat"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, kde-format
+msgid "Select the sound to play"
+msgstr "Hautatu jo beharreko soinua"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "Erakutsi mezua &laster-leiho batean"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "Erregistratu egunkari-fitxategian"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "Markatu &ataza-barraren sarrrera"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "Exekutatu &komandoa"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "Hautatu exekutatzeko komandoa"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, kde-format
+msgid "Sp&eech"
+msgstr "Hi&zketa"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Gertaera jasotzean knotify-k nola hitz egin behar duen zehazten du. "
+"\"Hitz egin testu pertsonalizatua\" hautatzen baduzu, sartu testua laukian. "
+"Honako ordezkatzeko kateak erabil ditzakezu testuan:<dl><dt>%e</"
+"dt><dd>Gertaeraren izena</dd><dt>%a</dt><dd>Gertaera bidali duen aplikazioa</"
+"dd><dt>%m</dt><dd>Aplikazioak bidalitako mezua</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, kde-format
+msgid "Speak Event Message"
+msgstr "Esan gertaeraren mezua"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, kde-format
+msgid "Speak Event Name"
+msgstr "Esan gertaeraren izena"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "Esan testu pertsonalizatua"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Gertaera jasotzean Jovie-k nola hitz egin behar duen zehazten du. \"Hitz "
+"egin testu pertsonalizatua\" hautatzen baduzu, sartu testua laukian. Honako "
+"ordezkatzeko kateak erabil ditzakezu testuan:<dl><dt>%e</dt><dd>Gertaeraren "
+"izena</dd><dt>%a</dt><dd>Gertaera bidali duen aplikazioa</dd><dt>%m</"
+"dt><dd>Aplikazioak bidalitako mezua</dd></dl></qt>"
+
+#: knotifyconfigwidget.cpp:119
+#, kde-format
+msgid "Configure Notifications"
+msgstr "Konfiguratu jakinarazpenak"
+
+#: knotifyeventlist.cpp:82
+#, kde-format
+msgctxt "State of the notified event"
+msgid "State"
+msgstr "Egoera"
+
+#: knotifyeventlist.cpp:82
+#, kde-format
+msgctxt "Title of the notified event"
+msgid "Title"
+msgstr "Titulua"
+
+#: knotifyeventlist.cpp:83
+#, kde-format
+msgctxt "Description of the notified event"
+msgid "Description"
+msgstr "Deskribapena"
