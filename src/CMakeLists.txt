@@ -53,7 +53,7 @@ ecm_generate_headers(KNotifyConfig_HEADERS
   REQUIRED_HEADERS KNotifyConfig_HEADERS
 )
 
-install(TARGETS KF5NotifyConfig EXPORT KF5NotifyConfigTargets ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS KF5NotifyConfig EXPORT KF5NotifyConfigTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ########### install files ###############
 install(FILES
