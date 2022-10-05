@@ -1,5 +1,5 @@
 set(HAVE_CANBERRA ${Canberra_FOUND})
-set(HAVE_PHONON ${Phonon4Qt5_FOUND})
+set(HAVE_PHONON ${Phonon4Qt${QT_MAJOR_VERSION}_FOUND})
 configure_file(knotify-config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/knotify-config.h )
 
 add_library(KF5NotifyConfig)
@@ -36,8 +36,8 @@ target_link_libraries(KF5NotifyConfig
 
 if(Canberra_FOUND)
   target_link_libraries(KF5NotifyConfig PRIVATE Canberra::Canberra)
-elseif (Phonon4Qt5_FOUND)
-    target_link_libraries(KF5NotifyConfig PRIVATE Phonon::phonon4qt5)
+elseif (Phonon4Qt${QT_MAJOR_VERSION}_FOUND)
+    target_link_libraries(KF5NotifyConfig PRIVATE Phonon::phonon4qt${QT_MAJOR_VERSION})
 endif()
 
 set_target_properties(KF5NotifyConfig PROPERTIES
