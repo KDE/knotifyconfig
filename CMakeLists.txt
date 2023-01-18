@@ -27,7 +27,7 @@ include(KDEGitCommitHooks)
 include(ECMDeprecationSettings)
 
 # Required Qt components to build this framework
-set(REQUIRED_QT_VERSION 5.15.2)
+set(REQUIRED_QT_VERSION 6.4.0)
 find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
 
 find_package(Qt${QT_MAJOR_VERSION}TextToSpeech ${REQUIRED_QT_VERSION} CONFIG)
