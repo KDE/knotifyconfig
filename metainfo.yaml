@@ -12,8 +12,8 @@ deprecated: false
 release: true
 libraries:
  - qmake: KNotifyConfig
-   cmake: "KF5::NotifyConfig"
-cmakename: KF5NotifyConfig
+   cmake: "KF6::NotifyConfig"
+cmakename: KF6NotifyConfig
 
 public_lib: true
 group: Frameworks

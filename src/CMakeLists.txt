@@ -2,19 +2,19 @@ set(HAVE_CANBERRA ${Canberra_FOUND})
 set(HAVE_PHONON ${Phonon4Qt${QT_MAJOR_VERSION}_FOUND})
 configure_file(knotify-config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/knotify-config.h )
 
-add_library(KF5NotifyConfig)
-add_library(KF5::NotifyConfig ALIAS KF5NotifyConfig)
+add_library(KF6NotifyConfig)
+add_library(KF6::NotifyConfig ALIAS KF6NotifyConfig)
 
-target_sources(KF5NotifyConfig PRIVATE
+target_sources(KF6NotifyConfig PRIVATE
     knotifyconfigactionswidget.cpp
     knotifyconfigelement.cpp
     knotifyeventlist.cpp
     knotifyconfigwidget.cpp
 )
 
-ki18n_wrap_ui(KF5NotifyConfig knotifyconfigactionswidgetbase.ui)
+ki18n_wrap_ui(KF6NotifyConfig knotifyconfigactionswidgetbase.ui)
 
-ecm_qt_declare_logging_category(KF5NotifyConfig
+ecm_qt_declare_logging_category(KF6NotifyConfig
     HEADER knotifyconfig_debug.h
     IDENTIFIER KNOTIFYCONFIG_LOG
     CATEGORY_NAME kf.notifyconfig
@@ -22,25 +22,25 @@ ecm_qt_declare_logging_category(KF5NotifyConfig
     EXPORT KNOTIFYCONFIG
 )
 
-generate_export_header(KF5NotifyConfig BASE_NAME KNotifyConfig)
+generate_export_header(KF6NotifyConfig BASE_NAME KNotifyConfig)
 
-target_include_directories(KF5NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig>")
+target_include_directories(KF6NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig>")
 
-target_link_libraries(KF5NotifyConfig
+target_link_libraries(KF6NotifyConfig
         PUBLIC
             Qt${QT_MAJOR_VERSION}::Widgets
         PRIVATE
-            KF5::I18n
-            KF5::KIOWidgets     # KUrlRequester
+            KF6::I18n
+            KF6::KIOWidgets     # KUrlRequester
             Qt${QT_MAJOR_VERSION}::DBus)
 
 if(Canberra_FOUND)
-  target_link_libraries(KF5NotifyConfig PRIVATE Canberra::Canberra)
+  target_link_libraries(KF6NotifyConfig PRIVATE Canberra::Canberra)
 elseif (Phonon4Qt${QT_MAJOR_VERSION}_FOUND)
-    target_link_libraries(KF5NotifyConfig PRIVATE Phonon::phonon4qt${QT_MAJOR_VERSION})
+    target_link_libraries(KF6NotifyConfig PRIVATE Phonon::phonon4qt${QT_MAJOR_VERSION})
 endif()
 
-set_target_properties(KF5NotifyConfig PROPERTIES
+set_target_properties(KF6NotifyConfig PROPERTIES
    VERSION      ${KNOTIFYCONFIG_VERSION}
    SOVERSION    ${KNOTIFYCONFIG_SOVERSION}
    EXPORT_NAME  NotifyConfig
@@ -53,7 +53,7 @@ ecm_generate_headers(KNotifyConfig_HEADERS
   REQUIRED_HEADERS KNotifyConfig_HEADERS
 )
 
-install(TARGETS KF5NotifyConfig EXPORT KF5NotifyConfigTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
+install(TARGETS KF6NotifyConfig EXPORT KF6NotifyConfigTargets ${KF_INSTALL_TARGETS_DEFAULT_ARGS})
 
 ########### install files ###############
 install(FILES
@@ -63,9 +63,9 @@ install(FILES
 
 if(BUILD_QCH)
     ecm_add_qch(
-        KF5NotifyConfig_QCH
+        KF6NotifyConfig_QCH
         NAME KNotifyConfig
-        BASE_NAME KF5NotifyConfig
+        BASE_NAME KF6NotifyConfig
         VERSION ${KF_VERSION}
         ORG_DOMAIN org.kde
         SOURCES # using only public headers, to cover only public API
@@ -86,7 +86,7 @@ if(BUILD_QCH)
 endif()
 
 include(ECMGeneratePriFile)
-ecm_generate_pri_file(BASE_NAME KNotifyConfig LIB_NAME KF5NotifyConfig DEPS "widgets" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig)
+ecm_generate_pri_file(BASE_NAME KNotifyConfig LIB_NAME KF6NotifyConfig DEPS "widgets" FILENAME_VAR PRI_FILENAME INCLUDE_INSTALL_DIR ${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig)
 install(FILES ${PRI_FILENAME} DESTINATION ${ECM_MKSPECS_INSTALL_DIR})
 
 ecm_qt_install_logging_categories(
