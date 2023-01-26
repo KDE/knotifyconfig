@@ -1,5 +1,5 @@
 set(HAVE_CANBERRA ${Canberra_FOUND})
-set(HAVE_PHONON ${Phonon4Qt${QT_MAJOR_VERSION}_FOUND})
+set(HAVE_PHONON ${Phonon4Qt6_FOUND})
 configure_file(knotify-config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/knotify-config.h )
 
 add_library(KF6NotifyConfig)
@@ -28,16 +28,16 @@ target_include_directories(KF6NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${KDE_
 
 target_link_libraries(KF6NotifyConfig
         PUBLIC
-            Qt${QT_MAJOR_VERSION}::Widgets
+            Qt6::Widgets
         PRIVATE
             KF6::I18n
             KF6::KIOWidgets     # KUrlRequester
-            Qt${QT_MAJOR_VERSION}::DBus)
+            Qt6::DBus)
 
 if(Canberra_FOUND)
   target_link_libraries(KF6NotifyConfig PRIVATE Canberra::Canberra)
-elseif (Phonon4Qt${QT_MAJOR_VERSION}_FOUND)
-    target_link_libraries(KF6NotifyConfig PRIVATE Phonon::phonon4qt${QT_MAJOR_VERSION})
+elseif (Phonon4Qt6_FOUND)
+    target_link_libraries(KF6NotifyConfig PRIVATE Phonon::phonon4qt6)
 endif()
 
 set_target_properties(KF6NotifyConfig PROPERTIES

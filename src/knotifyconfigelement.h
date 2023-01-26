@@ -35,7 +35,7 @@ public:
     void save();
 
     /**
-     * Return whether Qt5TextToSpeech is installed or not.
+     * Return whether Qt6TextToSpeech is installed or not.
      */
     static bool have_tts();
 

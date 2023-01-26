@@ -4,8 +4,8 @@ project(knotifytest)
 
 include(ECMMarkAsTest)
 
-find_package(Qt${QT_MAJOR_VERSION}Test ${REQUIRED_QT_VERSION} REQUIRED)
-set_package_properties(Qt${QT_MAJOR_VERSION}Test PROPERTIES PURPOSE "Required for tests")
+find_package(Qt6Test ${REQUIRED_QT_VERSION} REQUIRED)
+set_package_properties(Qt6Test PROPERTIES PURPOSE "Required for tests")
 
 find_package(KF6ConfigWidgets ${KF_DEP_VERSION} REQUIRED)
 set_package_properties(KF6ConfigWidgets PROPERTIES PURPOSE "Required for tests")
@@ -28,8 +28,8 @@ ki18n_wrap_ui(knotifytest knotifytestview.ui)
 ecm_mark_as_test(knotifytest)
 
 target_link_libraries(knotifytest
-   Qt${QT_MAJOR_VERSION}::Core
-   Qt${QT_MAJOR_VERSION}::Test
+   Qt6::Core
+   Qt6::Test
    KF6::NotifyConfig
    KF6::Notifications
    KF6::I18n

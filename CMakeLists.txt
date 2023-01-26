@@ -28,11 +28,11 @@ include(ECMDeprecationSettings)
 
 # Required Qt components to build this framework
 set(REQUIRED_QT_VERSION 6.4.0)
-find_package(Qt${QT_MAJOR_VERSION} ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
+find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
 
-find_package(Qt${QT_MAJOR_VERSION}TextToSpeech ${REQUIRED_QT_VERSION} CONFIG)
-if (NOT TARGET Qt${QT_MAJOR_VERSION}::TextToSpeech)
-  message(STATUS "Qt5TextToSpeech not found, speech features will be disabled")
+find_package(Qt6TextToSpeech ${REQUIRED_QT_VERSION} CONFIG)
+if (NOT TARGET Qt6::TextToSpeech)
+  message(STATUS "Qt6TextToSpeech not found, speech features will be disabled")
 else()
   add_definitions(-DHAVE_SPEECH)
 endif()
@@ -48,8 +48,8 @@ set_package_properties(Canberra PROPERTIES
     TYPE OPTIONAL)
 if (NOT Canberra_FOUND)
     # This is REQUIRED since you cannot tell CMake "either one of those two optional ones are required"
-    find_package(Phonon4Qt${QT_MAJOR_VERSION} 4.6.60 NO_MODULE REQUIRED)
-    set_package_properties(Phonon4Qt${QT_MAJOR_VERSION} PROPERTIES
+    find_package(Phonon4Qt6 4.6.60 NO_MODULE REQUIRED)
+    set_package_properties(Phonon4Qt6 PROPERTIES
         DESCRIPTION "Qt-based audio library"
         PURPOSE "Needed to preview notification sounds when Canberra isn't available")
 endif()
@@ -66,8 +66,8 @@ option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, 
 add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
 
 ecm_set_disabled_deprecation_versions(
-    QT 5.15.2
-    KF 5.95
+    QT 6.4
+    KF 5.102
 )
 
 # Subdirectories
