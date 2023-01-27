@@ -67,7 +67,7 @@ add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt 
 
 ecm_set_disabled_deprecation_versions(
     QT 6.4
-    KF 5.102
+    KF 5.240
 )
 
 # Subdirectories
