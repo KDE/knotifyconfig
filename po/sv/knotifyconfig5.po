@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-01 22:21+0000\n"
 "PO-Revision-Date: 2015-02-18 19:07+0100\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
@@ -24,6 +24,104 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr "&Spela ett ljud"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, kde-format
+msgid "Select the sound to play"
+msgstr "Välj ljud att spela"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "Visa ett meddelande i ett &fönster"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "Logga i en fil"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "Markera &posten i aktivitetsfältet"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "&Kör kommando"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "Välj kommando att köra"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, kde-format
+msgid "Sp&eech"
+msgstr "&Uppläsning"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Anger hur knotify ska läsa upp händelsen när den tas emot. Om du väljer "
+"\"Läs upp egen text\", skriv då in texten i rutan. Du kan använda följande "
+"ersättningssträngar i texten:<dl><dt>%e</dt><dd>Händelsens namn</dd><dt>%a</"
+"dt><dd>Programmet som skickade händelsen</dd><dt>%m</dt><dd>Meddelandet som "
+"programmet skickade</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, kde-format
+msgid "Speak Event Message"
+msgstr "Läs upp händelsemeddelande"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, kde-format
+msgid "Speak Event Name"
+msgstr "Läs upp händelsenamn"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "Läs upp egen text"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Anger hur Jovie ska läsa upp händelsen när den tas emot. Om du väljer "
+"\"Läs upp egen text\", skriv då in texten i rutan. Du kan använda följande "
+"ersättningssträngar i texten:<dl><dt>%e</dt><dd>Händelsens namn</dd><dt>%a</"
+"dt><dd>Programmet som skickade händelsen</dd><dt>%m</dt><dd>Meddelandet som "
+"programmet skickade</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -47,65 +145,6 @@ msgstr "Titel"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Beskrivning"
-
-#~ msgid "Play a &sound"
-#~ msgstr "&Spela ett ljud"
-
-#~ msgid "Select the sound to play"
-#~ msgstr "Välj ljud att spela"
-
-#~ msgid "Show a message in a &popup"
-#~ msgstr "Visa ett meddelande i ett &fönster"
-
-#~ msgid "Log to a file"
-#~ msgstr "Logga i en fil"
-
-#~ msgid "Mark &taskbar entry"
-#~ msgstr "Markera &posten i aktivitetsfältet"
-
-#~ msgid "Run &command"
-#~ msgstr "&Kör kommando"
-
-#~ msgid "Select the command to run"
-#~ msgstr "Välj kommando att köra"
-
-#~ msgid "Sp&eech"
-#~ msgstr "&Uppläsning"
-
-#~ msgid ""
-#~ "<qt>Specifies how knotify should speak the event when received.  If you "
-#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
-#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#~ "dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgstr ""
-#~ "<qt>Anger hur knotify ska läsa upp händelsen när den tas emot. Om du "
-#~ "väljer \"Läs upp egen text\", skriv då in texten i rutan. Du kan använda "
-#~ "följande ersättningssträngar i texten:<dl><dt>%e</dt><dd>Händelsens namn</"
-#~ "dd><dt>%a</dt><dd>Programmet som skickade händelsen</dd><dt>%m</"
-#~ "dt><dd>Meddelandet som programmet skickade</dd></dl></qt>"
-
-#~ msgid "Speak Event Message"
-#~ msgstr "Läs upp händelsemeddelande"
-
-#~ msgid "Speak Event Name"
-#~ msgstr "Läs upp händelsenamn"
-
-#~ msgid "Speak Custom Text"
-#~ msgstr "Läs upp egen text"
-
-#~ msgid ""
-#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
-#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
-#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#~ "dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgstr ""
-#~ "<qt>Anger hur Jovie ska läsa upp händelsen när den tas emot. Om du väljer "
-#~ "\"Läs upp egen text\", skriv då in texten i rutan. Du kan använda "
-#~ "följande ersättningssträngar i texten:<dl><dt>%e</dt><dd>Händelsens namn</"
-#~ "dd><dt>%a</dt><dd>Programmet som skickade händelsen</dd><dt>%m</"
-#~ "dt><dd>Meddelandet som programmet skickade</dd></dl></qt>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

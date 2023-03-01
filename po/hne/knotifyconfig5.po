@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-01 22:21+0000\n"
 "PO-Revision-Date: 2009-02-10 20:44+0530\n"
 "Last-Translator: Ravishankar Shrivastava <raviratlami@aol.in>\n"
 "Language-Team: Hindi <kde-i18n-doc@lists.kde.org>\n"
@@ -18,6 +18,97 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 0.2\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr "अवाज बजाव"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, kde-format
+msgid "Select the sound to play"
+msgstr "बजाय बर अवाज चुनव"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "पाप अप विंडो मं संदेस देखाव (&p)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "एक फाइल मं लाग करव"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "काम पट्टी प्रविस्टि चिनहा लगाव (&t)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "कमांड चलाव(&R)"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "चलाय बर कमांड चुनव"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, kde-format
+msgid "Sp&eech"
+msgstr "भासन (&e)"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, fuzzy, kde-format
+#| msgid "Speak event message"
+msgid "Speak Event Message"
+msgstr "घटना संदेस बोलव"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, fuzzy, kde-format
+#| msgid "Speak event name"
+msgid "Speak Event Name"
+msgstr "घटना नाम बोलव"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, fuzzy, kde-format
+#| msgid "Speak custom text"
+msgid "Speak Custom Text"
+msgstr "मनमाफिक पाठ बोलव"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -41,45 +132,6 @@ msgstr "सीर्सक"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "वर्नन"
-
-#~ msgid "Play a &sound"
-#~ msgstr "अवाज बजाव"
-
-#~ msgid "Select the sound to play"
-#~ msgstr "बजाय बर अवाज चुनव"
-
-#~ msgid "Show a message in a &popup"
-#~ msgstr "पाप अप विंडो मं संदेस देखाव (&p)"
-
-#~ msgid "Log to a file"
-#~ msgstr "एक फाइल मं लाग करव"
-
-#~ msgid "Mark &taskbar entry"
-#~ msgstr "काम पट्टी प्रविस्टि चिनहा लगाव (&t)"
-
-#~ msgid "Run &command"
-#~ msgstr "कमांड चलाव(&R)"
-
-#~ msgid "Select the command to run"
-#~ msgstr "चलाय बर कमांड चुनव"
-
-#~ msgid "Sp&eech"
-#~ msgstr "भासन (&e)"
-
-#, fuzzy
-#~| msgid "Speak event message"
-#~ msgid "Speak Event Message"
-#~ msgstr "घटना संदेस बोलव"
-
-#, fuzzy
-#~| msgid "Speak event name"
-#~ msgid "Speak Event Name"
-#~ msgstr "घटना नाम बोलव"
-
-#, fuzzy
-#~| msgid "Speak custom text"
-#~ msgid "Speak Custom Text"
-#~ msgstr "मनमाफिक पाठ बोलव"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

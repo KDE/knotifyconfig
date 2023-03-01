@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-01 22:21+0000\n"
 "PO-Revision-Date: 2022-05-18 23:52+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -17,6 +17,102 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Lokalize 21.12.3\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr "소리 재생하기(&S)"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, kde-format
+msgid "Select the sound to play"
+msgstr "재생할 소리 선택"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "팝업 창에 메시지 표시(&P)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "파일로 기록"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "작업 표시줄 항목 강조(&T)"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "명령 실행(&C)"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "실행할 명령 선택"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, kde-format
+msgid "Sp&eech"
+msgstr "말하기(&E)"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>knotify에서 받은 이벤트를 어떻게 말할 것인지 설정합니다. \"사용자 정의 텍"
+"스트 말하기\"를 선택했으면 상자에 텍스트를 입력하십시오. 텍스트의 다음 문자열"
+"은 대체됩니다:<dl><dt>%e</dt><dd>이벤트 이름</dd><dt>%a</dt><dd>이벤트를 보"
+"낸 프로그램</dd><dt>%m</dt><dd>프로그램이 보낸 메시지</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, kde-format
+msgid "Speak Event Message"
+msgstr "이벤트 메시지 말하기"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, kde-format
+msgid "Speak Event Name"
+msgstr "이벤트 이름 말하기"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "사용자 정의 텍스트 말하기"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Jovie에서 받은 이벤트를 어떻게 말할 것인지 설정합니다. \"사용자 정의 텍스"
+"트 말하기\"를 선택했으면 상자에 텍스트를 입력하십시오. 텍스트의 다음 문자열"
+"은 대체됩니다:<dl><dt>%e</dt><dd>이벤트 이름</dd><dt>%a</dt><dd>이벤트를 보"
+"낸 프로그램</dd><dt>%m</dt><dd>프로그램이 보낸 메시지</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -40,62 +136,3 @@ msgstr "제목"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "설명"
-
-#~ msgid "Play a &sound"
-#~ msgstr "소리 재생하기(&S)"
-
-#~ msgid "Select the sound to play"
-#~ msgstr "재생할 소리 선택"
-
-#~ msgid "Show a message in a &popup"
-#~ msgstr "팝업 창에 메시지 표시(&P)"
-
-#~ msgid "Log to a file"
-#~ msgstr "파일로 기록"
-
-#~ msgid "Mark &taskbar entry"
-#~ msgstr "작업 표시줄 항목 강조(&T)"
-
-#~ msgid "Run &command"
-#~ msgstr "명령 실행(&C)"
-
-#~ msgid "Select the command to run"
-#~ msgstr "실행할 명령 선택"
-
-#~ msgid "Sp&eech"
-#~ msgstr "말하기(&E)"
-
-#~ msgid ""
-#~ "<qt>Specifies how knotify should speak the event when received.  If you "
-#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
-#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#~ "dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgstr ""
-#~ "<qt>knotify에서 받은 이벤트를 어떻게 말할 것인지 설정합니다. \"사용자 정"
-#~ "의 텍스트 말하기\"를 선택했으면 상자에 텍스트를 입력하십시오. 텍스트의 다"
-#~ "음 문자열은 대체됩니다:<dl><dt>%e</dt><dd>이벤트 이름</dd><dt>%a</dt><dd>"
-#~ "이벤트를 보낸 프로그램</dd><dt>%m</dt><dd>프로그램이 보낸 메시지</dd></"
-#~ "dl></qt>"
-
-#~ msgid "Speak Event Message"
-#~ msgstr "이벤트 메시지 말하기"
-
-#~ msgid "Speak Event Name"
-#~ msgstr "이벤트 이름 말하기"
-
-#~ msgid "Speak Custom Text"
-#~ msgstr "사용자 정의 텍스트 말하기"
-
-#~ msgid ""
-#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
-#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
-#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#~ "dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgstr ""
-#~ "<qt>Jovie에서 받은 이벤트를 어떻게 말할 것인지 설정합니다. \"사용자 정의 "
-#~ "텍스트 말하기\"를 선택했으면 상자에 텍스트를 입력하십시오. 텍스트의 다음 "
-#~ "문자열은 대체됩니다:<dl><dt>%e</dt><dd>이벤트 이름</dd><dt>%a</dt><dd>이벤"
-#~ "트를 보낸 프로그램</dd><dt>%m</dt><dd>프로그램이 보낸 메시지</dd></dl></"
-#~ "qt>"

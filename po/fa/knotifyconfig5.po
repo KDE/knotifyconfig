@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-01 22:21+0000\n"
 "PO-Revision-Date: 2012-06-28 16:40+0430\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@linuxshop.ir>\n"
 "Language-Team: Farsi (Persian) <kde-i18n-fa@kde.org>\n"
@@ -20,6 +20,123 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr "پخش &صوت‌"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, kde-format
+msgid "Select the sound to play"
+msgstr "برگزیدن صوت برای پخش"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "نمایش پیام در یک &بالاپر‌"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "ثبت در یک پرونده"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "نشان‌گذاری مدخل &میله تکلیف‌"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "اجرای فرمان‌"
+
+# Select the command to run
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "برگزیدن فرمان برای اجرا"
+
+# Sp&eech
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, kde-format
+msgid "Sp&eech"
+msgstr "&جستجو"
+
+# <qt>Specifies how KTTS should speak the event when received.  If you select "Speak custom text", enter the text in the box.  You may use the following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The message sent by the application</dd></dl></qt>
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, fuzzy, no-c-format, kde-format
+#| msgid ""
+#| "<qt>Specifies how KTTS should speak the event when received.  If you "
+#| "select \"Speak custom text\", enter the text in the box.  You may use the "
+#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#| "dt><dd>The message sent by the application</dd></dl></qt>"
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>تعیین می‌کند که وقتی رخدادی رسید، KTTS چگونه باید آن را بگوید.  اگر «گفتن "
+"متن سفارشی» را انتخاب می‌کنید، متن را در مربع وارد کنید.  شما می‌توانید از این "
+"رشته‌های جایگزین، در متن استفاده کنید:<dl><dt>%e</dt><dd>نام رخداد</dd><dt>"
+"%a</dt><dd>برنامه‌ای که رخداد را فرستاده</dd><dt>%m</dt><dd>پیغام فرستاده‌شده "
+"توسط برنامه</dd></dl></qt>"
+
+# Speak event message
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, kde-format
+msgid "Speak Event Message"
+msgstr "گفتن پیغام رخداد"
+
+# Speak event name
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, kde-format
+msgid "Speak Event Name"
+msgstr "گفتن نام رخداد"
+
+# Speak custom text
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "گفتن متن سفارشی"
+
+# <qt>Specifies how KTTS should speak the event when received.  If you select "Speak custom text", enter the text in the box.  You may use the following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The message sent by the application</dd></dl></qt>
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, fuzzy, no-c-format, kde-format
+#| msgid ""
+#| "<qt>Specifies how KTTS should speak the event when received.  If you "
+#| "select \"Speak custom text\", enter the text in the box.  You may use the "
+#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#| "dt><dd>The message sent by the application</dd></dl></qt>"
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>تعیین می‌کند که وقتی رخدادی رسید، KTTS چگونه باید آن را بگوید.  اگر «گفتن "
+"متن سفارشی» را انتخاب می‌کنید، متن را در مربع وارد کنید.  شما می‌توانید از این "
+"رشته‌های جایگزین، در متن استفاده کنید:<dl><dt>%e</dt><dd>نام رخداد</dd><dt>"
+"%a</dt><dd>برنامه‌ای که رخداد را فرستاده</dd><dt>%m</dt><dd>پیغام فرستاده‌شده "
+"توسط برنامه</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -43,86 +160,6 @@ msgstr "عنوان"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "توصیف"
-
-#~ msgid "Play a &sound"
-#~ msgstr "پخش &صوت‌"
-
-#~ msgid "Select the sound to play"
-#~ msgstr "برگزیدن صوت برای پخش"
-
-#~ msgid "Show a message in a &popup"
-#~ msgstr "نمایش پیام در یک &بالاپر‌"
-
-#~ msgid "Log to a file"
-#~ msgstr "ثبت در یک پرونده"
-
-#~ msgid "Mark &taskbar entry"
-#~ msgstr "نشان‌گذاری مدخل &میله تکلیف‌"
-
-#~ msgid "Run &command"
-#~ msgstr "اجرای فرمان‌"
-
-# Select the command to run
-#~ msgid "Select the command to run"
-#~ msgstr "برگزیدن فرمان برای اجرا"
-
-# Sp&eech
-#~ msgid "Sp&eech"
-#~ msgstr "&جستجو"
-
-# <qt>Specifies how KTTS should speak the event when received.  If you select "Speak custom text", enter the text in the box.  You may use the following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The message sent by the application</dd></dl></qt>
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Specifies how KTTS should speak the event when received.  If you "
-#~| "select \"Speak custom text\", enter the text in the box.  You may use "
-#~| "the following substitution strings in the text:<dl><dt>%e</dt><dd>Name "
-#~| "of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>"
-#~| "%m</dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgid ""
-#~ "<qt>Specifies how knotify should speak the event when received.  If you "
-#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
-#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#~ "dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgstr ""
-#~ "<qt>تعیین می‌کند که وقتی رخدادی رسید، KTTS چگونه باید آن را بگوید.  اگر "
-#~ "«گفتن متن سفارشی» را انتخاب می‌کنید، متن را در مربع وارد کنید.  شما "
-#~ "می‌توانید از این رشته‌های جایگزین، در متن استفاده کنید:<dl><dt>%e</"
-#~ "dt><dd>نام رخداد</dd><dt>%a</dt><dd>برنامه‌ای که رخداد را فرستاده</dd><dt>"
-#~ "%m</dt><dd>پیغام فرستاده‌شده توسط برنامه</dd></dl></qt>"
-
-# Speak event message
-#~ msgid "Speak Event Message"
-#~ msgstr "گفتن پیغام رخداد"
-
-# Speak event name
-#~ msgid "Speak Event Name"
-#~ msgstr "گفتن نام رخداد"
-
-# Speak custom text
-#~ msgid "Speak Custom Text"
-#~ msgstr "گفتن متن سفارشی"
-
-# <qt>Specifies how KTTS should speak the event when received.  If you select "Speak custom text", enter the text in the box.  You may use the following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The message sent by the application</dd></dl></qt>
-#, fuzzy
-#~| msgid ""
-#~| "<qt>Specifies how KTTS should speak the event when received.  If you "
-#~| "select \"Speak custom text\", enter the text in the box.  You may use "
-#~| "the following substitution strings in the text:<dl><dt>%e</dt><dd>Name "
-#~| "of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>"
-#~| "%m</dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgid ""
-#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
-#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
-#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#~ "dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgstr ""
-#~ "<qt>تعیین می‌کند که وقتی رخدادی رسید، KTTS چگونه باید آن را بگوید.  اگر "
-#~ "«گفتن متن سفارشی» را انتخاب می‌کنید، متن را در مربع وارد کنید.  شما "
-#~ "می‌توانید از این رشته‌های جایگزین، در متن استفاده کنید:<dl><dt>%e</"
-#~ "dt><dd>نام رخداد</dd><dt>%a</dt><dd>برنامه‌ای که رخداد را فرستاده</dd><dt>"
-#~ "%m</dt><dd>پیغام فرستاده‌شده توسط برنامه</dd></dl></qt>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 86ff119b1606fcaa910d6b44fc14b611\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-01 22:21+0000\n"
 "PO-Revision-Date: 2023-01-18 07:31\n"
 "Last-Translator: Darafei Praliaskouski <komzpa@gmail.com>\n"
 "Language-Team: Belarusian\n"
@@ -28,6 +28,104 @@ msgstr ""
 "X-Crowdin-Language: be\n"
 "X-Crowdin-File: /main/be/knotifyconfig/knotifyconfig5.po\n"
 "X-Crowdin-File-ID: 8139\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr "Прайграць &гук"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, kde-format
+msgid "Select the sound to play"
+msgstr "Абраць гук для прайгравання"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "Паказаць &выплыўное паведамленне"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "Зрабіць запіс у файл"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "Пазначыць &запіс панэлі задач"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "Запусціць загад"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "Абраць загад для запуску"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, kde-format
+msgid "Sp&eech"
+msgstr "&Маўленне"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Вызначае, як knotify павінен агалошваць падзею пры атрыманні. Калі вы "
+"абралі «Сказаць адвольны тэкст», увядзіце тэкст у поле. Вы можаце "
+"выкарыстоўваць наступныя значэнні для падмены ў тэксце:<dl><dt>%e</"
+"dt><dd>Назва падзеі</dd><dt>%a</dt><dd>Праграма, якая адправіла падзею</"
+"dd><dt>%m</dt><dd>Паведамленне, адпраўленае праграмай</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, kde-format
+msgid "Speak Event Message"
+msgstr "Сказаць паведамленне падзеі"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, kde-format
+msgid "Speak Event Name"
+msgstr "Сказаць назву падзеі"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "Сказаць адвольны тэкст"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Вызначае, як Jovie павінен агалошваць падзею пры атрыманні. Калі вы "
+"абралі «Сказаць адвольны тэкст», увядзіце тэкст у поле. Вы можаце "
+"выкарыстоўваць наступныя значэнні для падмены ў тэксце:<dl><dt>%e</"
+"dt><dd>Назва падзеі</dd><dt>%a</dt><dd>Праграма, якая адправіла падзею</"
+"dd><dt>%m</dt><dd>Паведамленне, адпраўленае праграмай</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -51,65 +149,6 @@ msgstr "Назва"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Апісанне"
-
-#~ msgid "Play a &sound"
-#~ msgstr "Прайграць &гук"
-
-#~ msgid "Select the sound to play"
-#~ msgstr "Абраць гук для прайгравання"
-
-#~ msgid "Show a message in a &popup"
-#~ msgstr "Паказаць &выплыўное паведамленне"
-
-#~ msgid "Log to a file"
-#~ msgstr "Зрабіць запіс у файл"
-
-#~ msgid "Mark &taskbar entry"
-#~ msgstr "Пазначыць &запіс панэлі задач"
-
-#~ msgid "Run &command"
-#~ msgstr "Запусціць загад"
-
-#~ msgid "Select the command to run"
-#~ msgstr "Абраць загад для запуску"
-
-#~ msgid "Sp&eech"
-#~ msgstr "&Маўленне"
-
-#~ msgid ""
-#~ "<qt>Specifies how knotify should speak the event when received.  If you "
-#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
-#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#~ "dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgstr ""
-#~ "<qt>Вызначае, як knotify павінен агалошваць падзею пры атрыманні. Калі вы "
-#~ "абралі «Сказаць адвольны тэкст», увядзіце тэкст у поле. Вы можаце "
-#~ "выкарыстоўваць наступныя значэнні для падмены ў тэксце:<dl><dt>%e</"
-#~ "dt><dd>Назва падзеі</dd><dt>%a</dt><dd>Праграма, якая адправіла падзею</"
-#~ "dd><dt>%m</dt><dd>Паведамленне, адпраўленае праграмай</dd></dl></qt>"
-
-#~ msgid "Speak Event Message"
-#~ msgstr "Сказаць паведамленне падзеі"
-
-#~ msgid "Speak Event Name"
-#~ msgstr "Сказаць назву падзеі"
-
-#~ msgid "Speak Custom Text"
-#~ msgstr "Сказаць адвольны тэкст"
-
-#~ msgid ""
-#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
-#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
-#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#~ "dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgstr ""
-#~ "<qt>Вызначае, як Jovie павінен агалошваць падзею пры атрыманні. Калі вы "
-#~ "абралі «Сказаць адвольны тэкст», увядзіце тэкст у поле. Вы можаце "
-#~ "выкарыстоўваць наступныя значэнні для падмены ў тэксце:<dl><dt>%e</"
-#~ "dt><dd>Назва падзеі</dd><dt>%a</dt><dd>Праграма, якая адправіла падзею</"
-#~ "dd><dt>%m</dt><dd>Паведамленне, адпраўленае праграмай</dd></dl></qt>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

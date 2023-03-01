@@ -24,7 +24,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-01 22:21+0000\n"
 "PO-Revision-Date: 2006-01-04 13:32+0800\n"
 "Last-Translator: Abel Cheung <abel@oaka.org>\n"
 "Language-Team: Chinese (Hong Kong) <community@linuxhall.org>\n"
@@ -34,6 +34,101 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.3\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, fuzzy, kde-format
+#| msgid "Select the current day"
+msgid "Select the sound to play"
+msgstr "選擇一個日期"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, fuzzy, kde-format
+#| msgid "Go to Line"
+msgid "Log to a file"
+msgstr "跳至行數"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, fuzzy, kde-format
+#| msgid "Select the current day"
+msgid "Select the command to run"
+msgstr "選擇一個日期"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, fuzzy, kde-format
+#| msgid "S&earch:"
+msgid "Sp&eech"
+msgstr "搜尋(&S)："
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, fuzzy, kde-format
+#| msgid "artsmessage"
+msgid "Speak Event Message"
+msgstr "artsmessage"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, fuzzy, kde-format
+#| msgid "Please enter &name:"
+msgid "Speak Event Name"
+msgstr "請輸入名稱(&N)："
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, fuzzy, kde-format
+#| msgid "Please enter &name:"
+msgid "Speak Custom Text"
+msgstr "請輸入名稱(&N)："
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
 
 #: knotifyconfigwidget.cpp:119
 #, fuzzy, kde-format
@@ -60,41 +155,6 @@ msgstr "泰米爾文"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "描述："
-
-#, fuzzy
-#~| msgid "Select the current day"
-#~ msgid "Select the sound to play"
-#~ msgstr "選擇一個日期"
-
-#, fuzzy
-#~| msgid "Go to Line"
-#~ msgid "Log to a file"
-#~ msgstr "跳至行數"
-
-#, fuzzy
-#~| msgid "Select the current day"
-#~ msgid "Select the command to run"
-#~ msgstr "選擇一個日期"
-
-#, fuzzy
-#~| msgid "S&earch:"
-#~ msgid "Sp&eech"
-#~ msgstr "搜尋(&S)："
-
-#, fuzzy
-#~| msgid "artsmessage"
-#~ msgid "Speak Event Message"
-#~ msgstr "artsmessage"
-
-#, fuzzy
-#~| msgid "Please enter &name:"
-#~ msgid "Speak Event Name"
-#~ msgstr "請輸入名稱(&N)："
-
-#, fuzzy
-#~| msgid "Please enter &name:"
-#~ msgid "Speak Custom Text"
-#~ msgstr "請輸入名稱(&N)："
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

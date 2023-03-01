@@ -16,7 +16,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-01 22:21+0000\n"
 "PO-Revision-Date: 2015-04-03 10:03+0200\n"
 "Last-Translator: Andrej Mernik <andrejm@ubuntu.si>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -27,6 +27,104 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr "Predvajaj &zvok"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, kde-format
+msgid "Select the sound to play"
+msgstr "Izberite zvok za predvajanje"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr "Prikaži sporočilo v &pojavnem oknu"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "Beleži v datoteko"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr "Označi &vnos v opravilni vrstici"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "Zaženi &ukaz"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "Izberite ukaz, ki naj se zažene"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, kde-format
+msgid "Sp&eech"
+msgstr "&Govor"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Določa, kako knotify izgovori dogodke, ko jih sprejme. Če izberete "
+"»Izgovori besedilo po meri«, vnesite besedilo v polje. V besedilu lahko "
+"uporabite naslednje vsebnike:<dl><dt>%e</dt><dd>Ime dogodka</dd><dt>%a</"
+"dt><dd>Program, ki je poslal dogodek</dd><dt>%m</dt><dd>Sporočilo, ki ga je "
+"program poslal</dd></dl></qt>"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, kde-format
+msgid "Speak Event Message"
+msgstr "Izgovori sporočilo dogodka"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, kde-format
+msgid "Speak Event Name"
+msgstr "Izgovori ime dogodka"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, kde-format
+msgid "Speak Custom Text"
+msgstr "Izgovori besedilo po meri"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
+"<qt>Določa, kako Jovie izgovori dogodke, ko jih sprejme. Če izberete "
+"»Izgovori besedilo po meri«, vnesite besedilo v polje. V besedilu lahko "
+"uporabite naslednje vsebnike:<dl><dt>%e</dt><dd>Ime dogodka</dd><dt>%a</"
+"dt><dd>Program, ki je poslal dogodek</dd><dt>%m</dt><dd>Sporočilo, ki ga je "
+"program poslal</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -50,65 +148,6 @@ msgstr "Naslov"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Opis"
-
-#~ msgid "Play a &sound"
-#~ msgstr "Predvajaj &zvok"
-
-#~ msgid "Select the sound to play"
-#~ msgstr "Izberite zvok za predvajanje"
-
-#~ msgid "Show a message in a &popup"
-#~ msgstr "Prikaži sporočilo v &pojavnem oknu"
-
-#~ msgid "Log to a file"
-#~ msgstr "Beleži v datoteko"
-
-#~ msgid "Mark &taskbar entry"
-#~ msgstr "Označi &vnos v opravilni vrstici"
-
-#~ msgid "Run &command"
-#~ msgstr "Zaženi &ukaz"
-
-#~ msgid "Select the command to run"
-#~ msgstr "Izberite ukaz, ki naj se zažene"
-
-#~ msgid "Sp&eech"
-#~ msgstr "&Govor"
-
-#~ msgid ""
-#~ "<qt>Specifies how knotify should speak the event when received.  If you "
-#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
-#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#~ "dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgstr ""
-#~ "<qt>Določa, kako knotify izgovori dogodke, ko jih sprejme. Če izberete "
-#~ "»Izgovori besedilo po meri«, vnesite besedilo v polje. V besedilu lahko "
-#~ "uporabite naslednje vsebnike:<dl><dt>%e</dt><dd>Ime dogodka</dd><dt>%a</"
-#~ "dt><dd>Program, ki je poslal dogodek</dd><dt>%m</dt><dd>Sporočilo, ki ga "
-#~ "je program poslal</dd></dl></qt>"
-
-#~ msgid "Speak Event Message"
-#~ msgstr "Izgovori sporočilo dogodka"
-
-#~ msgid "Speak Event Name"
-#~ msgstr "Izgovori ime dogodka"
-
-#~ msgid "Speak Custom Text"
-#~ msgstr "Izgovori besedilo po meri"
-
-#~ msgid ""
-#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
-#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
-#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#~ "dt><dd>The message sent by the application</dd></dl></qt>"
-#~ msgstr ""
-#~ "<qt>Določa, kako Jovie izgovori dogodke, ko jih sprejme. Če izberete "
-#~ "»Izgovori besedilo po meri«, vnesite besedilo v polje. V besedilu lahko "
-#~ "uporabite naslednje vsebnike:<dl><dt>%e</dt><dd>Ime dogodka</dd><dt>%a</"
-#~ "dt><dd>Program, ki je poslal dogodek</dd><dt>%m</dt><dd>Sporočilo, ki ga "
-#~ "je program poslal</dd></dl></qt>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 21:29+0000\n"
+"POT-Creation-Date: 2023-03-01 22:21+0000\n"
 "PO-Revision-Date: 2009-10-17 00:34+0200\n"
 "Last-Translator: Mashrab Kuvatov <kmashrab@uni-bremen.de>\n"
 "Language-Team: Uzbek <floss-uz-l10n@googlegroups.com>\n"
@@ -16,6 +16,94 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.0\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:28
+#, kde-format
+msgid "Play a &sound"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
+#: knotifyconfigactionswidgetbase.ui:54
+#, fuzzy, kde-format
+msgid "Select the sound to play"
+msgstr "Жорий кунни танлаш"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
+#: knotifyconfigactionswidgetbase.ui:61
+#, kde-format
+msgid "Show a message in a &popup"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
+#: knotifyconfigactionswidgetbase.ui:68
+#, kde-format
+msgid "Log to a file"
+msgstr "Файлга ёзиш"
+
+#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
+#: knotifyconfigactionswidgetbase.ui:88
+#, kde-format
+msgid "Mark &taskbar entry"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
+#: knotifyconfigactionswidgetbase.ui:95
+#, kde-format
+msgid "Run &command"
+msgstr "Буйруқни &бажариш"
+
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
+#: knotifyconfigactionswidgetbase.ui:111
+#, kde-format
+msgid "Select the command to run"
+msgstr "Бажариш учун буйруқни танлаш"
+
+#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
+#: knotifyconfigactionswidgetbase.ui:118
+#, fuzzy, kde-format
+msgid "Sp&eech"
+msgstr "Қ&идириш:"
+
+#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:131
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how knotify should speak the event when received.  If you "
+"select \"Speak custom text\", enter the text in the box.  You may use the "
+"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+"dt><dd>The message sent by the application</dd></dl></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:135
+#, fuzzy, kde-format
+msgid "Speak Event Message"
+msgstr "artsmessage"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:140
+#, fuzzy, kde-format
+msgid "Speak Event Name"
+msgstr "Илтимос &номини киритинг:"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
+#: knotifyconfigactionswidgetbase.ui:145
+#, fuzzy, kde-format
+msgid "Speak Custom Text"
+msgstr "Илтимос &номини киритинг:"
+
+#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
+#: knotifyconfigactionswidgetbase.ui:153
+#, no-c-format, kde-format
+msgid ""
+"<qt>Specifies how Jovie should speak the event when received.  If you select "
+"\"Speak custom text\", enter the text in the box.  You may use the following "
+"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
+"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
+"message sent by the application</dd></dl></qt>"
+msgstr ""
 
 #: knotifyconfigwidget.cpp:119
 #, fuzzy, kde-format
@@ -39,35 +127,6 @@ msgstr "Тамилча"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Таърифи:"
-
-#, fuzzy
-#~ msgid "Select the sound to play"
-#~ msgstr "Жорий кунни танлаш"
-
-#~ msgid "Log to a file"
-#~ msgstr "Файлга ёзиш"
-
-#~ msgid "Run &command"
-#~ msgstr "Буйруқни &бажариш"
-
-#~ msgid "Select the command to run"
-#~ msgstr "Бажариш учун буйруқни танлаш"
-
-#, fuzzy
-#~ msgid "Sp&eech"
-#~ msgstr "Қ&идириш:"
-
-#, fuzzy
-#~ msgid "Speak Event Message"
-#~ msgstr "artsmessage"
-
-#, fuzzy
-#~ msgid "Speak Event Name"
-#~ msgstr "Илтимос &номини киритинг:"
-
-#, fuzzy
-#~ msgid "Speak Custom Text"
-#~ msgstr "Илтимос &номини киритинг:"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
