@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2008-08-30 01:10+0300\n"
 "Last-Translator: Ihar Hrachyshka <ihar.hrachyshka@gmail.com>\n"
 "Language-Team: Belarusian Latin <i18n@mova.org>\n"
@@ -19,116 +19,6 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || n%10>=5 && n%10<=9 || n"
 "%100>=11 && n%100<=14 ? 2 : 3);\n"
 "X-Generator: KBabel 1.11.4\n"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "Zajhraj &huk"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
-#, kde-format
-msgid "Select the sound to play"
-msgstr "Abiary, jaki huk zajhrać"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
-#, kde-format
-msgid "Show a message in a &popup"
-msgstr "Pakažy paviedamleńnie ŭ &vypłyŭnym aknie"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "Upišy ŭ fajł"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "Adznač &element u paneli zadańniaŭ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "Vykanaj za&had"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "Abiary, jaki zahad vykanać"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "H&ołas"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, fuzzy, no-c-format, kde-format
-#| msgid ""
-#| "<qt>Specifies how KTTS should speak the event when received.  If you "
-#| "select \"Speak custom text\", enter the text in the box.  You may use the "
-#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#| "dt><dd>The message sent by the application</dd></dl></qt>"
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>Aznačaje, što systema KTTS pramaŭlaje, kali zdarajecca hetaja padzieja.  "
-"Kali ty vybieraš opcyju „Pramaŭlaj peŭny tekst”, treba jaho ŭpisać u pole.  "
-"U hetym tekście možna ŭžyvać nastupnyja padstanovy:<dl><dt>%e</dt><dd>Nazva "
-"padziei</dd><dt>%a</dt><dd>Aplikacyja, u jakoj zdaryłasia padzieja</dd><dt>"
-"%m</dt><dd>Paviedamleńnie ad aplikacyi</dd></dl></qt>"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "Pramaŭlaj paviedamleńnie dla padziei"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "Pramaŭlaj nazvu padziei"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "Pramaŭlaj ułasny tekst"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, fuzzy, no-c-format, kde-format
-#| msgid ""
-#| "<qt>Specifies how KTTS should speak the event when received.  If you "
-#| "select \"Speak custom text\", enter the text in the box.  You may use the "
-#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#| "dt><dd>The message sent by the application</dd></dl></qt>"
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>Aznačaje, što systema KTTS pramaŭlaje, kali zdarajecca hetaja padzieja.  "
-"Kali ty vybieraš opcyju „Pramaŭlaj peŭny tekst”, treba jaho ŭpisać u pole.  "
-"U hetym tekście možna ŭžyvać nastupnyja padstanovy:<dl><dt>%e</dt><dd>Nazva "
-"padziei</dd><dt>%a</dt><dd>Aplikacyja, u jakoj zdaryłasia padzieja</dd><dt>"
-"%m</dt><dd>Paviedamleńnie ad aplikacyi</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -152,6 +42,81 @@ msgstr "Nazva"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Apisańnie"
+
+#~ msgid "Play a &sound"
+#~ msgstr "Zajhraj &huk"
+
+#~ msgid "Select the sound to play"
+#~ msgstr "Abiary, jaki huk zajhrać"
+
+#~ msgid "Show a message in a &popup"
+#~ msgstr "Pakažy paviedamleńnie ŭ &vypłyŭnym aknie"
+
+#~ msgid "Log to a file"
+#~ msgstr "Upišy ŭ fajł"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "Adznač &element u paneli zadańniaŭ"
+
+#~ msgid "Run &command"
+#~ msgstr "Vykanaj za&had"
+
+#~ msgid "Select the command to run"
+#~ msgstr "Abiary, jaki zahad vykanać"
+
+#~ msgid "Sp&eech"
+#~ msgstr "H&ołas"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Specifies how KTTS should speak the event when received.  If you "
+#~| "select \"Speak custom text\", enter the text in the box.  You may use "
+#~| "the following substitution strings in the text:<dl><dt>%e</dt><dd>Name "
+#~| "of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>"
+#~| "%m</dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgid ""
+#~ "<qt>Specifies how knotify should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Aznačaje, što systema KTTS pramaŭlaje, kali zdarajecca hetaja "
+#~ "padzieja.  Kali ty vybieraš opcyju „Pramaŭlaj peŭny tekst”, treba jaho "
+#~ "ŭpisać u pole.  U hetym tekście možna ŭžyvać nastupnyja padstanovy:"
+#~ "<dl><dt>%e</dt><dd>Nazva padziei</dd><dt>%a</dt><dd>Aplikacyja, u jakoj "
+#~ "zdaryłasia padzieja</dd><dt>%m</dt><dd>Paviedamleńnie ad aplikacyi</dd></"
+#~ "dl></qt>"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "Pramaŭlaj paviedamleńnie dla padziei"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "Pramaŭlaj nazvu padziei"
+
+#~ msgid "Speak Custom Text"
+#~ msgstr "Pramaŭlaj ułasny tekst"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Specifies how KTTS should speak the event when received.  If you "
+#~| "select \"Speak custom text\", enter the text in the box.  You may use "
+#~| "the following substitution strings in the text:<dl><dt>%e</dt><dd>Name "
+#~| "of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>"
+#~| "%m</dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgid ""
+#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Aznačaje, što systema KTTS pramaŭlaje, kali zdarajecca hetaja "
+#~ "padzieja.  Kali ty vybieraš opcyju „Pramaŭlaj peŭny tekst”, treba jaho "
+#~ "ŭpisać u pole.  U hetym tekście možna ŭžyvać nastupnyja padstanovy:"
+#~ "<dl><dt>%e</dt><dd>Nazva padziei</dd><dt>%a</dt><dd>Aplikacyja, u jakoj "
+#~ "zdaryłasia padzieja</dd><dt>%m</dt><dd>Paviedamleńnie ad aplikacyi</dd></"
+#~ "dl></qt>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

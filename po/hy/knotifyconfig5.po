@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2013-01-31 01:08+0400\n"
 "Last-Translator: Davit <nikdavnik@mail.ru>\n"
 "Language-Team: Armenian Language: hy\n"
@@ -20,113 +20,6 @@ msgstr ""
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
 "X-Text-Markup: kde4\n"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "&Միացնել ձայլնը"
-
-# նիշք
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
-#, kde-format
-msgid "Select the sound to play"
-msgstr "Ընտրեք երաժշտական նիշքը"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
-#, kde-format
-msgid "Show a message in a &popup"
-msgstr "&Ցույց տալ հաղորդագրությունը լողացող պատուհանում"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "&Պահպանել հիշողության նիշքում"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "&Ընտրել ծրագրիը կառավարման վահանակում"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "&Կատարել ծրագիրը"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "Ընտրեք ծրագիրը"
-
-# խոսք
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "&Կարդալ"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, fuzzy, no-c-format, kde-format
-#| msgid ""
-#| "<qt>Specifies how Jovie should speak the event when received.  If you "
-#| "select \"Speak custom text\", enter the text in the box.  You may use the "
-#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#| "dt><dd>The message sent by the application</dd></dl></qt>"
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>Ինչ ասել իրադարձության առաջացման ժամանակ։ Եթե ընտրվի «Կարդալ նշված "
-"տեքստը», մուտքագրեք տեքստը համապատասխան վայրում։ Կարելի է օգտագօրծել:<dl><dt>"
-"%e</dt><dd>Իրադարձության տեսակը</dd><dt>%a</dt><dd>ծրագիր-իրադարձության "
-"աղբյուրը</dd><dt>%m</dt><dd>հաղորդագրություն, տրված ծրագրի միջոցով</dd></"
-"dl></qt>"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "Կարդալ իրադարձության նկարագրությունը"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "Կարդալ իրադարձության անունը"
-
-# ընտրված տեքստը
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "Կարդալ իմ նշած տեքստը"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>Ինչ ասել իրադարձության առաջացման ժամանակ։ Եթե ընտրվի «Կարդալ նշված "
-"տեքստը», մուտքագրեք տեքստը համապատասխան վայրում։ Կարելի է օգտագօրծել:<dl><dt>"
-"%e</dt><dd>Իրադարձության տեսակը</dd><dt>%a</dt><dd>ծրագիր-իրադարձության "
-"աղբյուրը</dd><dt>%m</dt><dd>հաղորդագրություն, տրված ծրագրի միջոցով</dd></"
-"dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -150,6 +43,75 @@ msgstr "Վերնագիր"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Նկարագրություն"
+
+#~ msgid "Play a &sound"
+#~ msgstr "&Միացնել ձայլնը"
+
+# նիշք
+#~ msgid "Select the sound to play"
+#~ msgstr "Ընտրեք երաժշտական նիշքը"
+
+#~ msgid "Show a message in a &popup"
+#~ msgstr "&Ցույց տալ հաղորդագրությունը լողացող պատուհանում"
+
+#~ msgid "Log to a file"
+#~ msgstr "&Պահպանել հիշողության նիշքում"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "&Ընտրել ծրագրիը կառավարման վահանակում"
+
+#~ msgid "Run &command"
+#~ msgstr "&Կատարել ծրագիրը"
+
+#~ msgid "Select the command to run"
+#~ msgstr "Ընտրեք ծրագիրը"
+
+# խոսք
+#~ msgid "Sp&eech"
+#~ msgstr "&Կարդալ"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~| "select \"Speak custom text\", enter the text in the box.  You may use "
+#~| "the following substitution strings in the text:<dl><dt>%e</dt><dd>Name "
+#~| "of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>"
+#~| "%m</dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgid ""
+#~ "<qt>Specifies how knotify should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Ինչ ասել իրադարձության առաջացման ժամանակ։ Եթե ընտրվի «Կարդալ նշված "
+#~ "տեքստը», մուտքագրեք տեքստը համապատասխան վայրում։ Կարելի է օգտագօրծել:"
+#~ "<dl><dt>%e</dt><dd>Իրադարձության տեսակը</dd><dt>%a</dt><dd>ծրագիր-"
+#~ "իրադարձության աղբյուրը</dd><dt>%m</dt><dd>հաղորդագրություն, տրված ծրագրի "
+#~ "միջոցով</dd></dl></qt>"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "Կարդալ իրադարձության նկարագրությունը"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "Կարդալ իրադարձության անունը"
+
+# ընտրված տեքստը
+#~ msgid "Speak Custom Text"
+#~ msgstr "Կարդալ իմ նշած տեքստը"
+
+#~ msgid ""
+#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Ինչ ասել իրադարձության առաջացման ժամանակ։ Եթե ընտրվի «Կարդալ նշված "
+#~ "տեքստը», մուտքագրեք տեքստը համապատասխան վայրում։ Կարելի է օգտագօրծել:"
+#~ "<dl><dt>%e</dt><dd>Իրադարձության տեսակը</dd><dt>%a</dt><dd>ծրագիր-"
+#~ "իրադարձության աղբյուրը</dd><dt>%m</dt><dd>հաղորդագրություն, տրված ծրագրի "
+#~ "միջոցով</dd></dl></qt>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

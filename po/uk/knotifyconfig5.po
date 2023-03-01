@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knotifyconfig5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2015-02-18 17:24+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -22,106 +22,6 @@ msgstr ""
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
 "%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "Відтворити &звук"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
-#, kde-format
-msgid "Select the sound to play"
-msgstr "Виберіть звук для програвання"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
-#, kde-format
-msgid "Show a message in a &popup"
-msgstr "Показати повідомлення у &вигульку"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "Зробити запис до файла"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "Позначити елемент смужки &задач"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "Виконати &команду"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "Виберіть команду для запуску"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "Ви&голосити"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>Вказує, що knotify (система синтезу мовлення) повинна вимовити текст, "
-"коли отримала подію. Якщо ви позначите варіант «Декламувати вказаний текст», "
-"введіть цей текст. В тексті можна використовувати такі рядки-замінники: "
-"<dl><dt>%e</dt><dd>Назва події</dd><dt>%a</dt><dd>Програма, яка надіслала "
-"повідомлення про подію</dd><dt>%m</dt><dd>Повідомлення, яке надіслано "
-"програмою</dd></dl></qt>"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "Декламувати повідомлення події"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "Декламувати назву події"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "Декламувати вказаний текст"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>Вказує, що Jovie (система синтезу мовлення) повинна вимовити текст, коли "
-"отримала подію. Якщо ви позначите варіант «Декламувати вказаний текст», "
-"введіть цей текст. В тексті можна використовувати такі рядки-замінники: "
-"<dl><dt>%e</dt><dd>Назва події</dd><dt>%a</dt><dd>Програма, яка надіслала "
-"повідомлення про подію</dd><dt>%m</dt><dd>Повідомлення, яке надіслано "
-"програмою</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -145,3 +45,64 @@ msgstr "Заголовок"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Опис"
+
+#~ msgid "Play a &sound"
+#~ msgstr "Відтворити &звук"
+
+#~ msgid "Select the sound to play"
+#~ msgstr "Виберіть звук для програвання"
+
+#~ msgid "Show a message in a &popup"
+#~ msgstr "Показати повідомлення у &вигульку"
+
+#~ msgid "Log to a file"
+#~ msgstr "Зробити запис до файла"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "Позначити елемент смужки &задач"
+
+#~ msgid "Run &command"
+#~ msgstr "Виконати &команду"
+
+#~ msgid "Select the command to run"
+#~ msgstr "Виберіть команду для запуску"
+
+#~ msgid "Sp&eech"
+#~ msgstr "Ви&голосити"
+
+#~ msgid ""
+#~ "<qt>Specifies how knotify should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Вказує, що knotify (система синтезу мовлення) повинна вимовити текст, "
+#~ "коли отримала подію. Якщо ви позначите варіант «Декламувати вказаний "
+#~ "текст», введіть цей текст. В тексті можна використовувати такі рядки-"
+#~ "замінники: <dl><dt>%e</dt><dd>Назва події</dd><dt>%a</dt><dd>Програма, "
+#~ "яка надіслала повідомлення про подію</dd><dt>%m</dt><dd>Повідомлення, яке "
+#~ "надіслано програмою</dd></dl></qt>"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "Декламувати повідомлення події"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "Декламувати назву події"
+
+#~ msgid "Speak Custom Text"
+#~ msgstr "Декламувати вказаний текст"
+
+#~ msgid ""
+#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Вказує, що Jovie (система синтезу мовлення) повинна вимовити текст, "
+#~ "коли отримала подію. Якщо ви позначите варіант «Декламувати вказаний "
+#~ "текст», введіть цей текст. В тексті можна використовувати такі рядки-"
+#~ "замінники: <dl><dt>%e</dt><dd>Назва події</dd><dt>%a</dt><dd>Програма, "
+#~ "яка надіслала повідомлення про подію</dd><dt>%m</dt><dd>Повідомлення, яке "
+#~ "надіслано програмою</dd></dl></qt>"

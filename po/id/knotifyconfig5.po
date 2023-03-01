@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2022-04-21 06:37+0700\n"
 "Last-Translator: Wantoyèk <wantoyek@gmail.com>\n"
 "Language-Team: Indonesian <kde-i18n-doc@kde.org>\n"
@@ -18,104 +18,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 21.12.3\n"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "Bunyikan &suara"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
-#, kde-format
-msgid "Select the sound to play"
-msgstr "Pilih suara yang akan diputar"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
-#, kde-format
-msgid "Show a message in a &popup"
-msgstr "Tampilkan pesan dalam &sembul"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "Log ke file"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "Tandai entri &taskbar"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "Jalankan &perintah"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "Pilih perintah yang akan dijalankan"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "Li&san"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>Tentukan bagaimana knotify harus bicara ketika peristiwa diterima. Jika "
-"kamu memilih \"Bicarakan teks kustom\", masukkan teks di dalam kotak. Kamu "
-"dapat menggunakan string substitusi berikut di dalam teks:<dl><dt>%e</"
-"dt><dd>Nama peristiwa</dd><dt>%a</dt><dd>Aplikasi yang mengirim peristiwa</"
-"dd><dt>%m</dt><dd>Pesan yang dikirim oleh aplikasi</dd></dl></qt>"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "Katakan Pesan Peristiwa"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "Katakan Nama Peristiwa"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "Katakan Teks Kustom"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>Tentukan cara Jovie harus bicara ketika peristiwa diterima. Jika anda "
-"memilih \"Bicarakan teks kustom\", masukkan teks di dalam kotak. Anda dapat "
-"menggunakan string substitusi berikut di dalam teks:<dl><dt>%e</dt><dd>Nama "
-"peristiwa</dd><dt>%a</dt><dd>Aplikasi yang mengirim peristiwa</dd><dt>%m</"
-"dt><dd>Pesan yang dikirim oleh aplikasi</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -139,6 +41,67 @@ msgstr "Judul"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Keterangan"
+
+#~ msgid "Play a &sound"
+#~ msgstr "Bunyikan &suara"
+
+#~ msgid "Select the sound to play"
+#~ msgstr "Pilih suara yang akan diputar"
+
+#~ msgid "Show a message in a &popup"
+#~ msgstr "Tampilkan pesan dalam &sembul"
+
+#~ msgid "Log to a file"
+#~ msgstr "Log ke file"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "Tandai entri &taskbar"
+
+#~ msgid "Run &command"
+#~ msgstr "Jalankan &perintah"
+
+#~ msgid "Select the command to run"
+#~ msgstr "Pilih perintah yang akan dijalankan"
+
+#~ msgid "Sp&eech"
+#~ msgstr "Li&san"
+
+#~ msgid ""
+#~ "<qt>Specifies how knotify should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Tentukan bagaimana knotify harus bicara ketika peristiwa diterima. "
+#~ "Jika kamu memilih \"Bicarakan teks kustom\", masukkan teks di dalam "
+#~ "kotak. Kamu dapat menggunakan string substitusi berikut di dalam teks:"
+#~ "<dl><dt>%e</dt><dd>Nama peristiwa</dd><dt>%a</dt><dd>Aplikasi yang "
+#~ "mengirim peristiwa</dd><dt>%m</dt><dd>Pesan yang dikirim oleh aplikasi</"
+#~ "dd></dl></qt>"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "Katakan Pesan Peristiwa"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "Katakan Nama Peristiwa"
+
+#~ msgid "Speak Custom Text"
+#~ msgstr "Katakan Teks Kustom"
+
+#~ msgid ""
+#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Tentukan cara Jovie harus bicara ketika peristiwa diterima. Jika anda "
+#~ "memilih \"Bicarakan teks kustom\", masukkan teks di dalam kotak. Anda "
+#~ "dapat menggunakan string substitusi berikut di dalam teks:<dl><dt>%e</"
+#~ "dt><dd>Nama peristiwa</dd><dt>%a</dt><dd>Aplikasi yang mengirim "
+#~ "peristiwa</dd><dt>%m</dt><dd>Pesan yang dikirim oleh aplikasi</dd></dl></"
+#~ "qt>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

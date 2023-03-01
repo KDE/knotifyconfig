@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knotifyconfig\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2020-07-22 13:07+0200\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -25,104 +25,6 @@ msgstr ""
 "X-Generator: Lokalize 20.04.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: &\n"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "Reproduïx un &so"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
-#, kde-format
-msgid "Select the sound to play"
-msgstr "Seleccioneu el so que s'ha de reproduir"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
-#, kde-format
-msgid "Show a message in a &popup"
-msgstr "Mostra un missatge en una finestra emer&gent"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "Registra en un fitxer"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "Marca l'entrada de la barra de &tasques"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "Executa una &ordre"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "Seleccioneu l'ordre que s'ha d'executar"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "Pr&onuncia"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>Especifica com ha de llegir el knotify quan reba l'esdeveniment. Si "
-"seleccioneu «Llig un text personalitzat», introduïu el text al quadro. Podeu "
-"emprar les següents cadenes de substitució en el text:<dl><dt>%e</dt><dd>Nom "
-"de l'esdeveniment</dd><dt>%a</dt><dd>Aplicació que envia l'esdeveniment</"
-"dd><dt>%m</dt><dd>Missatge enviat per l'aplicació</dd></dl></qt>"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "Llig el missatge de l'esdeveniment"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "Llig el nom de l'esdeveniment"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "Llig un text personalitzat"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>Indiqueu què ha de llegir Jovie quan reba l'esdeveniment. Si seleccioneu "
-"«Llig un text personalitzat», introduïu el text al quadro. Podeu emprar les "
-"següents cadenes de substitució en el text:<dl><dt>%e</dt><dd>Nom de "
-"l'esdeveniment</dd><dt>%a</dt><dd>Aplicació que envia l'esdeveniment</dd><dt>"
-"%m</dt><dd>Missatge enviat per l'aplicació</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -146,3 +48,64 @@ msgstr "Títol"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Descripció"
+
+#~ msgid "Play a &sound"
+#~ msgstr "Reproduïx un &so"
+
+#~ msgid "Select the sound to play"
+#~ msgstr "Seleccioneu el so que s'ha de reproduir"
+
+#~ msgid "Show a message in a &popup"
+#~ msgstr "Mostra un missatge en una finestra emer&gent"
+
+#~ msgid "Log to a file"
+#~ msgstr "Registra en un fitxer"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "Marca l'entrada de la barra de &tasques"
+
+#~ msgid "Run &command"
+#~ msgstr "Executa una &ordre"
+
+#~ msgid "Select the command to run"
+#~ msgstr "Seleccioneu l'ordre que s'ha d'executar"
+
+#~ msgid "Sp&eech"
+#~ msgstr "Pr&onuncia"
+
+#~ msgid ""
+#~ "<qt>Specifies how knotify should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Especifica com ha de llegir el knotify quan reba l'esdeveniment. Si "
+#~ "seleccioneu «Llig un text personalitzat», introduïu el text al quadro. "
+#~ "Podeu emprar les següents cadenes de substitució en el text:<dl><dt>%e</"
+#~ "dt><dd>Nom de l'esdeveniment</dd><dt>%a</dt><dd>Aplicació que envia "
+#~ "l'esdeveniment</dd><dt>%m</dt><dd>Missatge enviat per l'aplicació</dd></"
+#~ "dl></qt>"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "Llig el missatge de l'esdeveniment"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "Llig el nom de l'esdeveniment"
+
+#~ msgid "Speak Custom Text"
+#~ msgstr "Llig un text personalitzat"
+
+#~ msgid ""
+#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>Indiqueu què ha de llegir Jovie quan reba l'esdeveniment. Si "
+#~ "seleccioneu «Llig un text personalitzat», introduïu el text al quadro. "
+#~ "Podeu emprar les següents cadenes de substitució en el text:<dl><dt>%e</"
+#~ "dt><dd>Nom de l'esdeveniment</dd><dt>%a</dt><dd>Aplicació que envia "
+#~ "l'esdeveniment</dd><dt>%m</dt><dd>Missatge enviat per l'aplicació</dd></"
+#~ "dl></qt>"

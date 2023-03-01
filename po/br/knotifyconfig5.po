@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4-1.1\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2007-10-15 22:19+0200\n"
 "Last-Translator: Jañ-Mai Drapier <jan-mai.drapier@mail.dotcom.fr>\n"
 "Language-Team: Brezhoneg <Suav.Icb@wanadoo.fr>\n"
@@ -17,100 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "S&eniñ ur son"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
-#, kde-format
-msgid "Select the sound to play"
-msgstr "Dibabit an ton da seniñ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
-#, kde-format
-msgid "Show a message in a &popup"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, fuzzy, kde-format
-#| msgid "Go to Line"
-msgid "Log to a file"
-msgstr "Kit da linenn"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "Seveniñ ur goulev"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, fuzzy, kde-format
-#| msgid "Select the sound to play"
-msgid "Select the command to run"
-msgstr "Dibabit an ton da seniñ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, fuzzy, kde-format
-#| msgid "S&earch:"
-msgid "Sp&eech"
-msgstr "K&aslk :"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, fuzzy, kde-format
-#| msgid "artsmessage"
-msgid "Speak Event Message"
-msgstr "artsmessage"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, fuzzy, kde-format
-#| msgid "Please enter &name:"
-msgid "Speak Event Name"
-msgstr "Skrivit un &anv mar plij :"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, fuzzy, kde-format
-#| msgid "Please enter &name:"
-msgid "Speak Custom Text"
-msgstr "Skrivit un &anv mar plij :"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
 
 #: knotifyconfigwidget.cpp:119
 #, fuzzy, kde-format
@@ -139,6 +45,45 @@ msgstr "Titl"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Deskrivadur"
+
+#~ msgid "Play a &sound"
+#~ msgstr "S&eniñ ur son"
+
+#~ msgid "Select the sound to play"
+#~ msgstr "Dibabit an ton da seniñ"
+
+#, fuzzy
+#~| msgid "Go to Line"
+#~ msgid "Log to a file"
+#~ msgstr "Kit da linenn"
+
+#~ msgid "Run &command"
+#~ msgstr "Seveniñ ur goulev"
+
+#, fuzzy
+#~| msgid "Select the sound to play"
+#~ msgid "Select the command to run"
+#~ msgstr "Dibabit an ton da seniñ"
+
+#, fuzzy
+#~| msgid "S&earch:"
+#~ msgid "Sp&eech"
+#~ msgstr "K&aslk :"
+
+#, fuzzy
+#~| msgid "artsmessage"
+#~ msgid "Speak Event Message"
+#~ msgstr "artsmessage"
+
+#, fuzzy
+#~| msgid "Please enter &name:"
+#~ msgid "Speak Event Name"
+#~ msgstr "Skrivit un &anv mar plij :"
+
+#, fuzzy
+#~| msgid "Please enter &name:"
+#~ msgid "Speak Custom Text"
+#~ msgstr "Skrivit un &anv mar plij :"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

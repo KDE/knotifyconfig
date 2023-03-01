@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2021-07-06 22:17+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -21,102 +21,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: Lokalize 21.04.2\n"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "एक ध्वनि बजाएँ(&s)"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
-#, kde-format
-msgid "Select the sound to play"
-msgstr "बजाने के लिए ध्वनि चुनें"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
-#, kde-format
-msgid "Show a message in a &popup"
-msgstr "पॉप अप विंडो में संदेश दिखाएँ (&p)"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "एक फ़ाइल में लॉग करें"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "कार्य पट्टी प्रविष्टि चिह्नित करें (&t)"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "समादेश चलाएँ(&R)"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "चलाने के लिए समादेश चुनें"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "कथन (&e)"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>केनोटिफ़ाई को किस प्रकार से घटना को बोलना है यह स्पष्ट करता है। अगर आप \"मनपसंद "
-"पाठ बोलें\" का चयन करते हैं तब डिब्बे में पाठ भरें। आप निम्नलिखित प्रतिस्थापन पाठ का प्रयोग "
-"कर सकते हैं<dl><dt>%e</dt><dd>घटना का नाम</dd><dt>%a</dt><dd>अनुप्रयोग जिसने घटना "
-"भेजी</dd><dt>%m</dt><dd>अनुप्रयोग द्वारा भेजा गया सन्देश</dd></dl></qt>"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "कार्यक्रम संदेश बोलें"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "कार्यक्रम नाम बोलें"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "मनपसंद पाठ बोलें"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>जोवी को किस प्रकार से घटना को बोलना है यह स्पष्ट करता है।  अगर आप \"मनपसंद पाठ "
-"बोलें\" का चयन करते हैं तब डिब्बे में पाठ भरें. आप निम्नलिखित प्रतिस्थापन पाठ का प्रयोग कर "
-"सकते हैं<dl><dt>%e</dt><dd>घटना का नाम</dd><dt>%a</dt><dd>अनुप्रयोग जिसने घटना "
-"भेजी</dd><dt>%m</dt><dd>अनुप्रयोग द्वारा भेजा गया सन्देश</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -140,6 +44,64 @@ msgstr "शीर्षक"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "वर्णन"
+
+#~ msgid "Play a &sound"
+#~ msgstr "एक ध्वनि बजाएँ(&s)"
+
+#~ msgid "Select the sound to play"
+#~ msgstr "बजाने के लिए ध्वनि चुनें"
+
+#~ msgid "Show a message in a &popup"
+#~ msgstr "पॉप अप विंडो में संदेश दिखाएँ (&p)"
+
+#~ msgid "Log to a file"
+#~ msgstr "एक फ़ाइल में लॉग करें"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "कार्य पट्टी प्रविष्टि चिह्नित करें (&t)"
+
+#~ msgid "Run &command"
+#~ msgstr "समादेश चलाएँ(&R)"
+
+#~ msgid "Select the command to run"
+#~ msgstr "चलाने के लिए समादेश चुनें"
+
+#~ msgid "Sp&eech"
+#~ msgstr "कथन (&e)"
+
+#~ msgid ""
+#~ "<qt>Specifies how knotify should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>केनोटिफ़ाई को किस प्रकार से घटना को बोलना है यह स्पष्ट करता है। अगर आप "
+#~ "\"मनपसंद पाठ बोलें\" का चयन करते हैं तब डिब्बे में पाठ भरें। आप निम्नलिखित प्रतिस्थापन "
+#~ "पाठ का प्रयोग कर सकते हैं<dl><dt>%e</dt><dd>घटना का नाम</dd><dt>%a</"
+#~ "dt><dd>अनुप्रयोग जिसने घटना भेजी</dd><dt>%m</dt><dd>अनुप्रयोग द्वारा भेजा गया "
+#~ "सन्देश</dd></dl></qt>"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "कार्यक्रम संदेश बोलें"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "कार्यक्रम नाम बोलें"
+
+#~ msgid "Speak Custom Text"
+#~ msgstr "मनपसंद पाठ बोलें"
+
+#~ msgid ""
+#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>जोवी को किस प्रकार से घटना को बोलना है यह स्पष्ट करता है।  अगर आप \"मनपसंद "
+#~ "पाठ बोलें\" का चयन करते हैं तब डिब्बे में पाठ भरें. आप निम्नलिखित प्रतिस्थापन पाठ का "
+#~ "प्रयोग कर सकते हैं<dl><dt>%e</dt><dd>घटना का नाम</dd><dt>%a</dt><dd>अनुप्रयोग "
+#~ "जिसने घटना भेजी</dd><dt>%m</dt><dd>अनुप्रयोग द्वारा भेजा गया सन्देश</dd></dl></qt>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

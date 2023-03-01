@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2010-12-29 15:32+0530\n"
 "Last-Translator: \n"
 "Language-Team: SMC <smc.org.in>\n"
@@ -20,94 +20,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "ഒരു ശബ്ദം കേള്‍പ്പിയ്ക്കുക &s"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
-#, kde-format
-msgid "Select the sound to play"
-msgstr "കേള്‍പ്പിയ്ക്കാന്‍ ശബ്ദം തെരഞ്ഞെടുക്കുക"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
-#, kde-format
-msgid "Show a message in a &popup"
-msgstr "പൊങ്ങിവരുന്ന ജാലകത്തില്‍ ഒരു സന്ദേശം കാണിയ്ക്കുക &p"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "ഒരു ഫയലിലേയ്ക്ക് ലോഗ് ചെയ്യുക"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "ടാസ്ക്ബാറിലൊരു വരി അടയാളപ്പെടുത്തുക &t"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "ആജ്ഞ പ്രവര്‍ത്തിപ്പിയ്ക്കുക &c"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "പ്രവര്‍ത്തിപ്പിക്കുന്നതിനുള്ള കമാന്‍ഡ് തെരഞ്ഞെടുക്കുക"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "&സംസാരം"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "ഓരോ സംഭവങ്ങളെക്കുറിച്ചുള്ള സന്ദേശം വായിയ്ക്കുക"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "സംഭവങ്ങളുടെ പേരു് വായിയ്ക്കുക"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "ഇഷ്ടപ്പെട്ട പദാവലി വായിയ്ക്കുക"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -133,6 +45,39 @@ msgstr "തലക്കെട്ട്"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "വിവരണം"
+
+#~ msgid "Play a &sound"
+#~ msgstr "ഒരു ശബ്ദം കേള്‍പ്പിയ്ക്കുക &s"
+
+#~ msgid "Select the sound to play"
+#~ msgstr "കേള്‍പ്പിയ്ക്കാന്‍ ശബ്ദം തെരഞ്ഞെടുക്കുക"
+
+#~ msgid "Show a message in a &popup"
+#~ msgstr "പൊങ്ങിവരുന്ന ജാലകത്തില്‍ ഒരു സന്ദേശം കാണിയ്ക്കുക &p"
+
+#~ msgid "Log to a file"
+#~ msgstr "ഒരു ഫയലിലേയ്ക്ക് ലോഗ് ചെയ്യുക"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "ടാസ്ക്ബാറിലൊരു വരി അടയാളപ്പെടുത്തുക &t"
+
+#~ msgid "Run &command"
+#~ msgstr "ആജ്ഞ പ്രവര്‍ത്തിപ്പിയ്ക്കുക &c"
+
+#~ msgid "Select the command to run"
+#~ msgstr "പ്രവര്‍ത്തിപ്പിക്കുന്നതിനുള്ള കമാന്‍ഡ് തെരഞ്ഞെടുക്കുക"
+
+#~ msgid "Sp&eech"
+#~ msgstr "&സംസാരം"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "ഓരോ സംഭവങ്ങളെക്കുറിച്ചുള്ള സന്ദേശം വായിയ്ക്കുക"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "സംഭവങ്ങളുടെ പേരു് വായിയ്ക്കുക"
+
+#~ msgid "Speak Custom Text"
+#~ msgstr "ഇഷ്ടപ്പെട്ട പദാവലി വായിയ്ക്കുക"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

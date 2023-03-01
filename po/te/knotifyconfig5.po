@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2013-11-04 23:55+0630\n"
 "Last-Translator: Bhuvan Krishna <bhuvan@swecha.org>\n"
 "Language-Team: Telugu <kde-i18n-doc@kde.org>\n"
@@ -23,94 +23,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "(&s) శబ్దమును మోగించుము"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
-#, kde-format
-msgid "Select the sound to play"
-msgstr "ప్లె చెయవలసిన శబ్దం ఎంచుకొనుము"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
-#, kde-format
-msgid "Show a message in a &popup"
-msgstr "(&p) పాపప్ నందు వొక సందేశమును చూపుము"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "దస్త్రంకు పంపు"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "(&t) టాస్కుబార్ ప్రవేశమును గుర్తుంచుము"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "(&c) ఆదేశమును నడుపుము"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "నేటి తేదిని ఎంచుకొనుము"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "(&e) సంభాషణ"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "సంఘటన సందేశం మట్లాడుట"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "ఘటన పేరును  పలుకుము"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "నిర్దేశిత  వచనము పలుకుము"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -134,6 +46,39 @@ msgstr "కితాబు"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "వర్ణన"
+
+#~ msgid "Play a &sound"
+#~ msgstr "(&s) శబ్దమును మోగించుము"
+
+#~ msgid "Select the sound to play"
+#~ msgstr "ప్లె చెయవలసిన శబ్దం ఎంచుకొనుము"
+
+#~ msgid "Show a message in a &popup"
+#~ msgstr "(&p) పాపప్ నందు వొక సందేశమును చూపుము"
+
+#~ msgid "Log to a file"
+#~ msgstr "దస్త్రంకు పంపు"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "(&t) టాస్కుబార్ ప్రవేశమును గుర్తుంచుము"
+
+#~ msgid "Run &command"
+#~ msgstr "(&c) ఆదేశమును నడుపుము"
+
+#~ msgid "Select the command to run"
+#~ msgstr "నేటి తేదిని ఎంచుకొనుము"
+
+#~ msgid "Sp&eech"
+#~ msgstr "(&e) సంభాషణ"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "సంఘటన సందేశం మట్లాడుట"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "ఘటన పేరును  పలుకుము"
+
+#~ msgid "Speak Custom Text"
+#~ msgstr "నిర్దేశిత  వచనము పలుకుము"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

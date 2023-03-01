@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-03-13 02:23+0100\n"
+"POT-Creation-Date: 2023-03-01 21:29+0000\n"
 "PO-Revision-Date: 2015-02-20 22:20+0800\n"
 "Last-Translator: Franklin Weng <franklin@goodhorse.idv.tw>\n"
 "Language-Team: Chinese Traditional <kde-i18n-doc@kde.org>\n"
@@ -25,102 +25,6 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Lokalize 1.5\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "播放音效(&S)"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
-#, kde-format
-msgid "Select the sound to play"
-msgstr "選擇要播放的音效"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
-#, kde-format
-msgid "Show a message in a &popup"
-msgstr "在彈出式選單中顯示訊息(&P)"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "紀錄到檔案"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "標記工作列項目(&T)"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "執行指令(&C)"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "選擇要執行的指令"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "語音(&E)"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>指定 knotify 如何在接收到事件時用語音說出。如果您選擇「念出自訂文字」，則"
-"在這裡輸入文字。您也可以在文字中使用以下的替代字串： <dl><dt>%e</dt><dd>事件"
-"名稱</dd> <dt>%a</dt><dd>送出此事件的應用程式</dd> <dt>%m</dt><dd>此應用程式"
-"送出的訊息</dd></dl></qt>"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "念出事件訊息"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "念出事件名稱"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "念出自訂文字"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>指定 Jovie 如何在接收到事件時用語音說出。如果您選擇「念出自訂文字」，則在"
-"這裡輸入文字。您也可以在文字中使用以下的替代字串： <dl><dt>%e</dt><dd>事件名"
-"稱</dd> <dt>%a</dt><dd>送出此事件的應用程式</dd> <dt>%m</dt><dd>此應用程式送"
-"出的訊息</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
@@ -144,3 +48,60 @@ msgstr "標題"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "描述"
+
+#~ msgid "Play a &sound"
+#~ msgstr "播放音效(&S)"
+
+#~ msgid "Select the sound to play"
+#~ msgstr "選擇要播放的音效"
+
+#~ msgid "Show a message in a &popup"
+#~ msgstr "在彈出式選單中顯示訊息(&P)"
+
+#~ msgid "Log to a file"
+#~ msgstr "紀錄到檔案"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "標記工作列項目(&T)"
+
+#~ msgid "Run &command"
+#~ msgstr "執行指令(&C)"
+
+#~ msgid "Select the command to run"
+#~ msgstr "選擇要執行的指令"
+
+#~ msgid "Sp&eech"
+#~ msgstr "語音(&E)"
+
+#~ msgid ""
+#~ "<qt>Specifies how knotify should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>指定 knotify 如何在接收到事件時用語音說出。如果您選擇「念出自訂文"
+#~ "字」，則在這裡輸入文字。您也可以在文字中使用以下的替代字串： <dl><dt>%e</"
+#~ "dt><dd>事件名稱</dd> <dt>%a</dt><dd>送出此事件的應用程式</dd> <dt>%m</"
+#~ "dt><dd>此應用程式送出的訊息</dd></dl></qt>"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "念出事件訊息"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "念出事件名稱"
+
+#~ msgid "Speak Custom Text"
+#~ msgstr "念出自訂文字"
+
+#~ msgid ""
+#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>指定 Jovie 如何在接收到事件時用語音說出。如果您選擇「念出自訂文字」，"
+#~ "則在這裡輸入文字。您也可以在文字中使用以下的替代字串： <dl><dt>%e</dt><dd>"
+#~ "事件名稱</dd> <dt>%a</dt><dd>送出此事件的應用程式</dd> <dt>%m</dt><dd>此應"
+#~ "用程式送出的訊息</dd></dl></qt>"
