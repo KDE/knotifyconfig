@@ -55,12 +55,6 @@ void KNotifyEventList::KNotifyEventListDelegate::paint(QPainter *painter, const 
     QList<QIcon> iconList;
     iconList << (optionsList.contains(QStringLiteral("Sound")) ? QIcon::fromTheme(QStringLiteral("media-playback-start")) : QIcon());
     iconList << (optionsList.contains(QStringLiteral("Popup")) ? QIcon::fromTheme(QStringLiteral("dialog-information")) : QIcon());
-    iconList << (optionsList.contains(QStringLiteral("Logfile")) ? QIcon::fromTheme(QStringLiteral("text-x-generic")) : QIcon());
-    iconList << (optionsList.contains(QStringLiteral("Taskbar")) ? QIcon::fromTheme(QStringLiteral("services")) : QIcon());
-    iconList << (optionsList.contains(QStringLiteral("Execute")) ? QIcon::fromTheme(QStringLiteral("system-run")) : QIcon());
-    if (KNotifyConfigElement::have_tts()) {
-        iconList << (optionsList.contains(QStringLiteral("TTS")) ? QIcon::fromTheme(QStringLiteral("text-speak")) : QIcon());
-    }
 
     int mc_x = 0;
 
@@ -94,7 +88,6 @@ KNotifyEventList::KNotifyEventList(QWidget *parent)
     setIconSize(QSize(iconWidth, iconWidth));
 
     header()->setSectionResizeMode(0, QHeaderView::Fixed);
-    header()->resizeSection(0, KNotifyConfigElement::have_tts() ? (iconWidth + 4) * 6 : (iconWidth + 4) * 5);
     header()->setSectionResizeMode(1, QHeaderView::ResizeToContents);
 
     connect(this, SIGNAL(currentItemChanged(QTreeWidgetItem *, QTreeWidgetItem *)), this, SLOT(slotSelectionChanged(QTreeWidgetItem *, QTreeWidgetItem *)));

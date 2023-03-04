@@ -36,7 +36,6 @@ Q_SIGNALS:
     void changed();
 private Q_SLOTS:
     void slotPlay();
-    void slotTTSComboChanged();
 
 private:
     Ui::KNotifyConfigActionsWidgetBase m_ui;

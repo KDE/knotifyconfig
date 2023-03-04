@@ -46,13 +46,3 @@ void KNotifyConfigElement::save()
         m_config->writeEntry(it.key(), it.value());
     }
 }
-
-bool KNotifyConfigElement::have_tts() //[static]
-{
-    // TODO: Add a runtime check to see if the status is not BackendError
-#ifdef HAVE_SPEECH
-    return true;
-#else
-    return false;
-#endif
-}

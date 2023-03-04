@@ -30,13 +30,6 @@ include(ECMDeprecationSettings)
 set(REQUIRED_QT_VERSION 6.4.0)
 find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
 
-find_package(Qt6TextToSpeech ${REQUIRED_QT_VERSION} CONFIG)
-if (NOT TARGET Qt6::TextToSpeech)
-  message(STATUS "Qt6TextToSpeech not found, speech features will be disabled")
-else()
-  add_definitions(-DHAVE_SPEECH)
-endif()
-
 find_package(KF6Completion ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6Config ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6I18n ${KF_DEP_VERSION} REQUIRED)

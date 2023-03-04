@@ -34,11 +34,6 @@ public:
 
     void save();
 
-    /**
-     * Return whether Qt6TextToSpeech is installed or not.
-     */
-    static bool have_tts();
-
 private:
     QMap<QString, QString> m_cache;
     KConfigGroup *m_config;
