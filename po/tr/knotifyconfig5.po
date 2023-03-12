@@ -23,7 +23,7 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-03-01 22:21+0000\n"
-"PO-Revision-Date: 2023-01-14 22:15+0300\n"
+"PO-Revision-Date: 2023-03-11 17:44+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -31,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
 #: knotifyconfigactionswidgetbase.ui:28
@@ -49,7 +49,7 @@ msgstr "Çalınacak sesi seç"
 #: knotifyconfigactionswidgetbase.ui:61
 #, kde-format
 msgid "Show a message in a &popup"
-msgstr "Açılan pencerede &bir ileti göster"
+msgstr "Bir açılır pencerede &bir ileti göster"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
 #: knotifyconfigactionswidgetbase.ui:68
@@ -101,13 +101,13 @@ msgstr ""
 #: knotifyconfigactionswidgetbase.ui:135
 #, kde-format
 msgid "Speak Event Message"
-msgstr "Konuşma Olayı İletisi"
+msgstr "Etkinlik İletisini Konuş"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
 #: knotifyconfigactionswidgetbase.ui:140
 #, kde-format
 msgid "Speak Event Name"
-msgstr "Konuşma Olayı İsmi"
+msgstr "Etkinlik Adını Konuş"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
 #: knotifyconfigactionswidgetbase.ui:145
