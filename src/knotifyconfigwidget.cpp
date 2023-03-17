@@ -47,10 +47,7 @@ KNotifyConfigWidget::KNotifyConfigWidget(QWidget *parent)
     layout->addWidget(d->actionsconfig);
 }
 
-KNotifyConfigWidget::~KNotifyConfigWidget()
-{
-    delete d;
-}
+KNotifyConfigWidget::~KNotifyConfigWidget() = default;
 
 void KNotifyConfigWidget::setApplication(const QString &app, const QString &context_name, const QString &context_value)
 {

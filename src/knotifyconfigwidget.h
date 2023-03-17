@@ -12,6 +12,8 @@
 #include <QWidget>
 #include <knotifyconfig_export.h>
 
+#include <memory>
+
 class KNotifyConfigElement;
 class KNotifyConfigWidgetPrivate;
 /**
@@ -84,11 +86,12 @@ Q_SIGNALS:
      */
     void changed(bool state);
 
-private:
-    KNotifyConfigWidgetPrivate *const d;
 private Q_SLOTS:
     void slotEventSelected(KNotifyConfigElement *e);
     void slotActionChanged();
+
+private:
+    std::unique_ptr<KNotifyConfigWidgetPrivate> const d;
 };
 
 #endif
