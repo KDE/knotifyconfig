@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 22:21+0000\n"
+"POT-Creation-Date: 2023-03-17 02:32+0000\n"
 "PO-Revision-Date: 2015-04-30 08:41+0200\n"
 "Last-Translator: Bjørn Steensrud <bjornst@skogkatt.homelinux.org>\n"
 "Language-Team: Norwegian Bokmål <l10n-no@lister.huftis.org>\n"
@@ -123,7 +123,7 @@ msgstr ""
 "dt><dd>Navn på hendelsen</dd><dt>%a</dt><dd>Programmet som sendte hendelsen</"
 "dd><dt>%m</dt><dd>Meldinga som programmet sendte</dd></dl></qt>"
 
-#: knotifyconfigwidget.cpp:119
+#: knotifyconfigwidget.cpp:116
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Oppsett av beskjeder"

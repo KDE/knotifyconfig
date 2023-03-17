@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 22:21+0000\n"
+"POT-Creation-Date: 2023-03-17 02:32+0000\n"
 "PO-Revision-Date: 2012-06-28 16:40+0430\n"
 "Last-Translator: Mohammad Reza Mirdamadi <mohi@linuxshop.ir>\n"
 "Language-Team: Farsi (Persian) <kde-i18n-fa@kde.org>\n"
@@ -138,7 +138,7 @@ msgstr ""
 "%a</dt><dd>برنامه‌ای که رخداد را فرستاده</dd><dt>%m</dt><dd>پیغام فرستاده‌شده "
 "توسط برنامه</dd></dl></qt>"
 
-#: knotifyconfigwidget.cpp:119
+#: knotifyconfigwidget.cpp:116
 #, kde-format
 msgid "Configure Notifications"
 msgstr "پیکربندی اخطارها"

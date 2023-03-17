@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 22:21+0000\n"
+"POT-Creation-Date: 2023-03-17 02:32+0000\n"
 "PO-Revision-Date: 2010-12-31 22:47+0700\n"
 "Last-Translator: Phuwanat Sakornsakolpat <narachai@gmail.com>\n"
 "Language-Team: Thai <thai-l10n@googlegroups.com>\n"
@@ -125,7 +125,7 @@ msgstr ""
 "dd><dt>%a</dt> <dd>โปรแกรมที่ส่งเหตุการณ์มา</dd><dt>%m</"
 "dt><dd>ข้อความที่ส่งโดยโปรแกรม</dd></dl></qt>"
 
-#: knotifyconfigwidget.cpp:119
+#: knotifyconfigwidget.cpp:116
 #, kde-format
 msgid "Configure Notifications"
 msgstr "ปรับแต่งการแจ้งให้ทราบ"

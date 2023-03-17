@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 22:21+0000\n"
+"POT-Creation-Date: 2023-03-17 02:32+0000\n"
 "PO-Revision-Date: 2012-06-27 10:04+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -118,7 +118,7 @@ msgstr ""
 "%e</dt><dd>ឈ្មោះ​ព្រឹត្តិការណ៍</dd><dt>%a</dt><dd>កម្មវិធី​ដែលបាន​ផ្ញើ​ព្រឹត្តិការណ៍</dd><dt>"
 "%m</dt><dd>សារ​បាន​ផ្ញើ​ដោយ​កម្មវិធី</dd></dl></qt>"
 
-#: knotifyconfigwidget.cpp:119
+#: knotifyconfigwidget.cpp:116
 #, kde-format
 msgid "Configure Notifications"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ការ​ជូនដំណឹង"

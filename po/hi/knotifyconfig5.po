@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 22:21+0000\n"
+"POT-Creation-Date: 2023-03-17 02:32+0000\n"
 "PO-Revision-Date: 2021-07-06 22:17+0530\n"
 "Last-Translator: Raghavendra Kamath <raghu@raghukamath.com>\n"
 "Language-Team: kde-hindi\n"
@@ -118,7 +118,7 @@ msgstr ""
 "सकते हैं<dl><dt>%e</dt><dd>घटना का नाम</dd><dt>%a</dt><dd>अनुप्रयोग जिसने घटना "
 "भेजी</dd><dt>%m</dt><dd>अनुप्रयोग द्वारा भेजा गया सन्देश</dd></dl></qt>"
 
-#: knotifyconfigwidget.cpp:119
+#: knotifyconfigwidget.cpp:116
 #, kde-format
 msgid "Configure Notifications"
 msgstr "सूचनाएँ विन्यस्त करें"

@@ -21,7 +21,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 22:21+0000\n"
+"POT-Creation-Date: 2023-03-17 02:32+0000\n"
 "PO-Revision-Date: 2018-06-09 22:13+0300\n"
 "Last-Translator: Safa Alfulaij <safa1996alfulaij@gmail.com>\n"
 "Language-Team: Arabic <doc@arabeyes.org>\n"
@@ -129,7 +129,7 @@ msgstr ""
 "<dl><dt>‎%e</dt><dd>اسم الحدث</dd><dt>‎%a</dt><dd>التطبيق الذي أرسل الحدث</"
 "dd><dt>‎%m</dt><dd>الرسالة التي أرسلها التطبيق</dd></dl>"
 
-#: knotifyconfigwidget.cpp:119
+#: knotifyconfigwidget.cpp:116
 #, kde-format
 msgid "Configure Notifications"
 msgstr "اضبط الإخطارات"
@@ -423,7 +423,7 @@ msgstr "الوصف"
 
 #~ msgctxt "@option:check"
 #~ msgid "Consider run-together &words as spelling errors"
-#~ msgstr "اعتبر ال&كلمات المركبة كأخطاء تهجئة"
+#~ msgstr "اعتبر ال&كلمات المركبة كأخطاء تهجية"
 
 #~ msgctxt "@label:listbox"
 #~ msgid "&Dictionary:"
@@ -483,7 +483,7 @@ msgstr "الوصف"
 
 #~ msgctxt "@item Spelling dictionary"
 #~ msgid "German (new spelling)"
-#~ msgstr "الألمانية (التهجئة الجديدة)"
+#~ msgstr "الألمانية (التهجية الجديدة)"
 
 #~ msgctxt "@item Spelling dictionary"
 #~ msgid "Brazilian Portuguese"
@@ -738,7 +738,7 @@ msgstr "الوصف"
 #~ "</qt>"
 #~ msgstr ""
 #~ "<qt>\n"
-#~ "<p>إذا كانت تهجئة الكلمة مجهولة خطأ ، يجب عليك كتابة التصحيح هنا أو "
+#~ "<p>إذا كانت تهجية الكلمة مجهولة خطأ ، يجب عليك كتابة التصحيح هنا أو "
 #~ "اخترالتصحيح من القائمة في الأسفل.</p>\n"
 #~ "<p>يمكنك النقر على <b>استبدل</b> إذا كنت تريد استبدال هذا الحدوث فقط أو "
 #~ "النقر على <b>استبدل الكلّ</b> إذا كنت تريد تصحيح كلّ التكرارات من الكلمة "
@@ -10807,7 +10807,7 @@ msgstr "الوصف"
 
 #~ msgctxt "Panj shanbe short"
 #~ msgid "5sh"
-#~ msgstr "پنجشنبه"
+#~ msgstr "بنجشنبه"
 
 #~ msgctxt "Jumee short"
 #~ msgid "Jom"
@@ -10831,7 +10831,7 @@ msgstr "الوصف"
 #~ msgstr "چهارشنبه"
 
 #~ msgid "Panj shanbe"
-#~ msgstr "پنجشنبه"
+#~ msgstr "بنجشنبه"
 
 #~ msgid "Jumee"
 #~ msgstr "جمعة"

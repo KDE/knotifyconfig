@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knotifyconfig\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 22:21+0000\n"
+"POT-Creation-Date: 2023-03-17 02:32+0000\n"
 "PO-Revision-Date: 2020-07-22 13:07+0200\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -126,7 +126,7 @@ msgstr ""
 "l'esdeveniment</dd><dt>%m</dt><dd>Missatge enviat per l'aplicació</dd></dl></"
 "qt>"
 
-#: knotifyconfigwidget.cpp:119
+#: knotifyconfigwidget.cpp:116
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Configura les notificacions"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-01 22:21+0000\n"
+"POT-Creation-Date: 2023-03-17 02:32+0000\n"
 "PO-Revision-Date: 2009-11-22 00:01+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <team@utkarsh.org>\n"
@@ -126,7 +126,7 @@ msgstr ""
 "ઉપયોગ કરી શકો છો:<dl><dt>%e</dt><dd>ઘટનાનું નામ</dd> <dt>%a</dt><dd>કાર્યક્રમ જે "
 "ઘટના મોકલે છે</dd><dt>%m</dt><dd> કાર્યક્રમ દ્વારા મોકલાયેલ સંદેશ</dd></dl></qt>"
 
-#: knotifyconfigwidget.cpp:119
+#: knotifyconfigwidget.cpp:116
 #, kde-format
 msgid "Configure Notifications"
 msgstr "નોંધો રૂપરેખાંકિત કરો"
