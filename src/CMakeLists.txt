@@ -5,6 +5,12 @@ configure_file(knotify-config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/knotify-config
 add_library(KF6NotifyConfig)
 add_library(KF6::NotifyConfig ALIAS KF6NotifyConfig)
 
+set_target_properties(KF6NotifyConfig PROPERTIES
+   VERSION      ${KNOTIFYCONFIG_VERSION}
+   SOVERSION    ${KNOTIFYCONFIG_SOVERSION}
+   EXPORT_NAME  NotifyConfig
+)
+
 target_sources(KF6NotifyConfig PRIVATE
     knotifyconfigactionswidget.cpp
     knotifyconfigelement.cpp
@@ -39,12 +45,6 @@ if(Canberra_FOUND)
 elseif (Phonon4Qt6_FOUND)
     target_link_libraries(KF6NotifyConfig PRIVATE Phonon::phonon4qt6)
 endif()
-
-set_target_properties(KF6NotifyConfig PROPERTIES
-   VERSION      ${KNOTIFYCONFIG_VERSION}
-   SOVERSION    ${KNOTIFYCONFIG_SOVERSION}
-   EXPORT_NAME  NotifyConfig
-)
 
 ecm_generate_headers(KNotifyConfig_HEADERS
   HEADER_NAMES
