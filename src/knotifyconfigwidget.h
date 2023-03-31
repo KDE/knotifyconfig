@@ -87,8 +87,8 @@ Q_SIGNALS:
 private:
     KNotifyConfigWidgetPrivate *const d;
 private Q_SLOTS:
-    void slotEventSelected(KNotifyConfigElement *e);
-    void slotActionChanged();
+    KNOTIFYCONFIG_NO_EXPORT void slotEventSelected(KNotifyConfigElement *e);
+    KNOTIFYCONFIG_NO_EXPORT void slotActionChanged();
 };
 
 #endif
