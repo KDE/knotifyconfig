@@ -28,7 +28,13 @@ ecm_qt_declare_logging_category(KF6NotifyConfig
     EXPORT KNOTIFYCONFIG
 )
 
-generate_export_header(KF6NotifyConfig BASE_NAME KNotifyConfig)
+ecm_generate_export_header(KF6NotifyConfig
+    BASE_NAME KNotifyConfig
+    GROUP_BASE_NAME KF
+    VERSION ${KF_VERSION}
+    USE_VERSION_HEADER
+    DEPRECATED_BASE_VERSION 0
+)
 
 target_include_directories(KF6NotifyConfig INTERFACE "$<INSTALL_INTERFACE:${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig>")
 
