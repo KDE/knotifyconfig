@@ -55,10 +55,11 @@ if (NOT Canberra_FOUND)
 endif()
 
 # ECM setup
+set(knotifyconfig_version_header "${CMAKE_CURRENT_BINARY_DIR}/src/knotifyconfig_version.h")
 ecm_setup_version(
   PROJECT
   VARIABLE_PREFIX KNOTIFYCONFIG
-  VERSION_HEADER "${CMAKE_CURRENT_BINARY_DIR}/knotifyconfig_version.h"
+  VERSION_HEADER "${knotifyconfig_version_header}"
   PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF6NotifyConfigConfigVersion.cmake"
   SOVERSION 6)
 
@@ -112,7 +113,7 @@ install(EXPORT
 )
 
 install(FILES
-  "${CMAKE_CURRENT_BINARY_DIR}/knotifyconfig_version.h"
+  "${knotifyconfig_version_header}"
   DESTINATION "${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig"
   COMPONENT Devel
 )
