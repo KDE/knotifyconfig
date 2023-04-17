@@ -25,7 +25,7 @@ class KNotifyEventList : public QTreeWidget
 public:
     explicit KNotifyEventList(QWidget *parent);
     ~KNotifyEventList() override;
-    void fill(const QString &appname, const QString &context_name = QString(), const QString &context_value = QString(), bool loadDefaults = false);
+    void fill(const QString &appname, bool loadDefaults = false);
     void save();
     void updateCurrentItem();
     void updateAllItems();

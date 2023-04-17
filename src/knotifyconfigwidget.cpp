@@ -25,8 +25,6 @@ public:
     KNotifyConfigActionsWidget *actionsconfig;
     KNotifyConfigElement *currentElement;
     QString application;
-    QString contextName;
-    QString contextValue;
 };
 
 KNotifyConfigWidget::KNotifyConfigWidget(QWidget *parent)
@@ -49,13 +47,11 @@ KNotifyConfigWidget::KNotifyConfigWidget(QWidget *parent)
 
 KNotifyConfigWidget::~KNotifyConfigWidget() = default;
 
-void KNotifyConfigWidget::setApplication(const QString &app, const QString &context_name, const QString &context_value)
+void KNotifyConfigWidget::setApplication(const QString &app)
 {
     d->currentElement = nullptr;
     d->application = app.isEmpty() ? QCoreApplication::instance()->applicationName() : app;
-    d->contextName = context_name;
-    d->contextValue = context_value;
-    d->eventList->fill(d->application, d->contextName, d->contextValue);
+    d->eventList->fill(d->application);
 }
 
 void KNotifyConfigWidget::selectEvent(const QString &eventId)
@@ -95,7 +91,7 @@ void KNotifyConfigWidget::save()
 
 void KNotifyConfigWidget::revertToDefaults()
 {
-    d->eventList->fill(d->application, d->contextName, d->contextValue, true);
+    d->eventList->fill(d->application, true);
     Q_EMIT changed(true);
 }
 

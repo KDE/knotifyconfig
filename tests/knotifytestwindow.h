@@ -29,7 +29,6 @@ public Q_SLOTS:
     void slotMessageRead();
 
     void slotConfigureG();
-    void slotConfigureC();
 };
 
 #endif

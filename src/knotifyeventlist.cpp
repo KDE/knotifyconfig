@@ -105,7 +105,7 @@ KNotifyEventList::~KNotifyEventList()
     delete config;
 }
 
-void KNotifyEventList::fill(const QString &appname, const QString &context_name, const QString &context_value, bool loadDefaults)
+void KNotifyEventList::fill(const QString &appname, bool loadDefaults)
 {
     m_elements.clear();
     clear();
@@ -121,15 +121,6 @@ void KNotifyEventList::fill(const QString &appname, const QString &context_name,
     for (const QString &group : std::as_const(conflist)) {
         KConfigGroup cg(config, group);
         QString id = rx.match(group).captured(1);
-
-        if (!context_name.isEmpty()) {
-            QStringList contexts = cg.readEntry("Contexts", QStringList());
-            if (!contexts.contains(context_name)) {
-                continue;
-            }
-
-            id = id + QLatin1Char('/') + context_name + QLatin1Char('/') + context_value;
-        }
         QString name = cg.readEntry("Name");
         QString description = cg.readEntry("Comment");
 

@@ -19,7 +19,7 @@ class KNotifyConfigWidgetPrivate;
 /**
  * @class KNotifyConfigWidget knotifyconfigwidget.h <KNotifyConfigWidget>
  *
- * Configure the notification for a given application / context
+ * Configure the notification for a given application
  *
  * You probably will want to use the static function configure
  *
@@ -43,13 +43,11 @@ public:
     static KNotifyConfigWidget *configure(QWidget *parent = nullptr, const QString &appname = QString());
 
     /**
-     * Change the application and the context
+     * Change the application
      *
      * @param appname name of the application.   if null QCoreApplication::instance()->applicationName() is used
-     * @param context_name the name of the context, if null , avery context are considered
-     * @param context_value the context value
      */
-    void setApplication(const QString &appname = QString(), const QString &context_name = QString(), const QString &context_value = QString());
+    void setApplication(const QString &appname = QString());
 
     /**
      * Select a given notification in the current list

@@ -42,17 +42,13 @@ KNotifyTestWindow::KNotifyTestWindow(QWidget *parent)
     connect(view.b_message, SIGNAL(clicked()), this, SLOT(slotSendMessageEvent()));
     connect(view.b_read, SIGNAL(clicked()), this, SLOT(slotMessageRead()));
     connect(view.b_confG, SIGNAL(clicked()), this, SLOT(slotConfigureG()));
-    connect(view.b_confC, SIGNAL(clicked()), this, SLOT(slotConfigureC()));
 }
 
 void KNotifyTestWindow::slotSendOnlineEvent()
 {
-    KNotification::ContextList contexts;
-    contexts.append(qMakePair(QString("group"), view.c_group->currentText()));
     KNotification *n = new KNotification("online");
     n->setWidget(this);
     n->setText(i18n("the contact %1 is now online", view.c_name->text()));
-    n->setContexts(contexts);
     n->sendEvent();
 }
 
@@ -71,9 +67,6 @@ void KNotifyTestWindow::slotSendMessageEvent()
         m_readNotif->setText(i18n("%1 new messages", m_nbNewMessage));
     }
 
-    KNotification::ContextList cl;
-    cl << qMakePair(QString("group"), view.c_group->currentText());
-    m_readNotif->setContexts(cl);
     m_readNotif->sendEvent();
 }
 
@@ -89,25 +82,4 @@ void KNotifyTestWindow::slotMessageRead()
 void KNotifyTestWindow::slotConfigureG()
 {
     KNotifyConfigWidget::configure(this);
-}
-
-void KNotifyTestWindow::slotConfigureC()
-{
-    QDialog dialog(this);
-
-    KNotifyConfigWidget *w = new KNotifyConfigWidget(&dialog);
-    w->setApplication(QString(), "group", view.c_group->currentText());
-
-    QDialogButtonBox *buttonBox = new QDialogButtonBox(&dialog);
-    buttonBox->setStandardButtons(QDialogButtonBox::Ok | QDialogButtonBox::Cancel);
-    connect(buttonBox, SIGNAL(accepted()), &dialog, SLOT(accept()));
-    connect(buttonBox, SIGNAL(rejected()), &dialog, SLOT(reject()));
-
-    QVBoxLayout *layout = new QVBoxLayout(&dialog);
-    layout->addWidget(w);
-    layout->addWidget(buttonBox);
-
-    if (dialog.exec()) {
-        w->save();
-    }
 }
