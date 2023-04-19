@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knotifyconfig\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-17 02:32+0000\n"
+"POT-Creation-Date: 2023-04-19 02:23+0000\n"
 "PO-Revision-Date: 2020-07-16 08:55+0400\n"
 "Last-Translator: Xəyyam Qocayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -115,7 +115,7 @@ msgstr ""
 "%a</dt><dd>Hadisəni göndərən tətbiq</dd><dt>%m</dt><dd>Bu mesajı göndərən "
 "tətbiq</dd></dl></qt>"
 
-#: knotifyconfigwidget.cpp:116
+#: knotifyconfigwidget.cpp:112
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Bildirişləri Tənzimlə"

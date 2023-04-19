@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-17 02:32+0000\n"
+"POT-Creation-Date: 2023-04-19 02:23+0000\n"
 "PO-Revision-Date: 2011-11-26 15:12+0400\n"
 "Last-Translator: Ainur Shakirov <ainur.shakirov.tt@gmail.com>\n"
 "Language-Team: Tatar <>\n"
@@ -121,7 +121,7 @@ msgstr ""
 "dt><dd>вакыйганы тудырган кушымта</dd><dt>%m</dt><dd>кушымтада алынган "
 "хәбәр</dd></dl></qt>"
 
-#: knotifyconfigwidget.cpp:116
+#: knotifyconfigwidget.cpp:112
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Белдерүләрне көйләү"

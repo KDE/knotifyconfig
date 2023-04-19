@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-17 02:32+0000\n"
+"POT-Creation-Date: 2023-04-19 02:23+0000\n"
 "PO-Revision-Date: 2020-01-25 21:03+0300\n"
 "Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
 "Language-Team: Russian <kde-russian@lists.kde.ru>\n"
@@ -132,7 +132,7 @@ msgstr ""
 "события</dd><dt>%a</dt><dd>приложение-источник события</dd><dt>%m</"
 "dt><dd>сообщение, переданное приложением</dd></dl></qt>"
 
-#: knotifyconfigwidget.cpp:116
+#: knotifyconfigwidget.cpp:112
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Настройка уведомлений"

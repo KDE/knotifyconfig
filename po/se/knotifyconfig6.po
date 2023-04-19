@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-17 02:32+0000\n"
+"POT-Creation-Date: 2023-04-19 02:23+0000\n"
 "PO-Revision-Date: 2012-05-30 23:19+0200\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -123,7 +123,7 @@ msgstr ""
 "namma</dd><dt>%a</dt><dd>Prográmma mii sáddii dáhpáhusa</dd><dt>%m</"
 "dt><dd>Diehtu maid prográmma sáddii</dd></dl></qt>"
 
-#: knotifyconfigwidget.cpp:116
+#: knotifyconfigwidget.cpp:112
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Heivet dieđáhusaid …"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-03-17 02:32+0000\n"
+"POT-Creation-Date: 2023-04-19 02:23+0000\n"
 "PO-Revision-Date: 2013-01-31 01:08+0400\n"
 "Last-Translator: Davit <nikdavnik@mail.ru>\n"
 "Language-Team: Armenian Language: hy\n"
@@ -128,7 +128,7 @@ msgstr ""
 "աղբյուրը</dd><dt>%m</dt><dd>հաղորդագրություն, տրված ծրագրի միջոցով</dd></"
 "dl></qt>"
 
-#: knotifyconfigwidget.cpp:116
+#: knotifyconfigwidget.cpp:112
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Հիշեցումների կարգավորում"
