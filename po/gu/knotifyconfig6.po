@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-19 02:23+0000\n"
+"POT-Creation-Date: 2023-05-06 02:08+0000\n"
 "PO-Revision-Date: 2009-11-22 00:01+0530\n"
 "Last-Translator: Kartik Mistry <kartik.mistry@gmail.com>\n"
 "Language-Team: Gujarati <team@utkarsh.org>\n"
@@ -18,136 +18,108 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "ધ્વનિ ચલાવો (&s)"
-
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
+#: knotifyconfigactionswidgetbase.ui:48
 #, kde-format
 msgid "Select the sound to play"
 msgstr "વગાડવા માટે ધ્વનિ પસંદ કરો"
 
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:55
+#, kde-format
+msgid "Play a &sound"
+msgstr "ધ્વનિ ચલાવો (&s)"
+
 #. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
+#: knotifyconfigactionswidgetbase.ui:62
 #, kde-format
 msgid "Show a message in a &popup"
 msgstr "પોપઅપમાં સંદેશો બતાવો (&p)"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "ફાઇલમાં લૉગ મૂકો"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "ટાસ્કબાર દાખલાંને નિશાની કરો (&t)"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "આદેશ ચલાવો (&c)"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "ચલાવવા માટે આદેશ પસંદ કરો"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "વક્તવ્ય (&e)"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, fuzzy, no-c-format, kde-format
-#| msgid ""
-#| "<qt>Specifies how KTTS should speak the event when received.  If you "
-#| "select \"Speak custom text\", enter the text in the box.  You may use the "
-#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#| "dt><dd>The message sent by the application</dd></dl></qt>"
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>KTTS એ ઘટના બને ત્યારે કઇ રીતે બોલવું જોઇએ તે સ્પષ્ટ કરે છે.  જો તમે \"પોતાનું લખાણ "
-"બોલો\", પસંદ કર્યું હોય તો ખાનાંમાં લખાણ દાખલ કરો.  જો નીચેનાં બદલી વાક્યો લખાણમાં "
-"ઉપયોગ કરી શકો છો:<dl><dt>%e</dt><dd>ઘટનાનું નામ</dd> <dt>%a</dt><dd>કાર્યક્રમ જે "
-"ઘટના મોકલે છે</dd><dt>%m</dt><dd> કાર્યક્રમ દ્વારા મોકલાયેલ સંદેશ</dd></dl></qt>"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "ઘટના સંદેશો બોલો"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "ઘટના નામ બોલો"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "પોતાનું લખાણ બોલો"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, fuzzy, no-c-format, kde-format
-#| msgid ""
-#| "<qt>Specifies how KTTS should speak the event when received.  If you "
-#| "select \"Speak custom text\", enter the text in the box.  You may use the "
-#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#| "dt><dd>The message sent by the application</dd></dl></qt>"
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>KTTS એ ઘટના બને ત્યારે કઇ રીતે બોલવું જોઇએ તે સ્પષ્ટ કરે છે.  જો તમે \"પોતાનું લખાણ "
-"બોલો\", પસંદ કર્યું હોય તો ખાનાંમાં લખાણ દાખલ કરો.  જો નીચેનાં બદલી વાક્યો લખાણમાં "
-"ઉપયોગ કરી શકો છો:<dl><dt>%e</dt><dd>ઘટનાનું નામ</dd> <dt>%a</dt><dd>કાર્યક્રમ જે "
-"ઘટના મોકલે છે</dd><dt>%m</dt><dd> કાર્યક્રમ દ્વારા મોકલાયેલ સંદેશ</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:112
 #, kde-format
 msgid "Configure Notifications"
 msgstr "નોંધો રૂપરેખાંકિત કરો"
 
-#: knotifyeventlist.cpp:82
+#: knotifyeventlist.cpp:76
 #, kde-format
 msgctxt "State of the notified event"
 msgid "State"
 msgstr "સ્થિતિ"
 
-#: knotifyeventlist.cpp:82
+#: knotifyeventlist.cpp:76
 #, kde-format
 msgctxt "Title of the notified event"
 msgid "Title"
 msgstr "શીર્ષક"
 
-#: knotifyeventlist.cpp:83
+#: knotifyeventlist.cpp:77
 #, kde-format
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "વર્ણન"
+
+#~ msgid "Log to a file"
+#~ msgstr "ફાઇલમાં લૉગ મૂકો"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "ટાસ્કબાર દાખલાંને નિશાની કરો (&t)"
+
+#~ msgid "Run &command"
+#~ msgstr "આદેશ ચલાવો (&c)"
+
+#~ msgid "Select the command to run"
+#~ msgstr "ચલાવવા માટે આદેશ પસંદ કરો"
+
+#~ msgid "Sp&eech"
+#~ msgstr "વક્તવ્ય (&e)"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Specifies how KTTS should speak the event when received.  If you "
+#~| "select \"Speak custom text\", enter the text in the box.  You may use "
+#~| "the following substitution strings in the text:<dl><dt>%e</dt><dd>Name "
+#~| "of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>"
+#~| "%m</dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgid ""
+#~ "<qt>Specifies how knotify should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>KTTS એ ઘટના બને ત્યારે કઇ રીતે બોલવું જોઇએ તે સ્પષ્ટ કરે છે.  જો તમે \"પોતાનું લખાણ "
+#~ "બોલો\", પસંદ કર્યું હોય તો ખાનાંમાં લખાણ દાખલ કરો.  જો નીચેનાં બદલી વાક્યો લખાણમાં "
+#~ "ઉપયોગ કરી શકો છો:<dl><dt>%e</dt><dd>ઘટનાનું નામ</dd> <dt>%a</dt><dd>કાર્યક્રમ "
+#~ "જે ઘટના મોકલે છે</dd><dt>%m</dt><dd> કાર્યક્રમ દ્વારા મોકલાયેલ સંદેશ</dd></dl></qt>"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "ઘટના સંદેશો બોલો"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "ઘટના નામ બોલો"
+
+#~ msgid "Speak Custom Text"
+#~ msgstr "પોતાનું લખાણ બોલો"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Specifies how KTTS should speak the event when received.  If you "
+#~| "select \"Speak custom text\", enter the text in the box.  You may use "
+#~| "the following substitution strings in the text:<dl><dt>%e</dt><dd>Name "
+#~| "of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>"
+#~| "%m</dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgid ""
+#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>KTTS એ ઘટના બને ત્યારે કઇ રીતે બોલવું જોઇએ તે સ્પષ્ટ કરે છે.  જો તમે \"પોતાનું લખાણ "
+#~ "બોલો\", પસંદ કર્યું હોય તો ખાનાંમાં લખાણ દાખલ કરો.  જો નીચેનાં બદલી વાક્યો લખાણમાં "
+#~ "ઉપયોગ કરી શકો છો:<dl><dt>%e</dt><dd>ઘટનાનું નામ</dd> <dt>%a</dt><dd>કાર્યક્રમ "
+#~ "જે ઘટના મોકલે છે</dd><dt>%m</dt><dd> કાર્યક્રમ દ્વારા મોકલાયેલ સંદેશ</dd></dl></qt>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"

@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-19 02:23+0000\n"
+"POT-Creation-Date: 2023-05-06 02:08+0000\n"
 "PO-Revision-Date: 2002-12-13 17:20SAST\n"
 "Last-Translator: Lwandle Mgidlana <lwandle@translate.org.za>\n"
 "Language-Team: Xhosa <xhosa@translate.org.za>\n"
@@ -23,94 +23,22 @@ msgstr ""
 "X-Generator: KBabel 1.0beta2\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr ""
-
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
+#: knotifyconfigactionswidgetbase.ui:48
 #, fuzzy, kde-format
 msgid "Select the sound to play"
 msgstr "Khetha icebo lokucoca ulwelo ukudibanisa"
 
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:55
+#, kde-format
+msgid "Play a &sound"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
+#: knotifyconfigactionswidgetbase.ui:62
 #, kde-format
 msgid "Show a message in a &popup"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, fuzzy, kde-format
-#| msgid "Go to Line"
-msgid "Log to a file"
-msgstr "Yiya Elayinini"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr ""
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, fuzzy, kde-format
-msgid "Select the command to run"
-msgstr "Khetha icebo lokucoca ulwelo ukudibanisa"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, fuzzy, kde-format
-msgid "Sp&eech"
-msgstr "(phendla)"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, fuzzy, kde-format
-#| msgid "artsmessage"
-msgid "Speak Event Message"
-msgstr "artsmessage"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, fuzzy, kde-format
-msgid "Speak Event Name"
-msgstr "Nceda ngenisa igama:"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, fuzzy, kde-format
-msgid "Speak Custom Text"
-msgstr "Nceda ngenisa igama:"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
 msgstr ""
 
 #: knotifyconfigwidget.cpp:112
@@ -119,25 +47,51 @@ msgstr ""
 msgid "Configure Notifications"
 msgstr "Qwalasela &Ulwaziso..."
 
-#: knotifyeventlist.cpp:82
+#: knotifyeventlist.cpp:76
 #, fuzzy, kde-format
 #| msgid "State"
 msgctxt "State of the notified event"
 msgid "State"
 msgstr "Isigqeba selizwe"
 
-#: knotifyeventlist.cpp:82
+#: knotifyeventlist.cpp:76
 #, fuzzy, kde-format
 msgctxt "Title of the notified event"
 msgid "Title"
 msgstr "Tamil"
 
-#: knotifyeventlist.cpp:83
+#: knotifyeventlist.cpp:77
 #, fuzzy, kde-format
 #| msgid "Description:"
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "Uchazo:"
+
+#, fuzzy
+#~| msgid "Go to Line"
+#~ msgid "Log to a file"
+#~ msgstr "Yiya Elayinini"
+
+#, fuzzy
+#~ msgid "Select the command to run"
+#~ msgstr "Khetha icebo lokucoca ulwelo ukudibanisa"
+
+#, fuzzy
+#~ msgid "Sp&eech"
+#~ msgstr "(phendla)"
+
+#, fuzzy
+#~| msgid "artsmessage"
+#~ msgid "Speak Event Message"
+#~ msgstr "artsmessage"
+
+#, fuzzy
+#~ msgid "Speak Event Name"
+#~ msgstr "Nceda ngenisa igama:"
+
+#, fuzzy
+#~ msgid "Speak Custom Text"
+#~ msgstr "Nceda ngenisa igama:"
 
 #, fuzzy
 #~ msgctxt "NAME OF TRANSLATORS"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-19 02:23+0000\n"
+"POT-Creation-Date: 2023-05-06 02:08+0000\n"
 "PO-Revision-Date: 2013-09-08 07:05+0900\n"
 "Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
@@ -18,132 +18,103 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.5.5\n"
 
-#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
-#: knotifyconfigactionswidgetbase.ui:28
-#, kde-format
-msgid "Play a &sound"
-msgstr "ئاۋاز قوي(&S)"
-
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
-#: knotifyconfigactionswidgetbase.ui:54
+#: knotifyconfigactionswidgetbase.ui:48
 #, kde-format
 msgid "Select the sound to play"
 msgstr "قويىدىغان ئاۋازنى تاللاڭ"
 
+#. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
+#: knotifyconfigactionswidgetbase.ui:55
+#, kde-format
+msgid "Play a &sound"
+msgstr "ئاۋاز قوي(&S)"
+
 #. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
-#: knotifyconfigactionswidgetbase.ui:61
+#: knotifyconfigactionswidgetbase.ui:62
 #, kde-format
 msgid "Show a message in a &popup"
 msgstr "قاڭقىش كۆزنىكىدە ئۇچۇرنى كۆرسەت(&P)"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
-#: knotifyconfigactionswidgetbase.ui:68
-#, kde-format
-msgid "Log to a file"
-msgstr "خاتىرىنى ھۆججەتكە ساقلا"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
-#: knotifyconfigactionswidgetbase.ui:88
-#, kde-format
-msgid "Mark &taskbar entry"
-msgstr "ۋەزىپە تۈرىگە بەلگە سال(&T)"
-
-#. i18n: ectx: property (text), widget (QCheckBox, Execute_check)
-#: knotifyconfigactionswidgetbase.ui:95
-#, kde-format
-msgid "Run &command"
-msgstr "بۇيرۇق ئىجرا قىل(&C)"
-
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, Execute_select)
-#: knotifyconfigactionswidgetbase.ui:111
-#, kde-format
-msgid "Select the command to run"
-msgstr "ئىجرا قىلىدىغان بۇيرۇقنى تاللاڭ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
-#: knotifyconfigactionswidgetbase.ui:118
-#, kde-format
-msgid "Sp&eech"
-msgstr "تاۋۇش(&E)"
-
-#. i18n: ectx: property (whatsThis), widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:131
-#, fuzzy, no-c-format, kde-format
-#| msgid ""
-#| "<qt>Specifies how Jovie should speak the event when received.  If you "
-#| "select \"Speak custom text\", enter the text in the box.  You may use the "
-#| "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-#| "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-#| "dt><dd>The message sent by the application</dd></dl></qt>"
-msgid ""
-"<qt>Specifies how knotify should speak the event when received.  If you "
-"select \"Speak custom text\", enter the text in the box.  You may use the "
-"following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
-"event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
-"dt><dd>The message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>ھادىسە تاپشۇرۇۋالغاندا  Jovie ھادىسىنى قانداق ئوقۇيدۇ. ئەگەر «ئۆزى "
-"بەلگىلىگەن تېكىستنى ئوقۇ» تاللانغان بولسا رامكىغا تېكىست كىرگۈزۈڭ. سىز "
-"تېكىستكە تۆۋەندىكىدەك ئورۇن بەلگىلىرىنى كىرگۈزەلەيسىز: <dl><dt>%e</"
-"dt><dd>ھادىسە ئاتى</dd><dt>%a</dt><dd>ھادىسە يوللايدىغان پروگرامما</dd><dt>"
-"%m</dt><dd>پروگرامما يوللىغان ئۇچۇر</dd></dl></qt>"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:135
-#, kde-format
-msgid "Speak Event Message"
-msgstr "ئوقۇش ھادىسە ئۇچۇرى"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:140
-#, kde-format
-msgid "Speak Event Name"
-msgstr "ئوقۇش ھادىسە ئاتى"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
-#: knotifyconfigactionswidgetbase.ui:145
-#, kde-format
-msgid "Speak Custom Text"
-msgstr "ئىختىيارى تېكىست تەلەپپۇزى"
-
-#. i18n: ectx: property (whatsThis), widget (QLineEdit, TTS_select)
-#: knotifyconfigactionswidgetbase.ui:153
-#, no-c-format, kde-format
-msgid ""
-"<qt>Specifies how Jovie should speak the event when received.  If you select "
-"\"Speak custom text\", enter the text in the box.  You may use the following "
-"substitution strings in the text:<dl><dt>%e</dt><dd>Name of the event</"
-"dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
-"message sent by the application</dd></dl></qt>"
-msgstr ""
-"<qt>ھادىسە تاپشۇرۇۋالغاندا  Jovie ھادىسىنى قانداق ئوقۇيدۇ. ئەگەر «ئۆزى "
-"بەلگىلىگەن تېكىستنى ئوقۇ» تاللانغان بولسا رامكىغا تېكىست كىرگۈزۈڭ. سىز "
-"تېكىستكە تۆۋەندىكىدەك ئورۇن بەلگىلىرىنى كىرگۈزەلەيسىز: <dl><dt>%e</"
-"dt><dd>ھادىسە ئاتى</dd><dt>%a</dt><dd>ھادىسە يوللايدىغان پروگرامما</dd><dt>"
-"%m</dt><dd>پروگرامما يوللىغان ئۇچۇر</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:112
 #, kde-format
 msgid "Configure Notifications"
 msgstr "ئۇقتۇرۇش سەپلەش"
 
-#: knotifyeventlist.cpp:82
+#: knotifyeventlist.cpp:76
 #, kde-format
 msgctxt "State of the notified event"
 msgid "State"
 msgstr "ھالەت"
 
-#: knotifyeventlist.cpp:82
+#: knotifyeventlist.cpp:76
 #, kde-format
 msgctxt "Title of the notified event"
 msgid "Title"
 msgstr "ماۋزۇ"
 
-#: knotifyeventlist.cpp:83
+#: knotifyeventlist.cpp:77
 #, kde-format
 msgctxt "Description of the notified event"
 msgid "Description"
 msgstr "چۈشەندۈرۈش"
+
+#~ msgid "Log to a file"
+#~ msgstr "خاتىرىنى ھۆججەتكە ساقلا"
+
+#~ msgid "Mark &taskbar entry"
+#~ msgstr "ۋەزىپە تۈرىگە بەلگە سال(&T)"
+
+#~ msgid "Run &command"
+#~ msgstr "بۇيرۇق ئىجرا قىل(&C)"
+
+#~ msgid "Select the command to run"
+#~ msgstr "ئىجرا قىلىدىغان بۇيرۇقنى تاللاڭ"
+
+#~ msgid "Sp&eech"
+#~ msgstr "تاۋۇش(&E)"
+
+#, fuzzy
+#~| msgid ""
+#~| "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~| "select \"Speak custom text\", enter the text in the box.  You may use "
+#~| "the following substitution strings in the text:<dl><dt>%e</dt><dd>Name "
+#~| "of the event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>"
+#~| "%m</dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgid ""
+#~ "<qt>Specifies how knotify should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>ھادىسە تاپشۇرۇۋالغاندا  Jovie ھادىسىنى قانداق ئوقۇيدۇ. ئەگەر «ئۆزى "
+#~ "بەلگىلىگەن تېكىستنى ئوقۇ» تاللانغان بولسا رامكىغا تېكىست كىرگۈزۈڭ. سىز "
+#~ "تېكىستكە تۆۋەندىكىدەك ئورۇن بەلگىلىرىنى كىرگۈزەلەيسىز: <dl><dt>%e</"
+#~ "dt><dd>ھادىسە ئاتى</dd><dt>%a</dt><dd>ھادىسە يوللايدىغان پروگرامما</"
+#~ "dd><dt>%m</dt><dd>پروگرامما يوللىغان ئۇچۇر</dd></dl></qt>"
+
+#~ msgid "Speak Event Message"
+#~ msgstr "ئوقۇش ھادىسە ئۇچۇرى"
+
+#~ msgid "Speak Event Name"
+#~ msgstr "ئوقۇش ھادىسە ئاتى"
+
+#~ msgid "Speak Custom Text"
+#~ msgstr "ئىختىيارى تېكىست تەلەپپۇزى"
+
+#~ msgid ""
+#~ "<qt>Specifies how Jovie should speak the event when received.  If you "
+#~ "select \"Speak custom text\", enter the text in the box.  You may use the "
+#~ "following substitution strings in the text:<dl><dt>%e</dt><dd>Name of the "
+#~ "event</dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</"
+#~ "dt><dd>The message sent by the application</dd></dl></qt>"
+#~ msgstr ""
+#~ "<qt>ھادىسە تاپشۇرۇۋالغاندا  Jovie ھادىسىنى قانداق ئوقۇيدۇ. ئەگەر «ئۆزى "
+#~ "بەلگىلىگەن تېكىستنى ئوقۇ» تاللانغان بولسا رامكىغا تېكىست كىرگۈزۈڭ. سىز "
+#~ "تېكىستكە تۆۋەندىكىدەك ئورۇن بەلگىلىرىنى كىرگۈزەلەيسىز: <dl><dt>%e</"
+#~ "dt><dd>ھادىسە ئاتى</dd><dt>%a</dt><dd>ھادىسە يوللايدىغان پروگرامما</"
+#~ "dd><dt>%m</dt><dd>پروگرامما يوللىغان ئۇچۇر</dd></dl></qt>"
 
 #~ msgctxt "NAME OF TRANSLATORS"
 #~ msgid "Your names"
