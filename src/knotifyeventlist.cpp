@@ -105,7 +105,7 @@ void KNotifyEventList::fill(const QString &appname, bool loadDefaults)
     delete config;
     config = new KConfig(appname + QStringLiteral(".notifyrc"), KConfig::NoGlobals);
     config->addConfigSources(
-        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("knotifications5/") + appname + QStringLiteral(".notifyrc")));
+        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("knotifications6/") + appname + QStringLiteral(".notifyrc")));
 
     QStringList conflist = config->groupList();
     QRegularExpression rx(QStringLiteral("^Event/([^/]*)$"));
