@@ -42,7 +42,7 @@ msgstr "Reproducir un &son"
 #: knotifyconfigactionswidgetbase.ui:62
 #, kde-format
 msgid "Show a message in a &popup"
-msgstr "Mostrar unha mensaxe &contextual"
+msgstr "Amosar unha mensaxe &contextual"
 
 #: knotifyconfigwidget.cpp:112
 #, kde-format
