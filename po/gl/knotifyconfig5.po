@@ -42,7 +42,7 @@ msgstr "Escolla o son para reproducir"
 #: knotifyconfigactionswidgetbase.ui:61
 #, kde-format
 msgid "Show a message in a &popup"
-msgstr "Mostrar unha mensaxe &contextual"
+msgstr "Amosar unha mensaxe &contextual"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
 #: knotifyconfigactionswidgetbase.ui:68
