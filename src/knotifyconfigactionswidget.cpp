@@ -147,3 +147,5 @@ void KNotifyConfigActionsWidget::slotPlay()
     connect(media, SIGNAL(finished()), media, SLOT(deleteLater()));
 #endif
 }
+
+#include "moc_knotifyconfigactionswidget.cpp"

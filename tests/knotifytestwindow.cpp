@@ -83,3 +83,5 @@ void KNotifyTestWindow::slotConfigureG()
 {
     KNotifyConfigWidget::configure(this);
 }
+
+#include "moc_knotifytestwindow.cpp"
