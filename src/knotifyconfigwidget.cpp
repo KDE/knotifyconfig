@@ -149,3 +149,5 @@ void KNotifyConfigWidget::slotActionChanged()
         d->eventList->updateCurrentItem();
     }
 }
+
+#include "moc_knotifyconfigwidget.cpp"

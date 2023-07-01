@@ -241,3 +241,5 @@ void KNotifyEventListItem::update()
 {
     setData(0, Qt::UserRole, m_config.readEntry(QStringLiteral("Action")));
 }
+
+#include "moc_knotifyeventlist.cpp"

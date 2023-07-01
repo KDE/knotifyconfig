@@ -209,3 +209,5 @@ void KNotifyConfigActionsWidget::slotTTSComboChanged()
     m_ui.TTS_select->setEnabled(m_ui.TTS_check->isChecked() && m_ui.TTS_combo->currentIndex() == 2);
     Q_EMIT changed();
 }
+
+#include "moc_knotifyconfigactionswidget.cpp"

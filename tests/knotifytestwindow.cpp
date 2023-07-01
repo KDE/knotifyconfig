@@ -111,3 +111,5 @@ void KNotifyTestWindow::slotConfigureC()
         w->save();
     }
 }
+
+#include "moc_knotifytestwindow.cpp"
