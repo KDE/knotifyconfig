@@ -20,6 +20,9 @@
 #include <phonon/mediaobject.h>
 #endif
 
+// TODO: Just for testing. Add a way to pass the sound theme here and eventually make it user selectable
+const QString SOUND_THEME = QStringLiteral("oxygen");
+
 KNotifyConfigActionsWidget::KNotifyConfigActionsWidget(QWidget *parent)
     : QWidget(parent)
 {
@@ -84,11 +87,11 @@ void KNotifyConfigActionsWidget::save(KNotifyConfigElement *config)
 
 void KNotifyConfigActionsWidget::slotPlay()
 {
-    const QString soundFilename = m_ui.Sound_select->text();
+    const QString soundName = m_ui.Sound_select->text();
     QUrl soundURL;
     const auto dataLocations = QStandardPaths::standardLocations(QStandardPaths::GenericDataLocation);
     for (const QString &dataLocation : dataLocations) {
-        soundURL = QUrl::fromUserInput(soundFilename, dataLocation + QStringLiteral("/sounds"), QUrl::AssumeLocalFile);
+        soundURL = QUrl::fromUserInput(soundName, dataLocation + QStringLiteral("/sounds"), QUrl::AssumeLocalFile);
         if (soundURL.isLocalFile() && QFile::exists(soundURL.toLocalFile())) {
             break;
         } else if (!soundURL.isLocalFile() && soundURL.isValid()) {
@@ -128,9 +131,14 @@ void KNotifyConfigActionsWidget::slotPlay()
     ca_proplist *props = nullptr;
     ca_proplist_create(&props);
 
+    ca_proplist_sets(props, CA_PROP_EVENT_ID, soundName.toLatin1().constData());
+    ca_proplist_sets(props, CA_PROP_CANBERRA_XDG_THEME_NAME, SOUND_THEME.toLatin1().constData());
+    // Fallback to filename
+    if (!soundURL.isEmpty()) {
+        ca_proplist_sets(props, CA_PROP_MEDIA_FILENAME, QFile::encodeName(soundURL.toLocalFile()).constData());
+    }
     // We'll also want this cached for a time. volatile makes sure the cache is
     // dropped after some time or when the cache is under pressure.
-    ca_proplist_sets(props, CA_PROP_MEDIA_FILENAME, QFile::encodeName(soundURL.toLocalFile()).constData());
     ca_proplist_sets(props, CA_PROP_CANBERRA_CACHE_CONTROL, "volatile");
 
     int ret = ca_context_play_full(m_context, 0, props, nullptr, nullptr);
@@ -138,7 +146,7 @@ void KNotifyConfigActionsWidget::slotPlay()
     ca_proplist_destroy(props);
 
     if (ret != CA_SUCCESS) {
-        qCWarning(KNOTIFYCONFIG_LOG) << "Failed to play sound with canberra:" << ca_strerror(ret);
+        qCWarning(KNOTIFYCONFIG_LOG) << "Failed to play sound" << soundName << "with canberra:" << ca_strerror(ret);
         return;
     }
 #elif HAVE_PHONON
