@@ -79,7 +79,7 @@ msgstr ""
 "<qt>knotify에서 받은 이벤트를 어떻게 말할 것인지 설정합니다. \"사용자 정의 텍"
 "스트 말하기\"를 선택했으면 상자에 텍스트를 입력하십시오. 텍스트의 다음 문자열"
 "은 대체됩니다:<dl><dt>%e</dt><dd>이벤트 이름</dd><dt>%a</dt><dd>이벤트를 보"
-"낸 프로그램</dd><dt>%m</dt><dd>프로그램이 보낸 메시지</dd></dl></qt>"
+"낸 앱</dd><dt>%m</dt><dd>앱이 보낸 메시지</dd></dl></qt>"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
 #: knotifyconfigactionswidgetbase.ui:135
@@ -112,7 +112,7 @@ msgstr ""
 "<qt>Jovie에서 받은 이벤트를 어떻게 말할 것인지 설정합니다. \"사용자 정의 텍스"
 "트 말하기\"를 선택했으면 상자에 텍스트를 입력하십시오. 텍스트의 다음 문자열"
 "은 대체됩니다:<dl><dt>%e</dt><dd>이벤트 이름</dd><dt>%a</dt><dd>이벤트를 보"
-"낸 프로그램</dd><dt>%m</dt><dd>프로그램이 보낸 메시지</dd></dl></qt>"
+"낸 앱</dd><dt>%m</dt><dd>앱이 보낸 메시지</dd></dl></qt>"
 
 #: knotifyconfigwidget.cpp:119
 #, kde-format
