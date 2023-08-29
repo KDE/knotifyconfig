@@ -27,7 +27,7 @@ include(KDEGitCommitHooks)
 include(ECMDeprecationSettings)
 
 # Required Qt components to build this framework
-set(REQUIRED_QT_VERSION 6.4.0)
+set(REQUIRED_QT_VERSION 6.5.0)
 find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
 
 find_package(KF6Completion ${KF_DEP_VERSION} REQUIRED)
