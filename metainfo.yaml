@@ -11,8 +11,7 @@ portingAid: false
 deprecated: false
 release: true
 libraries:
- - qmake: KNotifyConfig
-   cmake: "KF6::NotifyConfig"
+ - cmake: "KF6::NotifyConfig"
 cmakename: KF6NotifyConfig
 
 public_lib: true
