@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:25+0000\n"
-"PO-Revision-Date: 2024-02-29 12:56\n"
+"PO-Revision-Date: 2024-03-09 04:49\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
 "Language: zh_CN\n"
@@ -33,13 +33,13 @@ msgstr "选择要播放的声音"
 #: knotifyconfigactionswidgetbase.ui:61
 #, kde-format
 msgid "Show a message in a &popup"
-msgstr "在弹出窗口中显示消息(&P)"
+msgstr "显示弹窗消息(&P)"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
 #: knotifyconfigactionswidgetbase.ui:68
 #, kde-format
 msgid "Log to a file"
-msgstr "将日志记录到文件"
+msgstr "保存日志到文件"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Taskbar_check)
 #: knotifyconfigactionswidgetbase.ui:88
