@@ -44,7 +44,11 @@ target_link_libraries(KF6NotifyConfig
         PRIVATE
             KF6::I18n
             KF6::KIOWidgets     # KUrlRequester
-            Qt6::DBus)
+)
+
+if (UNIX AND NOT APPLE)
+    target_link_libraries(KF6NotifyConfig PRIVATE Qt6::DBus)
+endif()
 
 if(Canberra_FOUND)
   target_link_libraries(KF6NotifyConfig PRIVATE Canberra::Canberra)

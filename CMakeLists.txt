@@ -28,7 +28,11 @@ include(ECMDeprecationSettings)
 
 # Required Qt components to build this framework
 set(REQUIRED_QT_VERSION 6.5.0)
-find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets DBus)
+find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets)
+
+if (UNIX AND NOT APPLE)
+  find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED DBus)
+endif()
 
 find_package(KF6Completion ${KF_DEP_VERSION} REQUIRED)
 find_package(KF6Config ${KF_DEP_VERSION} REQUIRED)

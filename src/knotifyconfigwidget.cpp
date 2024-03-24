@@ -10,11 +10,14 @@
 #include "knotifyconfigelement.h"
 #include "knotifyeventlist.h"
 
-#include <QDBusConnectionInterface>
 #include <QDialog>
 #include <QDialogButtonBox>
 #include <QPushButton>
 #include <QVBoxLayout>
+
+#ifdef QT_DBUS_LIB
+#include <QDBusConnectionInterface>
+#endif
 
 #include <KLocalizedString>
 
@@ -82,11 +85,13 @@ void KNotifyConfigWidget::save()
     d->eventList->save();
     Q_EMIT changed(false);
 
+#ifdef QT_DBUS_LIB
     // ask KNotification objects to reload their config
     QDBusMessage message =
         QDBusMessage::createSignal(QStringLiteral("/Config"), QStringLiteral("org.kde.knotification"), QStringLiteral("reparseConfiguration"));
     message.setArguments(QVariantList() << d->application);
     QDBusConnection::sessionBus().send(message);
+#endif
 }
 
 void KNotifyConfigWidget::revertToDefaults()
