@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knotifyconfig\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-06 02:08+0000\n"
+"POT-Creation-Date: 2024-03-25 00:36+0000\n"
 "PO-Revision-Date: 2020-07-22 13:07+0200\n"
 "Last-Translator: Antoni Bella Pérez <antonibella5@yahoo.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -44,7 +44,7 @@ msgstr "Reprodueix un &so"
 msgid "Show a message in a &popup"
 msgstr "Mostra un missatge en una finestra emer&gent"
 
-#: knotifyconfigwidget.cpp:112
+#: knotifyconfigwidget.cpp:117
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Configura les notificacions"

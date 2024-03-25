@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-06 02:08+0000\n"
+"POT-Creation-Date: 2024-03-25 00:36+0000\n"
 "PO-Revision-Date: 2012-05-30 23:19+0200\n"
 "Last-Translator: Børre Gaup <boerre@skolelinux.no>\n"
 "Language-Team: Northern Sami <l10n-no@lister.huftis.org>\n"
@@ -37,7 +37,7 @@ msgstr "Čuojat &jiena"
 msgid "Show a message in a &popup"
 msgstr "Čájet dieđu &báhccanláses"
 
-#: knotifyconfigwidget.cpp:112
+#: knotifyconfigwidget.cpp:117
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Heivet dieđáhusaid …"

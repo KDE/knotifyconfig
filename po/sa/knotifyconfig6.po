@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knotifyconfig\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-06 02:08+0000\n"
+"POT-Creation-Date: 2024-03-25 00:36+0000\n"
 "PO-Revision-Date: 2023-09-26 23:14+0530\n"
 "Last-Translator: \n"
 "Language-Team: Sanskrit <kde-i18n-doc@kde.org>\n"
@@ -36,7 +36,7 @@ msgstr "एकं &ध्वनिं वादयतु"
 msgid "Show a message in a &popup"
 msgstr "एकं सन्देशं &उद्भित्सूचिमध्ये दर्शयतु"
 
-#: knotifyconfigwidget.cpp:112
+#: knotifyconfigwidget.cpp:117
 #, kde-format
 msgid "Configure Notifications"
 msgstr "सूचनाः विन्यस्यताम्"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knotifyconfig5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-06 02:08+0000\n"
+"POT-Creation-Date: 2024-03-25 00:36+0000\n"
 "PO-Revision-Date: 2017-09-28 17:58+0200\n"
 "Last-Translator: Chusslove Illich <caslav.ilic@gmx.net>\n"
 "Language-Team: Serbian <kde-i18n-sr@kde.org>\n"
@@ -39,7 +39,7 @@ msgstr "Пусти &звук"
 msgid "Show a message in a &popup"
 msgstr "Прикажи &искачућу поруку"
 
-#: knotifyconfigwidget.cpp:112
+#: knotifyconfigwidget.cpp:117
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Подеси обавјештења"

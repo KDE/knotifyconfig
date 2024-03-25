@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: knotifyconfig\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-06 02:08+0000\n"
+"POT-Creation-Date: 2024-03-25 00:36+0000\n"
 "PO-Revision-Date: 2020-07-16 08:55+0400\n"
 "Last-Translator: Xəyyam Qocayev <xxmn77@gmail.com>\n"
 "Language-Team: Azerbaijani <kde-i18n-doc@kde.org>\n"
@@ -35,7 +35,7 @@ msgstr "&Səsi oxudun"
 msgid "Show a message in a &popup"
 msgstr "Mesajı &pop-up pəncərədə göstər"
 
-#: knotifyconfigwidget.cpp:112
+#: knotifyconfigwidget.cpp:117
 #, kde-format
 msgid "Configure Notifications"
 msgstr "Bildirişləri Tənzimlə"

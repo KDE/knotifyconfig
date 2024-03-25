@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-06 02:08+0000\n"
+"POT-Creation-Date: 2024-03-25 00:36+0000\n"
 "PO-Revision-Date: 2010-12-29 15:32+0530\n"
 "Last-Translator: \n"
 "Language-Team: SMC <smc.org.in>\n"
@@ -39,7 +39,7 @@ msgstr "ഒരു ശബ്ദം കേള്‍പ്പിയ്ക്കു�
 msgid "Show a message in a &popup"
 msgstr "പൊങ്ങിവരുന്ന ജാലകത്തില്‍ ഒരു സന്ദേശം കാണിയ്ക്കുക &p"
 
-#: knotifyconfigwidget.cpp:112
+#: knotifyconfigwidget.cpp:117
 #, kde-format
 msgid "Configure Notifications"
 msgstr "അറിയിപ്പുകള്‍ ക്രമീകരിക്കുക"
