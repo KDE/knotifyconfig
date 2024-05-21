@@ -9,7 +9,7 @@
 #include <KActionCollection>
 #include <KLocalizedString>
 #include <KMessageBox>
-#include <KStandardAction>
+#include <KStandardActions>
 #include <KXMLGUIFactory>
 
 #include <QDialog>
@@ -32,9 +32,9 @@ KNotifyTestWindow::KNotifyTestWindow(QWidget *parent)
     setCentralWidget(w);
 
     // set up the actions
-    actionCollection()->addAction(KStandardAction::Quit, this, SLOT(close()));
+    actionCollection()->addAction(KStandardActions::Quit, this, &KNotifyTestWindow::close);
 
-    KStandardAction::keyBindings(guiFactory(), &KXMLGUIFactory::showConfigureShortcutsDialog, actionCollection());
+    KStandardActions::keyBindings(guiFactory(), &KXMLGUIFactory::showConfigureShortcutsDialog, actionCollection());
 
     createGUI(QFINDTESTDATA("knotifytestui.rc"));
 

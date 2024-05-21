@@ -35,6 +35,5 @@ target_link_libraries(knotifytest
    KF6::I18n
    KF6::XmlGui
    KF6::Completion
-   KF6::ConfigWidgets # KStandardAction
    KF6::WidgetsAddons # KMessageBox
 )
