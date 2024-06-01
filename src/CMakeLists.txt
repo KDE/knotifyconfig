@@ -46,7 +46,7 @@ target_link_libraries(KF6NotifyConfig
             KF6::KIOWidgets     # KUrlRequester
 )
 
-if (UNIX AND NOT APPLE)
+if (HAVE_DBUS)
     target_link_libraries(KF6NotifyConfig PRIVATE Qt6::DBus)
 endif()
 

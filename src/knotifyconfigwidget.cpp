@@ -15,7 +15,7 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 
-#ifdef QT_DBUS_LIB
+#ifdef HAVE_DBUS
 #include <QDBusConnectionInterface>
 #endif
 
@@ -85,7 +85,7 @@ void KNotifyConfigWidget::save()
     d->eventList->save();
     Q_EMIT changed(false);
 
-#ifdef QT_DBUS_LIB
+#ifdef HAVE_DBUS
     // ask KNotification objects to reload their config
     QDBusMessage message =
         QDBusMessage::createSignal(QStringLiteral("/Config"), QStringLiteral("org.kde.knotification"), QStringLiteral("reparseConfiguration"));
