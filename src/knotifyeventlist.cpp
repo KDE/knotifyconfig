@@ -104,8 +104,12 @@ void KNotifyEventList::fill(const QString &appname, bool loadDefaults)
     clear();
     delete config;
     config = new KConfig(appname + QStringLiteral(".notifyrc"), KConfig::NoGlobals);
-    config->addConfigSources(
-        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("knotifications6/") + appname + QStringLiteral(".notifyrc")));
+    auto configSources =
+        QStandardPaths::locateAll(QStandardPaths::GenericDataLocation, QStringLiteral("knotifications6/") + appname + QStringLiteral(".notifyrc"));
+    // `QStandardPaths` follows the order of precedence given by `$XDG_DATA_DIRS
+    // (more priority goest first), but for `addConfigSources() it is the opposite
+    std::reverse(configSources.begin(), configSources.end());
+    config->addConfigSources(configSources);
 
     QStringList conflist = config->groupList();
     QRegularExpression rx(QStringLiteral("^Event/([^/]*)$"));
