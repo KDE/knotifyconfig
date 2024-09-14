@@ -2,7 +2,7 @@
 #define KNOTIFY_CONFIG_H
 
 #cmakedefine01 HAVE_CANBERRA
-#cmakedefine01 HAVE_PHONON
+#cmakedefine01 HAVE_QTMULTIMEDIA
 
 #endif /* KNOTIFY_CONFIG_H */
 

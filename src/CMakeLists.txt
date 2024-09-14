@@ -1,5 +1,5 @@
 set(HAVE_CANBERRA ${Canberra_FOUND})
-set(HAVE_PHONON ${Phonon4Qt6_FOUND})
+set(HAVE_QTMULTIMEDIA ${Qt6Multimedia_FOUND})
 configure_file(knotify-config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/knotify-config.h )
 
 add_library(KF6NotifyConfig)
@@ -52,8 +52,8 @@ endif()
 
 if(Canberra_FOUND)
   target_link_libraries(KF6NotifyConfig PRIVATE Canberra::Canberra)
-elseif (Phonon4Qt6_FOUND)
-    target_link_libraries(KF6NotifyConfig PRIVATE Phonon::phonon4qt6)
+elseif (Qt6Multimedia_FOUND)
+    target_link_libraries(KF6NotifyConfig PRIVATE Qt6::Multimedia)
 endif()
 
 ecm_generate_headers(KNotifyConfig_HEADERS

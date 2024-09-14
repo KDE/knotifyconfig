@@ -6,7 +6,6 @@ Dependencies:
     'frameworks/ki18n' : '@same'
     'frameworks/knotifications' : '@same'
     'frameworks/kxmlgui' : '@same'
-    'libraries/phonon' : '@stable'
 
 Options:
   test-before-installing: True

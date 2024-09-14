@@ -16,8 +16,9 @@
 
 #if HAVE_CANBERRA
 #include <canberra.h>
-#elif HAVE_PHONON
-#include <phonon/mediaobject.h>
+#elif HAVE_QTMULTIMEDIA
+#include <QAudioOutput>
+#include <QMediaPlayer>
 #endif
 
 KNotifyConfigActionsWidget::KNotifyConfigActionsWidget(QWidget *parent)
@@ -141,10 +142,20 @@ void KNotifyConfigActionsWidget::slotPlay()
         qCWarning(KNOTIFYCONFIG_LOG) << "Failed to play sound with canberra:" << ca_strerror(ret);
         return;
     }
-#elif HAVE_PHONON
-    Phonon::MediaObject *media = Phonon::createPlayer(Phonon::NotificationCategory, soundURL);
-    media->play();
-    connect(media, SIGNAL(finished()), media, SLOT(deleteLater()));
+#elif HAVE_QTMULTIMEDIA
+    auto player = new QMediaPlayer(this);
+    auto audioOutput = new QAudioOutput(player);
+    connect(player, &QMediaPlayer::playingChanged, player, [player](bool playing) {
+        if (!playing) {
+            player->deleteLater();
+        }
+    });
+    connect(player, &QMediaPlayer::errorOccurred, player, [player]() {
+        player->deleteLater();
+    });
+    player->setAudioOutput(audioOutput);
+    player->setSource(soundURL);
+    player->play();
 #endif
 }
 
