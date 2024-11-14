@@ -14,7 +14,7 @@
 class KConfig;
 class KConfigGroup;
 
-/**
+/*
  * Represent the config for an event
         @author Olivier Goffart <ogoffart@kde.org>
  */

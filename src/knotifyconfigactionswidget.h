@@ -18,9 +18,9 @@ struct ca_context;
 
 class KNotifyConfigElement;
 
-/**
+/*
  * Represent the config for an event
- *  @internal
+ *  \internal
  *  @author Olivier Goffart <ogoffart @ kde.org>
  */
 class KNotifyConfigActionsWidget : public QWidget

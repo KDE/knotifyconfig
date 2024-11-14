@@ -1,0 +1,10 @@
+/*!
+    \module KNotifyConfig
+    \title KNotifyConfig C++ Classes
+    \ingroup modules
+    \cmakepackage KF6
+    \cmakecomponent NotifyConfig
+
+    \brief KNotifyConfig provies a unified configuration dialog for desktop notifications.
+
+*/
