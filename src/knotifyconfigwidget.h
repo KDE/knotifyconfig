@@ -25,7 +25,6 @@ class KNotifyConfigWidgetPrivate;
  *
  * If you create the widget yourself, you must call setApplication before showing it
  *
- * @author Olivier Goffart <ogoffart @ kde.org>
  */
 class KNOTIFYCONFIG_EXPORT KNotifyConfigWidget : public QWidget
 {

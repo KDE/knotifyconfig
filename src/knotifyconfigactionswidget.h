@@ -20,8 +20,6 @@ class KNotifyConfigElement;
 
 /*
  * Represent the config for an event
- *  \internal
- *  @author Olivier Goffart <ogoffart @ kde.org>
  */
 class KNotifyConfigActionsWidget : public QWidget
 {
