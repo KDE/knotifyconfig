@@ -17,7 +17,7 @@
 class KNotifyConfigElement;
 class KNotifyConfigWidgetPrivate;
 /*!
- * \ass KNotifyConfigWidget knotifyconfigwidget.h <KNotifyConfigWidget>
+ * \class KNotifyConfigWidget
  *
  * Configure the notification for a given application
  *
@@ -36,8 +36,8 @@ public:
 
     /*!
      * Show a dialog with the widget.
-     * \ parent the parent widget of the dialog
-     * \ appname the application name,  if null, it is autodetected
+     * \a parent the parent widget of the dialog
+     * \a appname the application name,  if null, it is autodetected
      * Returns the widget itself    the topLevelWidget of it is probably a KDialog
      */
     static KNotifyConfigWidget *configure(QWidget *parent = nullptr, const QString &appname = QString());
@@ -45,14 +45,14 @@ public:
     /*!
      * Change the application
      *
-     * \ appname name of the application.   if null QCoreApplication::instance()->applicationName() is used
+     * \a appname name of the application.   if null QCoreApplication::instance()->applicationName() is used
      */
     void setApplication(const QString &appname = QString());
 
     /*!
      * Select a given notification in the current list
      *
-     * \ id The id of the notification
+     * \a id The id of the notification
      * \since 5.18
      */
     void selectEvent(const QString &eventId);

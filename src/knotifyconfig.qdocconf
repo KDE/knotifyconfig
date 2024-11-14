@@ -12,7 +12,7 @@ imagedirs = ../docs/pics
 
 outputformats = HTML
 
-depends += qtcore qtgui qtwidgets qtxml kde kcoreaddons kconfigcore kxmlgui kcmodules
+depends += qtcore qtgui qtwidgets qtxml kde kcoreaddons kconfigcore kxmlgui kcmutils
 
 qhp.projects            = KNotifyConfig
 
