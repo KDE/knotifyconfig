@@ -20,8 +20,8 @@ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
 include(ECMGenerateExportHeader)
 include(ECMSetupVersion)
 include(ECMGenerateHeaders)
+include(ECMGenerateQDoc)
 include(ECMQtDeclareLoggingCategory)
-include(ECMAddQch)
 include(CMakePackageConfigHelpers)
 include(KDEGitCommitHooks)
 include(ECMDeprecationSettings)
@@ -69,9 +69,6 @@ ecm_setup_version(
   PACKAGE_VERSION_FILE "${CMAKE_CURRENT_BINARY_DIR}/KF6NotifyConfigConfigVersion.cmake"
   SOVERSION 6)
 
-option(BUILD_QCH "Build API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)" OFF)
-add_feature_info(QCH ${BUILD_QCH} "API documentation in QCH format (for e.g. Qt Assistant, Qt Creator & KDevelop)")
-
 ecm_set_disabled_deprecation_versions(
     QT 6.8.0
     KF 6.11.0
@@ -87,16 +84,6 @@ endif()
 
 # Create a Config.cmake and a ConfigVersion.cmake file and install them
 set(CMAKECONFIG_INSTALL_DIR "${KDE_INSTALL_CMAKEPACKAGEDIR}/KF6NotifyConfig")
-
-if (BUILD_QCH)
-    ecm_install_qch_export(
-        TARGETS KF6NotifyConfig_QCH
-        FILE KF6NotifyConfigQchTargets.cmake
-        DESTINATION "${CMAKECONFIG_INSTALL_DIR}"
-        COMPONENT Devel
-    )
-    set(PACKAGE_INCLUDE_QCHTARGETS "include(\"\${CMAKE_CURRENT_LIST_DIR}/KF6NotifyConfigQchTargets.cmake\")")
-endif()
 
 configure_package_config_file(
   "${CMAKE_CURRENT_SOURCE_DIR}/KF6NotifyConfigConfig.cmake.in"
