@@ -71,32 +71,10 @@ install(FILES
   ${KNotifyConfig_HEADERS}
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig COMPONENT Devel)
 
-if(BUILD_QCH)
-    ecm_add_qch(
-        KF6NotifyConfig_QCH
-        NAME KNotifyConfig
-        BASE_NAME KF6NotifyConfig
-        VERSION ${KF_VERSION}
-        ORG_DOMAIN org.kde
-        SOURCES # using only public headers, to cover only public API
-            ${KNotifyConfig_HEADERS}
-        MD_MAINPAGE "${CMAKE_SOURCE_DIR}/README.md"
-        LINK_QCHS
-            Qt6Widgets_QCH
-        INCLUDE_DIRS
-            ${CMAKE_CURRENT_BINARY_DIR}
-        BLANK_MACROS
-            KNOTIFYCONFIG_EXPORT
-            KNOTIFYCONFIG_DEPRECATED
-            KNOTIFYCONFIG_DEPRECATED_EXPORT
-        TAGFILE_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        QCH_INSTALL_DESTINATION ${KDE_INSTALL_QTQCHDIR}
-        COMPONENT Devel
-    )
-endif()
-
 ecm_qt_install_logging_categories(
     EXPORT KNOTIFYCONFIG
     FILE knotifyconfig.categories
     DESTINATION "${KDE_INSTALL_LOGGINGCATEGORIESDIR}"
 )
+
+ecm_generate_qdoc(KF6NotifyConfig knotifyconfig.qdocconf)

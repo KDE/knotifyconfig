@@ -16,9 +16,6 @@ class KNotifyConfigElement;
 class KNotifyEventListItem;
 class KConfig;
 
-/**
-    @author Olivier Goffart <ogoffart at kde.org>
-*/
 class KNotifyEventList : public QTreeWidget
 {
     Q_OBJECT

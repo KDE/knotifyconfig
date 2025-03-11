@@ -1,0 +1,29 @@
+include($KDE_DOCS/global/qt-module-defaults.qdocconf)
+
+project = KNotifyConfig
+description = Configuration system for KNotifications
+
+documentationinheaders = true
+
+headerdirs += .
+sourcedirs += .
+
+imagedirs = ../docs/pics
+
+outputformats = HTML
+
+depends += qtcore qtgui qtwidgets qtxml kde kcoreaddons kconfigcore kxmlgui kcmutils
+
+qhp.projects            = KNotifyConfig
+
+qhp.KNotifyConfig.file                = knotifyconfig.qhp
+qhp.KNotifyConfig.namespace           = org.kde.knotifyconfig.$QT_VERSION_TAG
+qhp.KNotifyConfig.virtualFolder       = knotifyconfig
+qhp.KNotifyConfig.indexTitle          = KNotifyConfig
+qhp.KNotifyConfig.indexRoot           =
+
+qhp.KNotifyConfig.subprojects         = classes
+qhp.KNotifyConfig.subprojects.classes.title = C++ Classes
+qhp.KNotifyConfig.subprojects.classes.indexTitle = KNotifyConfig C++ Classes
+qhp.KNotifyConfig.subprojects.classes.selectors = class fake:headerfile
+qhp.KNotifyConfig.subprojects.classes.sortPages = true

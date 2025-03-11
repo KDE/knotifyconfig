@@ -1,0 +1,20 @@
+/*!
+    \page knotifyconfig-index.html
+    \title KNotifyConfig
+
+    Configuration system for KNotifications
+
+    \section1 Using the Module
+
+    \include {module-use.qdocinc} {using the c++ api}
+
+    \section2 Building with CMake
+
+    \include {module-use.qdocinc} {building with cmake} {KF6} {NotifyConfig} {KF6::NotifyConfig}
+
+    \section1 API Reference
+
+    \list
+        \li \l{KNotifyConfig C++ Classes}
+    \endlist
+*/
