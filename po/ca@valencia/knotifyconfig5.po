@@ -36,7 +36,7 @@ msgstr "Reproduïx un &so"
 #: knotifyconfigactionswidgetbase.ui:54
 #, kde-format
 msgid "Select the sound to play"
-msgstr "Seleccioneu el so que s'ha de reproduir"
+msgstr "Trieu el so que s'ha de reproduir"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
 #: knotifyconfigactionswidgetbase.ui:61
@@ -66,7 +66,7 @@ msgstr "Executa una &ordre"
 #: knotifyconfigactionswidgetbase.ui:111
 #, kde-format
 msgid "Select the command to run"
-msgstr "Seleccioneu l'ordre que s'ha d'executar"
+msgstr "Trieu l'ordre que s'ha d'executar"
 
 #. i18n: ectx: property (text), widget (QCheckBox, TTS_check)
 #: knotifyconfigactionswidgetbase.ui:118
@@ -85,11 +85,10 @@ msgid ""
 "dt><dd>The message sent by the application</dd></dl></qt>"
 msgstr ""
 "<qt>Especifica com ha de llegir el knotify quan reba l'esdeveniment. Si "
-"seleccioneu «Llig un text personalitzat», introduïu el text en el quadro. "
-"Podeu emprar les següents cadenes de substitució en el text:<dl><dt>%e</"
-"dt><dd>Nom de l'esdeveniment</dd><dt>%a</dt><dd>Aplicació que envia "
-"l'esdeveniment</dd><dt>%m</dt><dd>Missatge enviat per l'aplicació</dd></dl></"
-"qt>"
+"trieu «Llig un text personalitzat», introduïu el text en el quadro. Podeu "
+"emprar les següents cadenes de substitució en el text:<dl><dt>%e</dt><dd>Nom "
+"de l'esdeveniment</dd><dt>%a</dt><dd>Aplicació que envia l'esdeveniment</"
+"dd><dt>%m</dt><dd>Missatge enviat per l'aplicació</dd></dl></qt>"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, TTS_combo)
 #: knotifyconfigactionswidgetbase.ui:135
@@ -119,9 +118,9 @@ msgid ""
 "dd><dt>%a</dt><dd>Application that sent the event</dd><dt>%m</dt><dd>The "
 "message sent by the application</dd></dl></qt>"
 msgstr ""
-"<qt>Indiqueu què ha de llegir Jovie quan reba l'esdeveniment. Si seleccioneu "
-"«Llig un text personalitzat», introduïu el text en el quadro. Podeu emprar "
-"les següents cadenes de substitució en el text:<dl><dt>%e</dt><dd>Nom de "
+"<qt>Indiqueu què ha de llegir Jovie quan reba l'esdeveniment. Si trieu «Llig "
+"un text personalitzat», introduïu el text en el quadro. Podeu emprar les "
+"següents cadenes de substitució en el text:<dl><dt>%e</dt><dd>Nom de "
 "l'esdeveniment</dd><dt>%a</dt><dd>Aplicació que envia l'esdeveniment</dd><dt>"
 "%m</dt><dd>Missatge enviat per l'aplicació</dd></dl></qt>"
 
