@@ -30,7 +30,7 @@ msgstr ""
 #: knotifyconfigactionswidgetbase.ui:48
 #, kde-format
 msgid "Select the sound to play"
-msgstr "Seleccioneu el so que s'ha de reproduir"
+msgstr "Trieu el so que s'ha de reproduir"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
 #: knotifyconfigactionswidgetbase.ui:55
