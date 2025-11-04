@@ -52,7 +52,7 @@ msgstr "Sélectionnez le son à lire"
 #: knotifyconfigactionswidgetbase.ui:61
 #, kde-format
 msgid "Show a message in a &popup"
-msgstr "Afficher un message dans une fen&être qui apparaît"
+msgstr "Afficher un message dans une fen&être qui apparait"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Logfile_check)
 #: knotifyconfigactionswidgetbase.ui:68
@@ -96,7 +96,7 @@ msgid ""
 msgstr ""
 "<qt>Spécifie comment KNotify énoncera l'évènement lors de sa réception. Si "
 "vous sélectionnez « Énoncer un texte personnalisé », saisissez le texte dans "
-"le champ de saisie. Vous pouvez également utiliser les chaînes de "
+"le champ de saisie. Vous pouvez également utiliser les chaines de "
 "substitution suivantes dans le texte : <dl><dt>%e</dt><dd>Nom de "
 "l'évènement</dd><dt>%a</dt><dd>Application ayant envoyé l'évènement</dd><dt>"
 "%m</dt><dd>Le message envoyé par l'application</dd></dl></qt>"
@@ -131,7 +131,7 @@ msgid ""
 msgstr ""
 "<qt>Spécifie comment Jovie énoncera l'évènement lors de sa réception. Si "
 "vous sélectionnez « Énoncer un texte personnalisé », saisissez le texte dans "
-"le champ de saisie. Vous pouvez également utiliser les chaînes de "
+"le champ de saisie. Vous pouvez également utiliser les chaines de "
 "substitution suivantes dans le texte : <dl><dt>%e</dt><dd>Nom de "
 "l'évènement</dd><dt>%a</dt><dd>Application ayant envoyé l'évènement</dd><dt>"
 "%m</dt><dd>Le message envoyé par l'application</dd></dl></qt>"
