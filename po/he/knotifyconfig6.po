@@ -17,19 +17,20 @@
 # Meni Livne <livne@kde.org>, 2007.
 # tahmar1900 <tahmar1900@gmail.com>, 2008, 2009.
 # Elkana Bardugo <ttv200@gmail.com>, 2017. #zanata
+# SPDX-FileCopyrightText: 2026 Yaron Shahrabani <sh.yaron@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: knotifyconfig5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:49+0000\n"
-"PO-Revision-Date: 2017-05-16 06:50-0400\n"
-"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
-"Language-Team: Hebrew <kde-i18n-doc@kde.org>\n"
+"PO-Revision-Date: 2026-04-11 21:46+0300\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
+"Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 3.9.6\n"
+"X-Generator: Lokalize 25.12.3\n"
 "Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
 "n % 10 == 0) ? 2 : 3));\n"
 
@@ -37,24 +38,24 @@ msgstr ""
 #: knotifyconfigactionswidgetbase.ui:48
 #, kde-format
 msgid "Select the sound to play"
-msgstr "בחר את הצליל שיש לנגן"
+msgstr "בחירת הצליל לניגון"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
 #: knotifyconfigactionswidgetbase.ui:55
 #, kde-format
 msgid "Play a &sound"
-msgstr "נגן &צליל"
+msgstr "ניגון &צליל"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
 #: knotifyconfigactionswidgetbase.ui:62
 #, kde-format
 msgid "Show a message in a &popup"
-msgstr "הצג הודעה &מוקפצת"
+msgstr "הצגת הודעה &מוקפצת"
 
 #: knotifyconfigwidget.cpp:117
 #, kde-format
 msgid "Configure Notifications"
-msgstr "הגדרות הודעות"
+msgstr "הגדרת התראות"
 
 #: knotifyeventlist.cpp:76
 #, kde-format
