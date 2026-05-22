@@ -8,27 +8,27 @@ msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:49+0000\n"
-"PO-Revision-Date: 2013-09-08 07:05+0900\n"
-"Last-Translator: Gheyret Kenji <gheyret@gmail.com>\n"
+"PO-Revision-Date: 2026-05-13 12:24-0400\n"
+"Last-Translator: Abduqadir Abliz <sahranbay@gmail.com>\n"
 "Language-Team: Uyghur Computer Science Association <UKIJ@yahoogroups.com>\n"
 "Language: ug\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 1.5.5\n"
+"X-Generator: Poedit 3.9\n"
 
 #. i18n: ectx: property (toolTip), widget (KUrlRequester, Sound_select)
 #: knotifyconfigactionswidgetbase.ui:48
 #, kde-format
 msgid "Select the sound to play"
-msgstr "قويىدىغان ئاۋازنى تاللاڭ"
+msgstr "ياڭرىتىدىغان ئاۋاز تاللىنىدۇ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Sound_check)
 #: knotifyconfigactionswidgetbase.ui:55
 #, kde-format
 msgid "Play a &sound"
-msgstr "ئاۋاز قوي(&S)"
+msgstr "ئاۋاز ياڭرات(&S)"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
 #: knotifyconfigactionswidgetbase.ui:62
@@ -39,7 +39,7 @@ msgstr "قاڭقىش كۆزنىكىدە ئۇچۇرنى كۆرسەت(&P)"
 #: knotifyconfigwidget.cpp:117
 #, kde-format
 msgid "Configure Notifications"
-msgstr "ئۇقتۇرۇش سەپلەش"
+msgstr "ئۇقتۇرۇش سەپلە"
 
 #: knotifyeventlist.cpp:76
 #, kde-format
@@ -74,7 +74,6 @@ msgstr "چۈشەندۈرۈش"
 #~ msgid "Sp&eech"
 #~ msgstr "تاۋۇش(&E)"
 
-#, fuzzy
 #~| msgid ""
 #~| "<qt>Specifies how Jovie should speak the event when received.  If you "
 #~| "select \"Speak custom text\", enter the text in the box.  You may use "
@@ -3792,7 +3791,6 @@ msgstr "چۈشەندۈرۈش"
 #~ msgid "Supply a username and password below."
 #~ msgstr "تۆۋەندە ئىشلەتكۈچى ئاتى ۋە ئىم تەمىنلەيدۇ."
 
-#, fuzzy
 #~| msgid "&Keep password"
 #~ msgid "Use this password:"
 #~ msgstr "ئىمنى ساقلا(&K)"
