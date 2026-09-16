@@ -25,6 +25,7 @@ include(ECMQtDeclareLoggingCategory)
 include(CMakePackageConfigHelpers)
 include(KDEGitCommitHooks)
 include(ECMDeprecationSettings)
+include(ECMInstalledLibraryCheck)
 
 # Required Qt components to build this framework
 set(REQUIRED_QT_VERSION 6.9.0)

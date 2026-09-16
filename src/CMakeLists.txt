@@ -56,7 +56,7 @@ elseif (Qt6Multimedia_FOUND)
     target_link_libraries(KF6NotifyConfig PRIVATE Qt6::Multimedia)
 endif()
 
-ecm_generate_headers(KNotifyConfig_HEADERS
+ecm_generate_headers(KNotifyConfig_CamelCase_HEADERS
   HEADER_NAMES
   KNotifyConfigWidget
 
@@ -69,6 +69,7 @@ install(TARGETS KF6NotifyConfig EXPORT KF6NotifyConfigTargets ${KF_INSTALL_TARGE
 install(FILES
   ${CMAKE_CURRENT_BINARY_DIR}/knotifyconfig_export.h
   ${KNotifyConfig_HEADERS}
+  ${KNotifyConfig_CamelCase_HEADERS}
   DESTINATION ${KDE_INSTALL_INCLUDEDIR_KF}/KNotifyConfig COMPONENT Devel)
 
 ecm_qt_install_logging_categories(
@@ -78,3 +79,16 @@ ecm_qt_install_logging_categories(
 )
 
 ecm_generate_qdoc(KF6NotifyConfig knotifyconfig.qdocconf)
+
+ecm_add_installed_library_check(KF6NotifyConfig
+    PACKAGE_NAME "KF6NotifyConfig"
+    PACKAGE_TARGET_NAMESPACE "KF6::"
+)
+
+ecm_installed_library_check_include_strings(KF6NotifyConfig
+    HEADERS ${KNotifyConfig_CamelCase_HEADERS}
+)
+
+ecm_installed_library_check_version_preprocessor_macros(KF6NotifyConfig
+    PREFIX KNOTIFYCONFIG
+)
