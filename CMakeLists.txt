@@ -28,7 +28,7 @@ include(ECMDeprecationSettings)
 include(ECMInstalledLibraryCheck)
 
 # Required Qt components to build this framework
-set(REQUIRED_QT_VERSION 6.9.0)
+set(REQUIRED_QT_VERSION 6.10.0)
 find_package(Qt6 ${REQUIRED_QT_VERSION} NO_MODULE REQUIRED Widgets)
 
 # shall we use DBus?
