@@ -44,13 +44,13 @@ msgstr "Выберите звуковой файл"
 #: knotifyconfigactionswidgetbase.ui:55
 #, kde-format
 msgid "Play a &sound"
-msgstr "Воспроизвести &звук"
+msgstr "Воспроизводить &звук"
 
 #. i18n: ectx: property (text), widget (QCheckBox, Popup_check)
 #: knotifyconfigactionswidgetbase.ui:62
 #, kde-format
 msgid "Show a message in a &popup"
-msgstr "Показать &сообщение во всплывающем окне"
+msgstr "Показывать &сообщение во всплывающем окне"
 
 #: knotifyconfigwidget.cpp:117
 #, kde-format
