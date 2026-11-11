@@ -113,6 +113,14 @@ void KNotifyConfigWidget::disableAllSounds()
 
 KNotifyConfigWidget *KNotifyConfigWidget::configure(QWidget *parent, const QString &appname)
 {
+    QDialog *dialog = createDialog(parent, appname);
+    dialog->setAttribute(Qt::WA_DeleteOnClose);
+    dialog->show();
+    return dialog->findChild<KNotifyConfigWidget *>();
+}
+
+QDialog *KNotifyConfigWidget::createDialog(QWidget *parent, const QString &appname)
+{
     QDialog *dialog = new QDialog(parent);
     dialog->setWindowTitle(i18n("Configure Notifications"));
 
@@ -126,17 +134,15 @@ KNotifyConfigWidget *KNotifyConfigWidget::configure(QWidget *parent, const QStri
     layout->addWidget(w);
     layout->addWidget(buttonBox);
 
-    connect(buttonBox->button(QDialogButtonBox::Apply), SIGNAL(clicked()), w, SLOT(save()));
-    connect(buttonBox->button(QDialogButtonBox::Ok), SIGNAL(clicked()), w, SLOT(save()));
-    connect(w, SIGNAL(changed(bool)), buttonBox->button(QDialogButtonBox::Apply), SLOT(setEnabled(bool)));
+    connect(buttonBox->button(QDialogButtonBox::Apply), &QPushButton::clicked, w, &KNotifyConfigWidget::save);
+    connect(buttonBox->button(QDialogButtonBox::Ok), &QPushButton::clicked, w, &KNotifyConfigWidget::save);
+    connect(w, &KNotifyConfigWidget::changed, buttonBox->button(QDialogButtonBox::Apply), &QPushButton::setEnabled);
 
-    connect(buttonBox, SIGNAL(accepted()), dialog, SLOT(accept()));
-    connect(buttonBox, SIGNAL(rejected()), dialog, SLOT(reject()));
+    connect(buttonBox, &QDialogButtonBox::accepted, dialog, &QDialog::accept);
+    connect(buttonBox, &QDialogButtonBox::rejected, dialog, &QDialog::reject);
 
     w->setApplication(appname);
-    dialog->setAttribute(Qt::WA_DeleteOnClose);
-    dialog->show();
-    return w;
+    return dialog;
 }
 
 void KNotifyConfigWidget::slotActionChanged()

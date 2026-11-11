@@ -48,6 +48,17 @@ public:
     static KNotifyConfigWidget *configure(QWidget *parent = nullptr, const QString &appname = QString());
 
     /*!
+     * Create a dialog with the widget.
+     *
+     * \a parent the parent widget of the dialog
+     *
+     * \a appname the application name, if null, it is autodetected
+     *
+     * \since 6.33
+     */
+    static QDialog *createDialog(QWidget *parent = nullptr, const QString &appname = QString());
+
+    /*!
      * Change the application
      *
      * \a appname name of the application. If null QCoreApplication::instance()->applicationName() is used
